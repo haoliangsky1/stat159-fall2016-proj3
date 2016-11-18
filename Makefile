@@ -2,7 +2,7 @@
 .PHONY: all data clean tests eda report slides session
 
 # Output
-
+rmd = report/sections/*.Rmd
 
 
 # PHONY targets
@@ -18,15 +18,27 @@ data:
 
 tests:
 	# run the unit tests of the self-defiend functions
-	Rscript code/test-that.R
+	Rscript code/test-that.
+	# generate report.pdf
+	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
 
 
+report:
+	# concatinate the files into one
+	cat$(rmd) > report/report.Rmd
+
+shinyApp:
+	# generate the shinyApp for the project
+
+
+slides:
+	# generate the slides.thml
 
 
 session:
 	# Generate session info for the environment
-	# bash session.sh
-	# Rscript code/scripts/session-info-script.R
+	bash session.sh
+	Rscript code/scripts/session-info-script.R
 
 clean:
 	# Clean 
