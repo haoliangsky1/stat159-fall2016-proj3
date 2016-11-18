@@ -12,9 +12,14 @@ all: $(output)
 
 data:
 	curl -O https://ed-public-download.apps.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip
-	mv CollegeScorecard_Raw_Data.zip rawData/CollegeScorecard_Raw_Data.zip
-	unzip rawData/CollegeScorecard_Raw_Data.zip
-	python code/function/cleanUp.pyt
+	mv CollegeScorecard_Raw_Data.zip data/CollegeScorecard_Raw_Data.zip
+	unzip data/CollegeScorecard_Raw_Data.zip -d data/rawData/
+	python code/function/cleanUp.py
+
+tests:
+	# run the unit tests of the self-defiend functions
+	Rscript code/test-that.R
+
 
 
 
