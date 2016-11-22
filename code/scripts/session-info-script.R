@@ -1,0 +1,26 @@
+# Include all library() calls to the packages 
+# that are used in the project
+library(devtools)
+library(knitr)
+library(rmarkdown)
+library(stats)
+library(base)
+library(utils)
+library(grDevices)
+library(graphics)
+library(testthat)
+library(plyr)
+library(pls)
+library(glmnet)
+library(pls)
+library(FactoMineR)
+library(ggplot2)
+library(xtable)
+library(maps)
+
+sink("../../session-info.txt", append = TRUE)
+cat("Session Information\n\n")
+print(sessionInfo())
+devtools::session_info()
+sink()
+
