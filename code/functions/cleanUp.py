@@ -101,23 +101,12 @@ for i in range(len(reducedDataList)):
     print(nameList[i] + ' converted.')
 
 
-# # Merge the data set
-# finalDF = pd.DataFrame()
-# year11 = reducedDataList[0]
-# year12 = reducedDataList[1]
-# year13 = reducedDataList[2]
-# year14 = reducedDataList[3]
-# year15 = reducedDataList[4]
-# for column in columnList:
-#     if year11[column][1].isdigit():
-#         finalDF[column] = year15[column].map(lambda x: int(x) * 0.4) + year15[column].map(lambda x: int(x) * 0.4)
-#         finalDF[column] = 0.4 * int(year15[column]) + \
-#                           0.3 * int(year14[column]) + 0.2 * int(year13[column]) + \
-#                           0.05 * int(year11[column]) + 0.05 * int(year12[column])
-#     else:
-#         finalDF[column] = year11[column]
-# # Output as cleaned-up data
-# finalDF.to_csv('../../data/cleanedUp.csv')
+salaryRaw = pd.read_csv('../../data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv')
+salaryRaw.replace('PrivacvySuppressed', np.NaN)
+# salary = salaryRaw.loc[df['UNITID'].isin(rowList)]
+salary.to_csv(path + 'salaryRaw.csv')
+print('salaryRaw.csv' + ' converted.')
+
 
 
 
