@@ -30,6 +30,10 @@ tests:
 	# generate report.pdf
 	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
 
+eda:
+	# perform the exploratory data analysis
+	Rscript code/scripts/eda-script.R data/combinedData.csv
+
 
 report:
 	# concatinate the files into one
