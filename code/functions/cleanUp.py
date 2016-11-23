@@ -48,7 +48,7 @@ nameList = ['year11.csv', 'year12.csv','year13.csv','year14.csv','year15.csv']
 # Use the newest data set of 20 as base for choosing columns
 # thresholdColumn = 0.9
 # columnList = getColumns(raw15, thresholdColumn)
-columnList = ['UNITID', 'OPEID', 'INSTNM', 'STABBR', 'PREDDEG', 'HIGHDEG', 'CONTROL', 'ST_FIPS', 'REGION', 'ADM_RATE', 'CCBASIC', 'CCUGPROF', \
+columnList = ['UNITID', 'OPEID', 'INSTNM', 'STABBR', 'PREDDEG', 'HIGHDEG', 'CONTROL', 'ST_FIPS', 'REGION', 'LATITUDE', 'LONGITUDE', 'ADM_RATE', 'CCBASIC', 'CCUGPROF', \
 'CCSIZSET', 'HBCU', 'PBI', 'ANNHI', 'TRIBAL', 'AANAPII', 'HSI','NANTI', 'ADM_RATE',  'SATVR25', 'SATVR75', 'SATMT25', 'SATMT75', 'SATVRMID', 'SATMTMID', 'ACTCM25', 'ACTCM75', 'ACTEN25', 'ACTEN75', 'ACTMT25', 'ACTMT75', 'ACTCMMID', 'ACTENMID', 'ACTMTMID','SAT_AVG', \
 'PCIP01', 'PCIP03', 'PCIP04', 'PCIP05', 'PCIP09', 'PCIP10','PCIP11','PCIP12','PCIP13', 'PCIP14', 'PCIP15', 'PCIP16', 'PCIP19', 'PCIP22', 'PCIP23','PCIP24','PCIP25','PCIP26','PCIP27','PCIP29', 'PCIP30', 'PCIP31', 'PCIP38', 'PCIP39', 'PCIP40', 'PCIP41', 'PCIP42', 'PCIP43', 'PCIP44', 'PCIP45', 'PCIP46', 'PCIP47', 'PCIP48', 'PCIP49', 'PCIP50', 'PCIP51', 'PCIP52', 'PCIP54', \
 'CIP01BACHL', 'CIP03BACHL', 'CIP04BACHL', 'CIP05BACHL', 'CIP10BACHL', 'CIP11BACHL', 'CIP12BACHL', 'CIP13BACHL','CIP14BACHL', 'CIP15BACHL','CIP16BACHL','CIP19BACHL','CIP22BACHL','CIP23BACHL','CIP24BACHL','CIP25BACHL','CIP26BACHL','CIP27BACHL','CIP29BACHL','CIP30BACHL','CIP31BACHL','CIP38BACHL','CIP39BACHL','CIP40BACHL','CIP41BACHL','CIP42BACHL','CIP43BACHL','CIP44BACHL','CIP45BACHL','CIP46BACHL','CIP47BACHL','CIP48BACHL','CIP49BACHL','CIP50BACHL','CIP51BACHL','CIP52BACHL','CIP54BACHL',\
@@ -103,7 +103,7 @@ for i in range(len(reducedDataList)):
 
 salaryRaw = pd.read_csv('../../data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv')
 salaryRaw.replace('PrivacvySuppressed', np.NaN)
-# salary = salaryRaw.loc[df['UNITID'].isin(rowList)]
+salary = salaryRaw.loc[df['UNITID'].isin(rowList)]
 salary.to_csv(path + 'salaryRaw.csv')
 print('salaryRaw.csv' + ' converted.')
 

@@ -17,6 +17,7 @@ library(FactoMineR)
 library(ggplot2)
 library(xtable)
 library(maps)
+library(shiny)
 
 sink("../../session-info.txt", append = TRUE)
 cat("Session Information\n\n")
