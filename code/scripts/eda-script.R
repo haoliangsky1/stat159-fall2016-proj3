@@ -27,7 +27,7 @@ all_states = map_data('state')
 year15 = read.csv('data/reducedData/year15.csv')
 # We list all the states in mainland USA
 stateList = c('AL', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'ID', 'IL', 'IN','IA','KS', 'KY','LA','ME','MD','MA','MI','MN','MS','MO','MT', 'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY')
-stateData = year15[year15$UNITID %in% college$UNITID, c(2:5, 10:12, 117)]
+stateData = year15[year15$UNITID %in% college$UNITID, ]
 stateData = stateData[stateData$STABBR %in% stateList,]
 stateData = stateData[is.na(stateData$UGDS) == FALSE,]
 
@@ -44,7 +44,7 @@ dev.off()
 
 
 ## Admission Rate, We may use 40% as threshold
-temp = year15[year15$UNITID %in% college$UNITID, c(1:5, 10:13, 117)]
+temp = year15[year15$UNITID %in% college$UNITID, ]
 temp = temp[temp$STABBR %in% stateList, ]
 admissionData =  temp[!is.na(temp$ADM_RATE), ]
 admissionData = admissionData[admissionData$ADM_RATE < 0.4, ]
@@ -58,14 +58,6 @@ p = p + geom_point(data = admissionData, aes(x = LONGITUDE, y = LATITUDE, size =
 #p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
 p
 dev.off()
-
-
-
-# Need criteria for good school
-# Salary?
-# Entrance SAT?
-
-# Financial support?
 
 
 # Flag for Historically Black College and University
@@ -87,5 +79,42 @@ AANAPIITable = count(college, 'AANAPII')
 HSITable = count(college, 'HSI')
 
 
+# Entrance Test Score Summary
+# SAT
+SATCR = college$SATVRMID
+SATCR = SATCR[SATCR != 0]
+hist(SATCR, main = 'Histogram of Median of SAT Critical Reading Scores')
+length(SATCR)
+
+SATMT = college$SATMTMID
+SATMT = SATMT[SATMT != 0]
+hist(SATMT, main = 'Histogram of Median of SAT Math Scores')
+length(SATMT)
+
+SATWR = college$SATWRMID
+SATWR = SATWR[SATWR != 0]
+hist(SATWR, main = 'Histogram of Meidan of SAT Writing Scores')
+
+# ACT
+ACTEN = college$ACTENMID
+ACTEN = ACTEN[ACTEN != 0]
+hist(ACTEN, main = 'Histogram of Median of ACT English')
+length(ACTEN)
+
+ACTMT = college$ACTMTMID
+ACTMT = ACTMT[ACTMT != 0]
+hist(ACTMT, main = 'Histogram of Median of ACT Math')
+length(ACTMT)
+
+ACTWR = college$ACTWRMID
+ACTWR = ACTWR[ACTWR != 0]
+hist(ACTWR, main = 'Histogram of Median of ACT Writing')
+length(ACTWR)
+
+# Need criteria for good school
+# Salary?
+# Entrance SAT?
+
+# Financial support?
 
 
