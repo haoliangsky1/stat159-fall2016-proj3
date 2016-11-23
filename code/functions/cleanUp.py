@@ -108,6 +108,3 @@ salary.to_csv(path + 'salaryRaw.csv')
 print('salaryRaw.csv' + ' converted.')
 
 
-
-
-
