@@ -52,3 +52,7 @@ We may see that blablablablabla
 
 
 Then, we may look at the 
+
+```{r, out.width = "300px",out.height='300px', echo=FALSE,message=FALSE, fig.align ='center', eval = T}
+knitr::include_graphics("../../images/ggplot-admissionRateDistribution.png")
+```
