@@ -43,9 +43,23 @@ p
 dev.off()
 
 
-## Admission Rate, We may use 30% as threhold
+## Admission Rate, We may use 40% as threshold
 temp = year15[year15$UNITID %in% college$UNITID, c(1:5, 10:13, 117)]
-admissionData =  temp[(temp$ADM_RATE < 0.3), ]
+temp = temp[temp$STABBR %in% stateList, ]
+admissionData =  temp[!is.na(temp$ADM_RATE), ]
+admissionData = admissionData[admissionData$ADM_RATE < 0.4, ]
+# Output as plot
+png('images/ggplot-admissionRateDistribution.png')
+p = ggplot()
+p = p + geom_polygon(data = all_states, 
+                     aes(x=long, y= lat, group = group), color = 'white')
+p = p + geom_point(data = admissionData, aes(x = LONGITUDE, y = LATITUDE, size = 1-ADM_RATE),
+                   color = 'red') + scale_size(name = 'Undergraduate Rejection Rate')
+#p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
+p
+dev.off()
+
+
 
 # Need criteria for good school
 # Salary?
