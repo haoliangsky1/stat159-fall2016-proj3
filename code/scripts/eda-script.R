@@ -68,5 +68,24 @@ dev.off()
 # Financial support?
 
 
+# Flag for Historically Black College and University
+HBCUTable = count(college, 'HBCU')
+
+# Flag for predominantly black institution
+PBITable = count(college, 'PBI')
+
+# Flag for Alaska Native Hawaiian serving institution
+ANNHITable = count(college, 'ANNHI')
+
+# Flag for tribal college and university
+TRIBALTable = count(college, 'TRIBAL')
+
+# Flag for Asian American Native American PacificIslander-serving institution
+AANAPIITable = count(college, 'AANAPII')
+
+# Flag for Hispanic-serving institution
+HSITable = count(college, 'HSI')
+
+
 
 
