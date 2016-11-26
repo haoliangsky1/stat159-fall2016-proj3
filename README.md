@@ -44,6 +44,8 @@ The *Makefile* for this project provides multiple phony targets to streamline th
 
 * ```slides```: will generate the *slides.html*
 
+* ```shinyApp```: will generate the shiny App for this project
+
 * ```session```:  will generate the *session-info.txt* file
 
 * ```clean```: will delete the generated report
