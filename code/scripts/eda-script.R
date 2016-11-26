@@ -83,12 +83,20 @@ HSITable = count(college, 'HSI')
 # SAT
 SATCR = college$SATVRMID
 SATCR = SATCR[SATCR != 0]
+png('images/histogram-SATCRMedian.png')
 hist(SATCR, main = 'Histogram of Median of SAT Critical Reading Scores')
+#abline(v = mean(SATCR), col = 'red')
+dev.off()
+SATCRTable = summary(SATCR)
+save(SATCRTable, file = 'data/rData/table-SATCR.RData')
 length(SATCR)
+# Write about the distribution, which school has the highest 
+
 
 SATMT = college$SATMTMID
 SATMT = SATMT[SATMT != 0]
 hist(SATMT, main = 'Histogram of Median of SAT Math Scores')
+abline(mena)
 length(SATMT)
 
 SATWR = college$SATWRMID
