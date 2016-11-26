@@ -7,6 +7,7 @@ output: pdf_document
 
 ```{r,echo=FALSE, message=FALSE}
 # Settings
+#library(Hmisc)
 options(xtable.comment = FALSE)
 options(knitr.comment = FALSE)
 ```
@@ -56,3 +57,38 @@ Then, we may look at the
 ```{r, out.width = "300px",out.height='300px', echo=FALSE,message=FALSE, fig.align ='center', eval = T}
 knitr::include_graphics("../../images/ggplot-admissionRateDistribution.png")
 ```
+
+
+The Standardized Test Scores could be important indications for the quality of school and how likely a student may get admission. So we may look at the general distribution of SAT and ACT scores.
+
+
+```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+knitr::include_graphics("../../images/histogram-SATCRMedian.png")
+load('../../data/rData/table-SATCR.RData')
+xtable(SATCRTable)
+```
+
+We can see that 
+
+```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+knitr::include_graphics("../../images/histogram-SATMTMedian.png")
+load('../../data/rData/table-SATMT.RData')
+xtable(SATCRTable)
+```
+
+
+And ACT:
+```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+knitr::include_graphics("../../images/histogram-ACTENMedian.png")
+load('../../data/rData/table-ACTEN.RData')
+xtable(ACTENTable)
+```
+
+```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+knitr::include_graphics("../../images/histogram-ACTMTMedian.png")
+load('../../data/rData/table-ACTMT.RData')
+xtable(ACTMTTable)
+```
+
+
+
