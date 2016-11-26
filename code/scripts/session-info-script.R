@@ -18,6 +18,7 @@ library(ggplot2)
 library(xtable)
 library(maps)
 library(shiny)
+library(Hmisc)
 
 sink("../../session-info.txt", append = TRUE)
 cat("Session Information\n\n")

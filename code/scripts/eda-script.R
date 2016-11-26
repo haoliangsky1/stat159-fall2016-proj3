@@ -79,6 +79,17 @@ AANAPIITable = count(college, 'AANAPII')
 HSITable = count(college, 'HSI')
 
 
+
+# Compute the summary statistics for quantitative variables
+getSummary = function(vector){
+  temp = matrix(nrow = 1, ncol = 10, byrow= T)
+  temp[1,] = c(min(vector, na.rm=T), max(vector, na.rm=T), (max(vector, na.rm=T) - min(vector, na.rm=T)), median(vector, na.rm=T), quantile(vector, na.rm=T)[[2]], quantile(vector, na.rm=T)[[4]], IQR(vector, na.rm=T), mean(vector, na.rm=T), var(vector, na.rm=T), sd(vector, na.rm=T))
+  colnames(temp) = c('Min.', 'Max.', 'Range', 'Median', '1st Quartile', '3rd Quartile', 'IQR', 'Mean', 'Variance', 'SD')
+  return(temp)
+}
+
+
+
 # Entrance Test Score Summary
 # SAT
 SATCR = college$SATVRMID
@@ -87,37 +98,41 @@ png('images/histogram-SATCRMedian.png')
 hist(SATCR, main = 'Histogram of Median of SAT Critical Reading Scores')
 #abline(v = mean(SATCR), col = 'red')
 dev.off()
-SATCRTable = summary(SATCR)
+SATCRTable = getSummary(SATCR)
 save(SATCRTable, file = 'data/rData/table-SATCR.RData')
 length(SATCR)
-# Write about the distribution, which school has the highest 
-
 
 SATMT = college$SATMTMID
 SATMT = SATMT[SATMT != 0]
+png('images/histogram-SATMTMedian.png')
 hist(SATMT, main = 'Histogram of Median of SAT Math Scores')
-abline(mena)
-length(SATMT)
+dev.off()
+SATMTTable = getSummary(SATMT)
+save(SATMTTable, file = 'data/rData/table-SATMT.RData')
 
-SATWR = college$SATWRMID
-SATWR = SATWR[SATWR != 0]
-hist(SATWR, main = 'Histogram of Meidan of SAT Writing Scores')
+
+
 
 # ACT
 ACTEN = college$ACTENMID
 ACTEN = ACTEN[ACTEN != 0]
+png('images/histogram-ACTENMedian.png')
 hist(ACTEN, main = 'Histogram of Median of ACT English')
+dev.off()
+ACTENTable = getSummary(ACTEN)
+save(ACTENTable, file = 'data/rData/table-ACTEN.RData')
+
+
 length(ACTEN)
 
 ACTMT = college$ACTMTMID
 ACTMT = ACTMT[ACTMT != 0]
+png('images/histogram-ACTMTMedian.png')
 hist(ACTMT, main = 'Histogram of Median of ACT Math')
-length(ACTMT)
+dev.off()
+ACTMTTable = getSummary(ACTMT)
+save(ACTMTTable, file = 'data/rData/table-ACTMT.RData')
 
-ACTWR = college$ACTWRMID
-ACTWR = ACTWR[ACTWR != 0]
-hist(ACTWR, main = 'Histogram of Median of ACT Writing')
-length(ACTWR)
 
 # Need criteria for good school
 # Salary?
