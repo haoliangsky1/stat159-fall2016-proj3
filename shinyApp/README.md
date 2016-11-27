@@ -1,0 +1,3 @@
+This folder contains the shiny App generated for the clients of the project.
+
+This app .............
