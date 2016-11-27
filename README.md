@@ -60,6 +60,8 @@ stat159-fall2016-project2/
    session-info.txt
    .gitignore
    code/
+      README.md
+      test-that.R
       functions/
          ...
       scripts/
@@ -74,8 +76,10 @@ stat159-fall2016-project2/
       rData/
          ...
    images/
+      README.md
       ...
    report/
+      README.md
       report.pdf
       report.Rmd
       sections/
@@ -87,6 +91,7 @@ stat159-fall2016-project2/
          05-results.Rmd
          06-conclusions.Rmd
    slides/
+      README.md
       ...
 ```
 
