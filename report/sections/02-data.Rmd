@@ -43,6 +43,7 @@ xtable(weightTable)
 
 ## Exploratory Data Analysis
 
+### Geographical Distribution
 We may first have a look at the geographical distribution of colleges in the dataset. For the purpose of graphing, the plot only shows colleges in mainland United States.
 
 ```{r, out.width = "300px",out.height='300px', echo=FALSE,message=FALSE, fig.align ='center', eval = T}
@@ -59,36 +60,82 @@ knitr::include_graphics("../../images/ggplot-admissionRateDistribution.png")
 ```
 
 
+### Ethnicity
+We can also look at the historical statistics for educational conditions for minority groups. For such causes have long been drawing attention from the society and the public still complain about it.
+
+```{r, echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+load('../../data/rData/table-HBCU.RData')
+xtable(HBCUTable, caption = 'Flag for Historically Black College and University')
+
+load('../../data/rData/table-PBI.RData')
+xtable(PBITable, caption = 'Flag for predominantly Black Institution')
+
+load('../../data/rData/table-ANNHI.RData')
+xtable(ANNHITable, caption = 'Flag for Alaska Native, Native Hawaiian Serving Institution')
+
+load('../../data/rData/table-HSI.RData')
+xtable(HSITable, caption = 'Flag for Hispanic-Serving Institution')
+
+load('../../data/rData/table-TRIBAL.RData')
+xtable(TRIBALTable, caption = 'Flag for Tribal College and University')
+
+load('../../data/rData/table-AANAPII.RData')
+xtable(AANAPIITable, caption = 'Flag for Asian American, Native American, Pacific Islander-serving Institution')
+```
+
+From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S.. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
+
+```{r, out.width = "250px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+knitr::include_graphics("../../images/piechart-enrollmentEthnicity.png")
+```
+
+From the pie chart above, we may see that ..............................
+
+
+### Net Price
+```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
+load('../../data/rData/table-netPrice.RData')
+xtable(NPTable, caption = 'Summary Statistics for Net Price of Public and Private Institutions')
+```
+
+From the table above, we can see that ............................
+
+
+### Standardized Test Scores
 The Standardized Test Scores could be important indications for the quality of school and how likely a student may get admission. So we may look at the general distribution of SAT and ACT scores.
 
 
 ```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
 knitr::include_graphics("../../images/histogram-SATCRMedian.png")
 load('../../data/rData/table-SATCR.RData')
-xtable(SATCRTable)
+xtable(SATCRTable, caption = 'Summary Statistics for SAT Critical Writing')
 ```
 
-We can see that 
+From the histogram and the table above, we can see that the median of SAT Critical Reading scores basically follows a normal distribution, with most of the scores clustering between 450 and 550. We may consider colleges with such score higher than 556 to be outstanding as a college institution.
 
 ```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
 knitr::include_graphics("../../images/histogram-SATMTMedian.png")
 load('../../data/rData/table-SATMT.RData')
-xtable(SATCRTable)
+xtable(SATMTTable, caption = 'Summary Statistics for SAT Math')
 ```
 
+From the histogram and the table above, we can see that the median of SAT Mathematics scores basically follows a normal distribution, with most of the scores clustering between 450 and 550. We may consider colleges with such score higher than 563 to be outstanding as a college institution.
 
-And ACT:
+Because not all colleges recorded or submitted their SAT Writing scores to the original dataset, we may remove in the consideration. Also, we may conduct similar analysis on reported ACT scores:
 ```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
 knitr::include_graphics("../../images/histogram-ACTENMedian.png")
 load('../../data/rData/table-ACTEN.RData')
-xtable(ACTENTable)
+xtable(ACTENTable, caption = 'Summary Statistics for ACT English')
 ```
+
+From the histogram and the table above, we can see that the median of ACT English scores basically follows a normal distribution, with most of the scores clustering between 20 and 24. We may consider colleges with such score higher than 24.6 to be outstanding as a college institution.
+
 
 ```{r, out.width = "150px", echo=FALSE,message=FALSE, fig.align ='center', eval = T, results='asis'}
 knitr::include_graphics("../../images/histogram-ACTMTMedian.png")
 load('../../data/rData/table-ACTMT.RData')
-xtable(ACTMTTable)
+xtable(ACTMTTable, caption = 'Summary Statistics for ACT Math')
 ```
 
-
+From the histogram and the table above, we can see that the median of ACT Math scores basically follows a normal distribution, with most of the scores clustering between 20 and 24. We may consider colleges with such score higher than 24 to be outstanding as a college institution.
 
