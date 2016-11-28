@@ -1,0 +1,12 @@
+\documentclass{article}
+\title{Stat159 Project 3: Add a title}
+\author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Abstract}
+
+This project aims to design and build a website for an NGO in order to provide minority studetns a portfolio of colleges which would best serve their needs: a high-quality, low-cost education.
+
+\end{document}
