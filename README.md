@@ -81,15 +81,15 @@ stat159-fall2016-project2/
    report/
       README.md
       report.pdf
-      report.Rmd
+      report.Rnw
       sections/
-         00-abstract.Rmd
-         01-introduction.Rmd
-         02-data.Rmd
-         03-methods.Rmd
-         04-analysis.Rmd
-         05-results.Rmd
-         06-conclusions.Rmd
+         00-abstract.Rnw
+         01-introduction.Rnw
+         02-data.Rnw
+         03-methods.Rnw
+         04-analysis.Rnw
+         05-results.Rnw
+         06-conclusions.Rnw
    slides/
       README.md
       ...

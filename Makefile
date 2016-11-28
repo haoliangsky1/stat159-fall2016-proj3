@@ -2,7 +2,7 @@
 .PHONY: all data clean tests eda report slides session
 
 # Output
-rmd = report/sections/*.Rmd
+rmd = report/sections/*.Rnw
 
 
 # PHONY targets
@@ -27,8 +27,6 @@ data:
 tests:
 	# run the unit tests of the self-defiend functions
 	Rscript code/test-that.
-	# generate report.pdf
-	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
 
 eda:
 	# perform the exploratory data analysis
@@ -37,7 +35,10 @@ eda:
 
 report:
 	# concatinate the files into one
-	cat$(rmd) > report/report.Rmd
+	cat$(rnw) > report/report.Rnw
+	# generate report.pdf
+	Rscript -e 'library(rsweave); render("report/report.Rnw")'
+
 
 shinyApp:
 	# generate the shinyApp for the project
