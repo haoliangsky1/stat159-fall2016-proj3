@@ -21,9 +21,13 @@ ui = fluidPage(
 	selectInput(inputId = 'familyIncome', label = 'Choose family income level', 
 	            choices = c('$0-$30,000','$30,001-$48,000','$48,001-$75,000','$75,001-$110,000','$110,000+')),
 	# Input SAT Scores
-	numericInput('SATMath', label = 'Input SAT Math Score', value=400),
-	numericInput('SATCriticalReading', label = 'Input SAT Critical Reading Score', value = 400),
-	numericInput('SATWriting', label = 'Input SAT Writing Score', value=400)
+	numericInput('SATMath', label = 'Input SAT Math Score', value=NA),
+	numericInput('SATCriticalReading', label = 'Input SAT Critical Reading Score', value = NA),
+	numericInput('SATWriting', label = 'Input SAT Writing Score', value=NA),
+	# Input ACT Scores
+	numericInput('ACTEnglish', label = 'Input ACT English Score', value=NA),
+	numericInput('ACTMath', label = 'Input ACT Math Score', value=NA),
+	numericInput('ACTWriting', label = 'Input ACT Writing Score', value=NA)
 	)
 
 server = function(input, output) {
