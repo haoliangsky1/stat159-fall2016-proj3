@@ -14,13 +14,13 @@ ui = fluidPage(
 	# Select Race/Ethnicity
 	selectInput("ethnicity", label = 'Choose Ethnicity',
 	            choices = c('White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
-	# Select an intended major
+	# Select an intended major - Current list is placeholder
 	selectInput(inputId = 'intendedMajor', label = 'Choose an intended major', 
 	            choices = c('Computer Science','Literature','Mathematics','Engineering','Social Studies','Visual and Perfoming Arts','Business','History')),
-	# Select financial aid level
+	# Select financial aid level - Data has net cost after financial aid based on family income
 	selectInput(inputId = 'familyIncome', label = 'Choose family income level', 
 	            choices = c('$0-$30,000','$30,001-$48,000','$48,001-$75,000','$75,001-$110,000','$110,000+')),
-	# Input SAT Scores
+	# Input SAT Scores - Data has percentiles of SAT/ACT scores for students
 	numericInput('SATMath', label = 'Input SAT Math Score', value=NA),
 	numericInput('SATCriticalReading', label = 'Input SAT Critical Reading Score', value = NA),
 	numericInput('SATWriting', label = 'Input SAT Writing Score', value=NA),
