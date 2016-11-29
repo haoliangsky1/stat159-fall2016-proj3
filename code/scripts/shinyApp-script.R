@@ -14,6 +14,10 @@ ui = fluidPage(
 	# Select Race/Ethnicity
 	selectInput("ethnicity", label = 'Choose Ethnicity',
 	            choices = c('White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
+	# First Generation
+	radioButtons('firstGeneration', label = 'First Generation?', choices = c('Yes', 'No')),
+	# Sex
+	radioButtons('sex', label = 'Select Sex', choices = c('Male', 'Female')),
 	# Select an intended major - Current list is placeholder
 	selectInput(inputId = 'intendedMajor', label = 'Choose an intended major', 
 	            choices = c('Computer Science','Literature','Mathematics','Engineering','Social Studies','Visual and Perfoming Arts','Business','History')),
