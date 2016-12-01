@@ -4,16 +4,31 @@ library(ggplot2)
 library(stringr)
 library(shiny)
 
-college = read.csv('data/combinedData.csv')
+college = read.csv('../../data/schoolRanking.csv')
 stateList = college$STABBR
 
 ui = fluidPage(
-	# Select a state
-	selectInput(inputId = 'state', label = 'Choose a State', choices = sort(stateList)),
-	plotOutput('plot'),
-	# Select Race/Ethnicity
-	selectInput("ethnicity", label = 'Choose Ethnicity',
-	            choices = c('White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
+  # This is the title
+  titlePanel('Hello World'),
+  
+  # Main Panel
+  mainPanel('Please add in some description so that the user can have a general idea of the project'),
+  
+  # Sidebar
+  sidebarPanel('whatever you consider fit here'),
+  
+ 
+  fluidRow(
+    column(2,
+           # Select a state
+           selectInput(inputId = 'state', label = 'Choose a State', choices = sort(stateList)),
+           #plotOutput('plot'),
+           # Select Race/Ethnicity
+           selectInput("ethnicity", label = 'Choose Ethnicity',
+                       choices = c('None','White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
+    )
+  ),
+  
 	# First Generation
 	radioButtons('firstGeneration', label = 'First Generation?', choices = c('Yes', 'No')),
 	# Sex

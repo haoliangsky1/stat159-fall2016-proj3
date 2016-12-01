@@ -27,6 +27,9 @@ dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
 # Employment:
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
+# Proportion of Pell Grant
+
+
 # We only take 4-year institute
 dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
 
@@ -66,6 +69,9 @@ summary(Score)
 
 
 dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'Score')]
+# Output the csv for shinyApp
+write.csv(dummyScore, file = 'data/schoolRanking.csv')
+
 CA = dummyScore[dummyScore$STABBR=='CA',]
 for (i in 1:10) {
   n = nrow(CA)
