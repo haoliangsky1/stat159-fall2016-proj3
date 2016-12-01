@@ -1,0 +1,1793 @@
+"","UNITID","INSTNM","STABBR","Score"
+"1",100654,"Alabama A & M University","AL",-1.55768363949682
+"2",100663,"University of Alabama at Birmingham","AL",-0.202811100288781
+"3",100690,"Amridge University","AL",-1.0402038144071
+"4",100706,"University of Alabama in Huntsville","AL",0.0902943980181386
+"5",100724,"Alabama State University","AL",-2.13012443363604
+"6",100751,"The University of Alabama","AL",0.261582898694436
+"9",100830,"Auburn University at Montgomery","AL",-1.22269215982793
+"10",100858,"Auburn University","AL",0.686405148947375
+"14",101116,"South University-Montgomery","AL",-2.07144835472299
+"17",101189,"Faulkner University","AL",-0.885544479863804
+"24",101453,"Heritage Christian University","AL",1.3276591241329
+"26",101480,"Jacksonville State University","AL",-1.19609774229974
+"32",101587,"University of West Alabama","AL",-1.27549898786463
+"36",101693,"University of Mobile","AL",-0.929512215346996
+"37",101709,"University of Montevallo","AL",-0.855340336057349
+"39",101879,"University of North Alabama","AL",-0.883407102552329
+"41",101912,"Oakwood University","AL",-1.21771443842849
+"46",102049,"Samford University","AL",0.858589705690449
+"47",102058,"Selma University","AL",1.37545268552025
+"50",102094,"University of South Alabama","AL",-0.66653232331101
+"51",102234,"Spring Hill College","AL",0.250787595484448
+"56",102368,"Troy University","AL",-1.18436015964645
+"61",102377,"Tuskegee University","AL",-0.984907236678261
+"62",102395,"United States Sports Academy","AL",1.00723445926413
+"64",102553,"University of Alaska Anchorage","AK",-0.518968479913507
+"65",102614,"University of Alaska Fairbanks","AK",-0.846200276178649
+"66",102632,"University of Alaska Southeast","AK",-1.05403588709918
+"67",102669,"Alaska Pacific University","AK",0.281795913347461
+"75",103778,"Thunderbird School of Global Management","AZ",-3.3592660173783
+"85",104151,"Arizona State University-Tempe","AZ",0.411794517404243
+"87",104179,"University of Arizona","AZ",0.483042722979259
+"98",104586,"Embry-Riddle Aeronautical University-Prescott","AZ",1.2009536345087
+"99",104665,"Frank Lloyd Wright School of Architecture","AZ",1.00034842139591
+"101",104717,"Grand Canyon University","AZ",-0.435195636510504
+"110",105330,"Northern Arizona University","AZ",-0.312781163981207
+"112",105367,"Ottawa University-Phoenix","AZ",-1.09331313865719
+"118",105589,"Prescott College","AZ",-0.844454365670977
+"128",106102,"Western International University","AZ",-0.718837918066341
+"131",106245,"University of Arkansas at Little Rock","AR",-1.3129296695631
+"132",106263,"University of Arkansas for Medical Sciences","AR",0.363749318283838
+"141",106397,"University of Arkansas","AR",0.333218280802677
+"142",106412,"University of Arkansas at Pine Bluff","AR",-1.88142417248716
+"144",106458,"Arkansas State University-Main Campus","AR",-1.18036651645119
+"145",106467,"Arkansas Tech University","AR",-0.988442373028838
+"146",106485,"University of Arkansas at Monticello","AR",-1.55405884632143
+"150",106704,"University of Central Arkansas","AR",-0.610332722401681
+"160",107044,"Harding University","AR",-0.0497944810946412
+"162",107071,"Henderson State University","AR",-1.36717682963603
+"163",107080,"Hendrix College","AR",0.334341560301717
+"166",107141,"John Brown University","AR",0.686551078880115
+"194",107983,"Southern Arkansas University Main Campus","AR",-1.16562513950102
+"198",108232,"Academy of Art University","CA",-0.949737325928295
+"200",108269,"Academy of Chinese Culture and Health Sciences","CA",0.329387524855007
+"205",108861,"American Baptist Seminary of the West","CA",0.665233423663978
+"206",108870,"American Film Institute Conservatory","CA",1.00034842139591
+"209",109086,"American Conservatory Theater","CA",1.00723445926413
+"212",109651,"Art Center College of Design","CA",1.02533122494278
+"215",109785,"Azusa Pacific University","CA",0.804948633247174
+"219",110060,"Bethesda University","CA",2.3082240274501
+"220",110097,"Biola University","CA",0.318872167201591
+"221",110185,"Brooks Institute","CA",-1.30404526065359
+"225",110307,"Phillips Graduate Institute","CA",1.00034842139591
+"226",110316,"California Institute of Integral Studies","CA",1.00723445926413
+"228",110361,"California Baptist University","CA",-0.109011958801104
+"229",110370,"California College of the Arts","CA",-0.309216679824493
+"230",110398,"University of California-Hastings College of Law","CA",-3.18976234787931
+"231",110404,"California Institute of Technology","CA",2.81431329085727
+"232",110413,"California Lutheran University","CA",0.959481111290492
+"233",110422,"California Polytechnic State University-San Luis Obispo","CA",1.77375119244524
+"234",110468,"Alliant International University-San Diego","CA",0.0627925692151806
+"240",110486,"California State University-Bakersfield","CA",-0.0486020962217232
+"241",110495,"California State University-Stanislaus","CA",0.068643046197726
+"242",110510,"California State University-San Bernardino","CA",-0.124851683746963
+"243",110529,"California State Polytechnic University-Pomona","CA",0.754885388166101
+"244",110538,"California State University-Chico","CA",0.41525343008366
+"245",110547,"California State University-Dominguez Hills","CA",-0.506240375575688
+"246",110556,"California State University-Fresno","CA",0.0467608518185244
+"247",110565,"California State University-Fullerton","CA",0.294581572320248
+"248",110574,"California State University-East Bay","CA",0.367449092274861
+"249",110583,"California State University-Long Beach","CA",0.536013580555777
+"250",110592,"California State University-Los Angeles","CA",-0.176447689757982
+"251",110608,"California State University-Northridge","CA",-0.0395737440668852
+"252",110617,"California State University-Sacramento","CA",0.0720728501923686
+"253",110635,"University of California-Berkeley","CA",2.21475453726234
+"254",110644,"University of California-Davis","CA",1.83860230037942
+"255",110653,"University of California-Irvine","CA",1.69204215788204
+"256",110662,"University of California-Los Angeles","CA",2.15788036275628
+"257",110671,"University of California-Riverside","CA",0.810887741448986
+"258",110680,"University of California-San Diego","CA",2.02323858370262
+"259",110699,"University of California-San Francisco","CA",-3.07145459966627
+"260",110705,"University of California-Santa Barbara","CA",1.4329967675106
+"261",110714,"University of California-Santa Cruz","CA",0.733154478163819
+"262",110778,"Sofia University","CA",1.00034842139591
+"267",111081,"California Institute of the Arts","CA",-0.416232482327832
+"269",111391,"California Western School of Law","CA",0.902947807678188
+"285",111948,"Chapman University","CA",0.879752629515371
+"286",111966,"Charles R Drew University of Medicine and Science","CA",0.119337842625631
+"287",112075,"Concordia University-Irvine","CA",0.258622456943515
+"288",112084,"San Diego Christian College","CA",-0.822122571808223
+"289",112127,"Church Divinity School of the Pacific","CA",0.665233423663978
+"292",112251,"Claremont Graduate University","CA",0.160668606344597
+"293",112260,"Claremont McKenna College","CA",2.58158563399695
+"298",112446,"Coleman University","CA",-0.263167690856726
+"300",112525,"Western University of Health Sciences","CA",-2.99745132935055
+"313",113537,"Dell'Arte International School of Physical Theatre","CA",1.00723445926413
+"317",113698,"Dominican University of California","CA",0.8219229620407
+"318",113704,"Dominican School of Philosophy & Theology","CA",0.664502522586937
+"325",114114,"Emperor's College of Traditional Oriental Medicine","CA",0.665233423663978
+"333",114549,"Fielding Graduate University","CA",1.00034842139591
+"334",114585,"Five Branches University","CA",1.00723445926413
+"336",114734,"Franciscan School of Theology","CA",0.329387524855007
+"339",114813,"Fresno Pacific University","CA",-0.293794126344922
+"340",114840,"Fuller Theological Seminary in California","CA",1.00723445926413
+"346",115083,"Golden Gate University-San Francisco","CA",0.424884588598604
+"351",115214,"Graduate Theological Union","CA",0.329387524855007
+"362",115728,"Holy Names University","CA",0.340094702891432
+"363",115746,"Pacifica Graduate Institute","CA",1.00034842139591
+"364",115755,"Humboldt State University","CA",-0.76789835211078
+"365",115773,"Humphreys College-Stockton and Modesto Campuses","CA",-0.744210688866119
+"376",116712,"John F. Kennedy University","CA",-0.841001725943487
+"377",116846,"American Jewish University","CA",2.06743008574872
+"381",117140,"University of La Verne","CA",0.606289576231063
+"382",117168,"Laguna College of Art and Design","CA",-0.278120055165951
+"387",117520,"Life Chiropractic College West","CA",0.672119461532195
+"388",117557,"Lincoln University","CA",2.24157876051958
+"389",117575,"Southern California Seminary","CA",1.30194594874429
+"390",117627,"La Sierra University","CA",-0.105135543622982
+"391",117636,"Loma Linda University","CA",0.771324871146276
+"393",117672,"Southern California University of Health Sciences","CA",1.00034842139591
+"399",117751,"The Master's College and Seminary","CA",0.0947898127451357
+"404",117928,"Argosy University-The Art Institute of California-San Francisco","CA",-0.977415023474697
+"405",117946,"Loyola Marymount University","CA",1.54290708126964
+"431",118888,"Mills College","CA",0.101853729147797
+"439",119058,"Middlebury Institute of International Studies at Monterey","CA",0.278803260416657
+"443",119173,"Mount Saint Mary's University","CA",0.771995166043702
+"453",119544,"The National Hispanic University","CA",-0.249671103395227
+"455",119605,"National University","CA",0.37404359577382
+"456",119775,"Newschool of Architecture and Design","CA",-0.363725848420317
+"462",120184,"Notre Dame de Namur University","CA",0.444371865622831
+"463",120254,"Occidental College","CA",1.39831133689601
+"467",120403,"Otis College of Art and Design","CA",0.387127094088023
+"469",120537,"Hope International University","CA",-0.454690394519457
+"471",120698,"Palo Alto University","CA",1.00034842139591
+"472",120740,"Pacific Lutheran Theological Seminary","CA",0.329387524855007
+"473",120768,"Pacific Oaks College","CA",-1.2107059119756
+"474",120795,"Pacific School of Religion","CA",0.329387524855007
+"475",120838,"Pacific States University","CA",1.86102463154121
+"477",120883,"University of the Pacific","CA",1.7184203217959
+"482",121150,"Pepperdine University","CA",1.89625759789368
+"485",121309,"Point Loma Nazarene University","CA",0.879932286646697
+"491",121628,"Pardee RAND Graduate School","CA",0.329387524855007
+"493",121691,"University of Redlands","CA",1.06056120165313
+"499",121983,"Argosy University-San Francisco Bay Area","CA",-1.93370326467785
+"501",122117,"Dongguk University-Los Angeles","CA",1.00723445926413
+"504",122296,"Samuel Merritt University","CA",-1.53905521282636
+"509",122409,"San Diego State University","CA",0.715352321084776
+"510",122436,"University of San Diego","CA",1.67764560279194
+"511",122454,"San Francisco Art Institute","CA",-1.42125190480362
+"512",122506,"San Francisco Conservatory of Music","CA",2.03938495433074
+"513",122597,"San Francisco State University","CA",0.308560384870124
+"514",122603,"San Francisco Theological Seminary","CA",1.00034842139591
+"515",122612,"University of San Francisco","CA",1.66305621481158
+"516",122649,"San Joaquin College of Law","CA",1.00034842139591
+"522",122755,"San Jose State University","CA",0.874077805795006
+"525",122843,"Westwood College-Los Angeles","CA",-1.82197385063456
+"528",122931,"Santa Clara University","CA",2.23889594777698
+"531",123095,"Saybrook University","CA",1.00034842139591
+"532",123165,"Scripps College","CA",1.41124558474193
+"535",123280,"Shasta Bible College and Graduate School","CA",1.39894389813498
+"540",123448,"Trinity Law School","CA",-1.0631405141433
+"541",123457,"Simpson University","CA",-0.691748434899758
+"546",123554,"Saint Mary's College of California","CA",1.50918465986308
+"548",123572,"Sonoma State University","CA",0.302161794839176
+"551",123633,"South Baylo University","CA",-1.89494351792412
+"553",123651,"Vanguard University of Southern California","CA",-0.136675193829753
+"556",123916,"Starr King School for the Ministry","CA",0.329387524855007
+"557",123943,"Marshall B Ketchum University","CA",0.138321610779588
+"558",123952,"Southern California Institute of Architecture","CA",0.427744450022816
+"559",123961,"University of Southern California","CA",2.4936580495097
+"560",123970,"Southwestern Law School","CA",0.85930915554278
+"562",124283,"Claremont School of Theology","CA",0.664502522586937
+"578",125231,"Walden University","MN",0.00552881904890577
+"583",125718,"Westminster Theological Seminary in California","CA",0.329387524855007
+"585",125763,"Whittier College","CA",0.551931581866631
+"586",125897,"Woodbury University","CA",0.169253195019586
+"587",126012,"The Wright Institute","CA",0.336273562723224
+"588",126030,"Western State College of Law at Argosy University","CA",-1.58815570367225
+"589",126049,"Thomas Jefferson School of Law","CA",1.00723445926413
+"593",126182,"Adams State University","CO",-1.32643471424852
+"598",126562,"University of Colorado Denver/Anschutz Medical Campus","CO",1.02290487929448
+"599",126580,"University of Colorado Colorado Springs","CO",-0.18231474251297
+"601",126614,"University of Colorado Boulder","CO",0.920047478234244
+"602",126669,"Colorado Christian University","CO",-0.482270502906144
+"603",126678,"Colorado College","CO",0.90523126686306
+"608",126775,"Colorado School of Mines","CO",2.0519500318328
+"610",126818,"Colorado State University-Fort Collins","CO",0.575065263070796
+"611",126827,"Colorado Technical University-Colorado Springs","CO",-0.31005318639362
+"619",126979,"Denver Seminary","CO",1.00034842139591
+"621",127060,"University of Denver","CO",1.36670539505467
+"627",127273,"Iliff School of Theology","CO",1.00723445926413
+"630",127556,"Colorado Mesa University","CO",-1.16107481515153
+"633",127653,"Naropa University","CO",-1.6649299362263
+"638",127741,"University of Northern Colorado","CO",-0.311651640825025
+"645",127918,"Regis University","CO",0.843112929284289
+"648",128106,"Colorado State University-Pueblo","CO",-0.938227784378196
+"655",128498,"Albertus Magnus College","CT",0.498529781484632
+"661",128744,"University of Bridgeport","CT",-0.628049472156553
+"662",128771,"Central Connecticut State University","CT",0.132012114826117
+"665",128902,"Connecticut College","CT",1.65712524902142
+"668",129020,"University of Connecticut","CT",1.51566928101935
+"671",129215,"Eastern Connecticut State University","CT",0.0759742613054168
+"672",129242,"Fairfield University","CT",2.09972978754198
+"675",129428,"Rensselaer Hartford Graduate Center Inc","CT",0.811482950314874
+"677",129491,"Hartford Seminary","CT",0.329387524855007
+"678",129525,"University of Hartford","CT",0.266089061725255
+"679",129534,"Holy Apostles College and Seminary","CT",1.35640772019987
+"689",129941,"University of New Haven","CT",0.368664804623831
+"701",130183,"Post University","CT",-1.03625013420689
+"703",130226,"Quinnipiac University","CT",1.61219916905521
+"704",130253,"Sacred Heart University","CT",1.09630486188881
+"705",130314,"University of Saint Joseph","CT",0.372390772856013
+"708",130493,"Southern Connecticut State University","CT",-0.203805248500804
+"710",130581,"Tri-State College of Acupuncture","NY",1.00723445926413
+"711",130590,"Trinity College","CT",1.97276831598555
+"713",130697,"Wesleyan University","CT",1.78869643833742
+"714",130776,"Western Connecticut State University","CT",-0.0955382013706681
+"716",130794,"Yale University","CT",0.774274299438762
+"722",130934,"Delaware State University","DE",-1.08598688812094
+"723",130943,"University of Delaware","DE",1.52284744353094
+"724",130989,"Goldey-Beacom College","DE",-0.250701535097964
+"726",131098,"Wesley College","DE",-0.807281567463815
+"727",131113,"Wilmington University","DE",-0.557570345566348
+"728",131159,"American University","DC",1.59918154916674
+"729",131283,"Catholic University of America","DC",1.02828264854951
+"730",131399,"University of the District of Columbia","DC",-1.58651523075444
+"731",131405,"Pontifical Faculty of the Immaculate Conception at the Dominican House of Studies","DC",0.329387524855007
+"732",131450,"Gallaudet University","DC",-1.3007369620212
+"733",131469,"George Washington University","DC",2.13991687268319
+"734",131496,"Georgetown University","DC",0.838087265357884
+"735",131520,"Howard University","DC",0.0127296690190639
+"737",131803,"Strayer University-District of Columbia","DC",-0.716503297024011
+"740",131876,"Trinity Washington University","DC",-0.657299798454339
+"741",131973,"Wesley Theological Seminary","DC",0.664502522586937
+"746",132471,"Barry University","FL",-0.249685693204331
+"747",132523,"Gooding Institute of Nurse Anesthesia","FL",0.664502522586937
+"748",132602,"Bethune-Cookman University","FL",-1.56138699127744
+"749",132657,"Lynn University","FL",-0.576012733536922
+"755",132842,"Carlos Albizu University-Miami","FL",-1.7078819051517
+"758",132903,"University of Central Florida","FL",0.333875231919991
+"764",133465,"South University-West Palm Beach","FL",-1.9821693945916
+"768",133553,"Embry-Riddle Aeronautical University-Daytona Beach","FL",1.1712038180375
+"769",133650,"Florida Agricultural and Mechanical University","FL",-0.843315987504153
+"770",133669,"Florida Atlantic University","FL",-0.315167035098404
+"777",133872,"Adventist University of Health Sciences","FL",0.102869497610818
+"778",133881,"Florida Institute of Technology","FL",0.866090613260708
+"780",133951,"Florida International University","FL",0.0219785498718901
+"782",133979,"Florida Memorial University","FL",-1.87388783342498
+"785",134079,"Florida Southern College","FL",-0.235750198942164
+"786",134097,"Florida State University","FL",0.628188971549567
+"789",134130,"University of Florida","FL",1.44553987639385
+"790",134149,"Everest University-Pompano Beach","FL",-2.26966209748476
+"792",134237,"Full Sail University","FL",-0.498104202318541
+"803",134811,"AI Miami International University of Art and Design","FL",-1.55802238831644
+"805",134945,"Jacksonville University","FL",0.0152015389971356
+"807",135081,"Keiser University-Ft Lauderdale","FL",-1.24984374133242
+"830",135364,"Luther Rice University & Seminary","GA",-1.24723673304401
+"836",135610,"Trinity International University-Florida","FL",-1.1185045204973
+"839",135726,"University of Miami","FL",1.58494963222749
+"848",136172,"University of North Florida","FL",-0.0853854199669938
+"850",136215,"Nova Southeastern University","FL",0.0223421930126352
+"852",136288,"Everest University-North Orlando","FL",-2.13225218729298
+"854",136330,"Palm Beach Atlantic University","FL",-0.370043384767078
+"861",136701,"Saint Vincent de Paul Regional Seminary","FL",0.329387524855007
+"865",136950,"Rollins College","FL",0.356224709399554
+"867",137032,"Saint Leo University","FL",-0.30551394611311
+"872",137148,"Argosy University-Sarasota","FL",-0.600365151265239
+"875",137272,"Saint John Vianney College Seminary","FL",1.38383335268969
+"878",137351,"University of South Florida-Main Campus","FL",0.0600807138095795
+"879",137476,"St Thomas University","FL",-0.235086254424799
+"881",137546,"Stetson University","FL",0.0516698792193048
+"882",137564,"Southeastern University","FL",-0.989260133636255
+"886",137777,"Talmudic College of Florida","FL",2.36369472671737
+"887",137801,"Everest University-Tampa","FL",-1.95162965700189
+"888",137810,"Everest University-Largo","FL",-2.2223758133125
+"889",137847,"The University of Tampa","FL",0.197887140494006
+"892",137953,"Trinity Baptist College","FL",-1.08723534212379
+"896",138275,"Warner University","FL",-0.548613462593889
+"898",138293,"Webber International University","FL",-1.21958905987561
+"903",138354,"The University of West Florida","FL",-0.589212195373482
+"914",138716,"Albany State University","GA",-1.41608255938832
+"916",138789,"Armstrong State University","GA",-0.791770969161191
+"922",138929,"Atlanta's John Marshall Law School","GA",1.00034842139591
+"924",138947,"Clark Atlanta University","GA",-1.27201007943175
+"929",139144,"Berry College","GA",-0.0281922870323745
+"930",139153,"Beulah Heights University","GA",-1.78087688859798
+"931",139199,"Brenau University","GA",-0.284359906651634
+"937",139311,"Clayton  State University","GA",-1.02200660435779
+"938",139348,"Columbia Theological Seminary","GA",1.00034842139591
+"940",139366,"Columbus State University","GA",-1.13598688262208
+"942",139393,"Covenant College","GA",0.138734228062505
+"945",139579,"South University-Savannah","GA",-1.9684442995185
+"948",139658,"Emory University","GA",2.21263484668457
+"950",139719,"Fort Valley State University","GA",-1.82300785543245
+"952",139755,"Georgia Institute of Technology-Main Campus","GA",2.22241250155551
+"953",139764,"Georgia Southwestern State University","GA",-1.05964469762854
+"954",139861,"Georgia College and State University","GA",-0.118114100369897
+"955",139931,"Georgia Southern University","GA",-0.305302792315708
+"956",139940,"Georgia State University","GA",-0.213187962655907
+"957",139959,"University of Georgia","GA",1.09411875836882
+"963",140146,"Interdenominational Theological Center","GA",1.00723445926413
+"964",140164,"Kennesaw State University","GA",-0.432874502963824
+"965",140234,"LaGrange College","GA",-0.512133774427621
+"967",140252,"Life University","GA",-0.647641727288631
+"970",140447,"Mercer University","GA",0.510244109429277
+"972",140562,"Morehouse School of Medicine","GA",1.00723445926413
+"975",140696,"Oglethorpe University","GA",0.16303877752888
+"977",140818,"Piedmont College","GA",-0.49135592643198
+"979",140872,"Reinhardt University","GA",-0.79677199467621
+"981",140951,"Savannah College of Art and Design","GA",-0.38903599124391
+"982",140960,"Savannah State University","GA",-1.7787721857576
+"987",141097,"Southern Polytechnic State University","GA",0.435716018514093
+"989",141167,"Thomas University","GA",-1.33830678714837
+"993",141264,"Valdosta State University","GA",-0.776318487840378
+"994",141325,"Wesleyan College","GA",-0.61692048106318
+"995",141334,"University of West Georgia","GA",-0.770849502996608
+"998",141486,"Chaminade University of Honolulu","HI",-0.624015034620437
+"999",141565,"University of Hawaii at Hilo","HI",-0.972039634763831
+"1000",141574,"University of Hawaii at Manoa","HI",0.305059630878209
+"1002",141644,"Hawaii Pacific University","HI",-0.13897149507195
+"1009",141936,"World Medicine Institute","HI",0.664502522586937
+"1015",142115,"Boise State University","ID",-0.818523119335794
+"1017",142276,"Idaho State University","ID",-0.858276983311558
+"1018",142285,"University of Idaho","ID",-0.0100517992477018
+"1019",142294,"The College of Idaho","ID",0.0783035595094035
+"1025",142461,"Northwest Nazarene University","ID",-0.334807102544561
+"1029",142832,"Adler University","IL",1.00034842139591
+"1033",143048,"School of the Art Institute of Chicago","IL",-0.809040192814129
+"1035",143118,"Aurora University","IL",-0.0077779887708318
+"1038",143233,"Bethany Theological Seminary","IN",0.664502522586937
+"1043",143358,"Bradley University","IL",1.2167872022812
+"1053",143659,"Catholic Theological Union at Chicago","IL",0.664502522586937
+"1055",143853,"Midwestern University-Downers Grove","IL",-3.07701429617106
+"1056",143978,"The Chicago School of Professional Psychology at Chicago","IL",1.00034842139591
+"1057",144005,"Chicago State University","IL",-1.63484099656975
+"1058",144014,"Chicago Theological Seminary","IL",0.664502522586937
+"1059",144050,"University of Chicago","IL",2.61703460852799
+"1067",144281,"Columbia College-Chicago","IL",-1.04991222668128
+"1068",144351,"Concordia University-Chicago","IL",-0.309340260472891
+"1073",144740,"DePaul University","IL",0.917646081394923
+"1077",144892,"Eastern Illinois University","IL",-0.00109841278169655
+"1079",144962,"Elmhurst College","IL",0.823324061712249
+"1083",145275,"Garrett-Evangelical Theological Seminary","IL",1.00723445926413
+"1085",145336,"Governors State University","IL",-1.23577726337415
+"1087",145372,"Greenville College","IL",-0.333413945426644
+"1091",145460,"Harrington College of Design","IL",-0.959134062724108
+"1094",145558,"Rosalind Franklin University of Medicine and Science","IL",-2.88851982791241
+"1095",145600,"University of Illinois at Chicago","IL",1.02588544826357
+"1096",145619,"Benedictine University","IL",0.607476289297096
+"1097",145628,"Illinois College of Optometry","IL",0.151595644734687
+"1098",145637,"University of Illinois at Urbana-Champaign","IL",1.85408556245589
+"1103",145725,"Illinois Institute of Technology","IL",1.83215530961091
+"1104",145770,"Argosy University-Chicago","IL",-1.23646130754287
+"1105",145813,"Illinois State University","IL",0.696914371572661
+"1107",145886,"Institute for Clinical Social Work","IL",0.329387524855007
+"1110",146241,"The John Marshall Law School","IL",1.00034842139591
+"1113",146339,"Judson University","IL",-0.0956809514025875
+"1121",146481,"Lake Forest College","IL",0.839875904653902
+"1122",146490,"Lake Forest Graduate School of Management","IL",1.00034842139591
+"1126",146612,"Lewis University","IL",0.478428812022378
+"1127",146667,"Lincoln Christian University","IL",-1.09108836959953
+"1131",146719,"Loyola University Chicago","IL",1.05919799623336
+"1132",146728,"Lutheran School of Theology at Chicago","IL",0.664502522586937
+"1138",146977,"McCormick Theological Seminary","IL",0.664502522586937
+"1140",147013,"McKendree University","IL",0.00302585076023216
+"1141",147031,"Meadville Lombard Theological School","IL",0.664502522586937
+"1144",147244,"Millikin University","IL",0.173612200952714
+"1150",147536,"National Louis University","IL",-0.303524181177087
+"1151",147590,"National University of Health Sciences","IL",-1.06139736790862
+"1153",147660,"North Central College","IL",0.477977236401107
+"1154",147679,"North Park University","IL",0.111141213446688
+"1155",147697,"Northern Baptist Theological Seminary","IL",0.329387524855007
+"1156",147703,"Northern Illinois University","IL",0.0860588051270069
+"1158",147767,"Northwestern University","IL",2.56308859131637
+"1159",147776,"Northeastern Illinois University","IL",-1.07306358103256
+"1162",147828,"Olivet Nazarene University","IL",-0.0742690043000413
+"1167",148131,"Quincy University","IL",-0.245749224198283
+"1172",148335,"Robert Morris University Illinois","IL",-1.16175657697427
+"1175",148405,"Rockford University","IL",-0.343578476455071
+"1176",148487,"Roosevelt University","IL",-0.304753642802375
+"1177",148496,"Dominican University","IL",0.176606075192329
+"1178",148511,"Rush University","IL",-1.24446275252024
+"1179",148575,"Saint Francis Medical Center College of Nursing","IL",-0.051970267988058
+"1180",148584,"University of St Francis","IL",0.263474625149167
+"1182",148627,"Saint Xavier University","IL",0.0374819314121793
+"1183",148654,"University of Illinois at Springfield","IL",-0.0690695494297984
+"1188",148885,"University of Saint Mary of the Lake","IL",0.329387524855007
+"1191",148982,"Spertus College","IL",0.664502522586937
+"1193",149028,"Saint Anthony College of Nursing","IL",0.00859649455238339
+"1195",149222,"Southern Illinois University-Carbondale","IL",-0.171816732165892
+"1196",149231,"Southern Illinois University-Edwardsville","IL",-0.0999378076632318
+"1202",149514,"Trinity International University-Illinois","IL",-0.167342247865367
+"1205",149639,"VanderCook College of Music","IL",2.26910837598625
+"1208",149772,"Western Illinois University","IL",-0.037098382664569
+"1209",149781,"Wheaton College","IL",0.982389177277118
+"1212",150066,"Anderson University","IN",-0.379047041416892
+"1214",150136,"Ball State University","IN",-0.0886076667347936
+"1215",150145,"Bethel College-Indiana","IN",-0.253479707933274
+"1216",150163,"Butler University","IN",1.57097736331054
+"1217",150172,"Calumet College of Saint Joseph","IN",-0.848251058148713
+"1218",150215,"Christian Theological Seminary","IN",0.665233423663978
+"1220",150288,"Concordia Theological Seminary","IN",1.00034842139591
+"1225",150455,"Earlham College","IN",-0.0614957878779917
+"1226",150534,"University of Evansville","IN",0.254685665025507
+"1228",150668,"Goshen College","IN",0.124038182146341
+"1229",150677,"Grace College and Theological Seminary","IN",-0.304028053531146
+"1236",150941,"Huntington University","IN",-0.311523870767924
+"1238",151102,"Indiana University-Purdue University-Fort Wayne","IN",-1.04185071289843
+"1239",151111,"Indiana University-Purdue University-Indianapolis","IN",-0.267674895977574
+"1241",151263,"University of Indianapolis","IN",-0.0916206989616919
+"1242",151290,"Indiana Institute of Technology","IN",-0.719671769296036
+"1243",151306,"University of Southern Indiana","IN",-0.807199117179895
+"1244",151324,"Indiana State University","IN",-0.702107638579204
+"1245",151333,"Indiana University-Kokomo","IN",-1.22619990513424
+"1246",151342,"Indiana University-South Bend","IN",-1.23314207633726
+"1247",151351,"Indiana University-Bloomington","IN",0.968662611353927
+"1248",151360,"Indiana University-Northwest","IN",-1.1648424642534
+"1249",151379,"Indiana University-Southeast","IN",-1.10416284963797
+"1250",151388,"Indiana University-East","IN",-1.55382372912022
+"1255",151519,"ITT Technical Institute-Indianapolis","IN",-1.36606066100113
+"1264",151786,"Marian University","IN",-0.129376553957895
+"1265",151801,"Indiana Wesleyan University-Marion","IN",0.36193138064203
+"1266",151810,"Martin University","IN",-3.02996775544284
+"1268",151865,"Anabaptist Mennonite Biblical Seminary","IN",0.664502522586937
+"1273",152080,"University of Notre Dame","IN",2.70356235970206
+"1274",152099,"Oakland City University","IN",-0.527973326919995
+"1276",152248,"Purdue University-Calumet Campus","IN",-0.882736001413073
+"1277",152266,"Purdue University-North Central Campus","IN",-1.05075732650955
+"1280",152318,"Rose-Hulman Institute of Technology","IN",2.04637027974051
+"1282",152336,"University of Saint Francis-Fort Wayne","IN",-0.225685942595215
+"1283",152363,"Saint Josephs College","IN",-0.201850336020028
+"1284",152381,"Saint Mary-of-the-Woods College","IN",-0.849487168820757
+"1287",152451,"Saint Meinrad School of Theology","IN",0.664502522586937
+"1289",152530,"Taylor University","IN",0.229131116401234
+"1290",152567,"Trine University","IN",-0.260002457428012
+"1291",152600,"Valparaiso University","IN",0.940668235212328
+"1295",152798,"Allen College","IA",0.852574193629588
+"1297",152992,"Briar Cliff University","IA",-0.377175003519726
+"1298",153001,"Buena Vista University","IA",-0.412663282751923
+"1303",153126,"Clarke University","IA",0.228819811981733
+"1304",153144,"Coe College","IA",0.418085733571865
+"1309",153250,"Dordt College","IA",0.0506242169140131
+"1310",153269,"Drake University","IA",1.60056927256973
+"1311",153278,"University of Dubuque","IA",-0.586959713904862
+"1315",153320,"Faith Baptist Bible College and Theological Seminary","IA",-0.700046838307281
+"1317",153366,"Graceland University-Lamoni","IA",-0.498701945702365
+"1332",153603,"Iowa State University","IA",0.851204245530143
+"1335",153658,"University of Iowa","IA",1.07418943111585
+"1341",153825,"Loras College","IA",0.349803095002188
+"1343",153861,"Maharishi University of Management","IA",-1.27792785136658
+"1346",154004,"Morningside College","IA",-0.124235751350023
+"1347",154013,"Mount Mercy University","IA",0.326191627869735
+"1348",154022,"Ashford University","CA",-1.31826540807454
+"1350",154095,"University of Northern Iowa","IA",0.303055336785649
+"1354",154156,"Des Moines University-Osteopathic Medical Center","IA",1.00723445926413
+"1356",154174,"Palmer College of Chiropractic","IA",-0.184685451776909
+"1358",154235,"Saint Ambrose University","IA",0.348630567018487
+"1362",154350,"Simpson College","IA",0.468260772563891
+"1368",154493,"Upper Iowa University","IA",-0.575377195896678
+"1371",154536,"Wartburg Theological Seminary","IA",0.336273562723224
+"1374",154590,"William Penn University","IA",-0.549870770368108
+"1376",154688,"Baker University","KS",0.527342922828269
+"1380",154712,"Benedictine College","KS",0.0928855370538945
+"1387",154837,"Central Baptist Theological Seminary","KS",2.49441042916174
+"1398",155025,"Emporia State University","KS",-0.747212338968055
+"1400",155061,"Fort Hays State University","KS",-0.462751805493183
+"1402",155089,"Friends University","KS",-0.494448019521041
+"1414",155317,"University of Kansas","KS",0.480536904666063
+"1415",155335,"Newman University","KS",-0.189649290250033
+"1417",155399,"Kansas State University","KS",0.315031016594663
+"1418",155414,"Kansas Wesleyan University","KS",-0.833603259606503
+"1425",155520,"MidAmerica Nazarene University","KS",-0.192547451182368
+"1430",155636,"Ottawa University-Kansas City","KS",-1.09331313865719
+"1431",155681,"Pittsburg State University","KS",-0.325177031633795
+"1433",155812,"University of Saint Mary","KS",-0.634843253269772
+"1437",155900,"Southwestern College","KS",0.258353918597075
+"1440",156082,"Washburn University","KS",-0.730904727521192
+"1441",156125,"Wichita State University","KS",-0.426886522984485
+"1444",156213,"Asbury University","KY",-0.312418777392565
+"1445",156222,"Asbury Theological Seminary","KY",-0.799976949807017
+"1448",156286,"Bellarmine University","KY",0.536826616161313
+"1456",156356,"Brescia University","KY",-0.755465796194792
+"1457",156365,"Campbellsville University","KY",-1.02039964932394
+"1464",156541,"University of the Cumberlands","KY",-1.17651105467514
+"1465",156620,"Eastern Kentucky University","KY",-0.914718614075741
+"1467",156727,"Frontier Nursing University","KY",1.00034842139591
+"1468",156745,"Georgetown College","KY",0.0767014094551691
+"1480",157058,"Kentucky State University","KY",-1.99130339898714
+"1482",157085,"University of Kentucky","KY",0.255182747841148
+"1483",157100,"Kentucky Christian University","KY",-1.26257586738627
+"1484",157207,"Lexington Theological Seminary","KY",1.00034842139591
+"1485",157216,"Lindsey Wilson College","KY",-1.74622053941189
+"1487",157289,"University of Louisville","KY",-0.192743268846194
+"1488",157298,"Louisville Presbyterian Theological Seminary","KY",0.336273562723224
+"1491",157377,"Midway University","KY",-0.656020196522585
+"1492",157386,"Morehead State University","KY",-1.22017291849607
+"1493",157401,"Murray State University","KY",-0.48097230834244
+"1495",157447,"Northern Kentucky University","KY",-0.780902097481443
+"1500",157535,"University of Pikeville","KY",-1.42274962378817
+"1511",157757,"Spalding University","KY",-0.476379968142924
+"1513",157793,"Sullivan University","KY",-1.10740689666022
+"1514",157809,"Thomas More College","KY",0.161490934444643
+"1517",157863,"Union College","KY",-1.29680583953897
+"1518",157951,"Western Kentucky University","KY",-0.899665540898782
+"1528",158477,"Centenary College of Louisiana","LA",0.0751649383350793
+"1538",159009,"Grambling State University","LA",-1.8069376892462
+"1543",159373,"Louisiana State University Health Sciences Center-New Orleans","LA",0.617713241303333
+"1545",159391,"Louisiana State University and Agricultural & Mechanical College","LA",0.736162330780214
+"1547",159416,"Louisiana State University-Shreveport","LA",-1.05785153163756
+"1551",159568,"Louisiana College","LA",-0.453383337510117
+"1553",159647,"Louisiana Tech University","LA",-0.0758868621518002
+"1554",159656,"Loyola University New Orleans","LA",0.235817068808891
+"1555",159717,"McNeese State University","LA",-0.662111746451317
+"1556",159939,"University of New Orleans","LA",-0.741078764668778
+"1557",159966,"Nicholls State University","LA",-0.716837236399736
+"1558",159993,"University of Louisiana at Monroe","LA",-0.59096645276611
+"1560",160029,"Notre Dame Seminary Graduate School of Theology","LA",0.671388560455155
+"1561",160038,"Northwestern State University of Louisiana","LA",-1.05318642474661
+"1562",160065,"University of Holy Cross","LA",-0.688659909731767
+"1563",160074,"Our Lady of the Lake College","LA",-0.328582430870414
+"1576",160612,"Southeastern Louisiana University","LA",-0.892318004507297
+"1577",160621,"Southern University and A & M College","LA",-1.40802973092952
+"1578",160630,"Southern University at New Orleans","LA",-2.11370733098365
+"1580",160658,"University of Louisiana at Lafayette","LA",-0.476633664238319
+"1582",160755,"Tulane University of Louisiana","LA",1.50988598064235
+"1583",160904,"Xavier University of Louisiana","LA",0.231771449937698
+"1586",160959,"College of the Atlantic","ME",-0.487317553104783
+"1594",161165,"Husson University","ME",-0.541919517655298
+"1601",161253,"University of Maine","ME",0.017928106245555
+"1602",161299,"Maine Maritime Academy","ME",2.1632660715311
+"1604",161457,"University of New England","ME",0.395937448462053
+"1610",161509,"Maine College of Art","ME",-1.36544990612986
+"1611",161518,"Saint Joseph's College of Maine","ME",-0.0582702228325496
+"1614",161554,"University of Southern Maine","ME",-0.689151739101683
+"1615",161563,"Thomas College","ME",-0.695831204310451
+"1626",161873,"University of Baltimore","MD",0.526094852357717
+"1627",162007,"Bowie State University","MD",-0.349283922802387
+"1628",162061,"Capitol Technology University","MD",1.06029337965944
+"1632",162210,"Washington Adventist University","MD",-0.243388677532299
+"1633",162283,"Coppin State University","MD",-1.43257443882523
+"1637",162584,"Frostburg State University","MD",-0.180011129628808
+"1639",162654,"Goucher College","MD",0.653733391999638
+"1643",162760,"Hood College","MD",0.291863121505061
+"1646",162928,"Johns Hopkins University","MD",2.48899333079207
+"1649",163046,"Loyola University Maryland","MD",2.04303007088351
+"1651",163204,"University of Maryland-University College","MD",-0.38122474745624
+"1652",163259,"University of Maryland  Baltimore","MD",0.918793287450057
+"1653",163268,"University of Maryland-Baltimore County","MD",1.03342500669487
+"1654",163286,"University of Maryland-College Park","MD",1.91691877640502
+"1655",163295,"Maryland Institute College of Art","MD",-0.326873358334819
+"1656",163338,"University of Maryland Eastern Shore","MD",-1.11594308907188
+"1660",163453,"Morgan State University","MD",-1.11741781670207
+"1661",163462,"Mount St Mary's University","MD",0.867198520916057
+"1662",163532,"Ner Israel Rabbinical College","MD",1.62890585970501
+"1664",163578,"Notre Dame of Maryland University","MD",0.221883571573291
+"1669",163851,"Salisbury University","MD",0.593665686673083
+"1670",163912,"St Mary's College of Maryland","MD",1.06605164713644
+"1671",163921,"Sojourner-Douglass College","MD",-1.74112573273993
+"1672",163976,"St John's College","MD",-0.0302687559580242
+"1674",164076,"Towson University","MD",0.82359867159746
+"1675",164085,"Maryland University of Integrative Health","MD",1.00723445926413
+"1678",164173,"Stevenson University","MD",0.732580463212404
+"1679",164216,"Washington College","MD",0.706813969406184
+"1680",164270,"McDaniel College","MD",0.773645530081972
+"1682",164438,"New England College of Business and Finance","MA",2.82577402788611
+"1683",164447,"American International College","MA",-0.634822619453727
+"1685",164474,"Andover Newton Theological School","MA",1.00034842139591
+"1686",164492,"Anna Maria College","MA",-0.152701880907537
+"1688",164562,"Assumption College","MA",1.23420709023573
+"1689",164580,"Babson College","MA",0.684262450626727
+"1692",164632,"Bay Path University","MA",-0.188966202327923
+"1696",164739,"Bentley University","MA",2.50860613290692
+"1700",164872,"Boston Architectural College","MA",-0.759908594988326
+"1701",164915,"Boston Graduate School of Psychoanalysis Inc","MA",0.329387524855007
+"1702",164924,"Boston College","MA",2.53643557361824
+"1703",164933,"The Boston Conservatory","MA",-0.768978154301679
+"1704",164988,"Boston University","MA",1.98524012769111
+"1705",165015,"Brandeis University","MA",2.07714432834648
+"1706",165024,"Bridgewater State University","MA",-0.0342814365272576
+"1710",165167,"Cambridge College","MA",-1.73817707978158
+"1714",165334,"Clark University","MA",0.696612469418971
+"1715",165495,"Conway School of Landscape Design","MA",0.329387524855007
+"1716",165529,"Curry College","MA",0.0425436612957368
+"1721",165644,"Eastern Nazarene College","MA",0.0459426605359209
+"1722",165662,"Emerson College","MA",0.787339483708603
+"1723",165671,"Emmanuel College","MA",0.304026569962856
+"1724",165699,"Endicott College","MA",0.731035019515039
+"1725",165705,"Episcopal Divinity School","MA",1.00034842139591
+"1728",165820,"Fitchburg State University","MA",-0.0954231751876125
+"1729",165866,"Framingham State University","MA",0.165167489033008
+"1731",165936,"Gordon College","MA",0.28794321035764
+"1732",165945,"Gordon-Conwell Theological Seminary","MA",1.00723445926413
+"1736",166027,"Harvard University","MA",0.924189656535364
+"1737",166045,"Hebrew College","MA",2.23011894836618
+"1738",166054,"Hellenic College-Holy Cross Greek Orthodox School of Theology","MA",1.92256672013396
+"1745",166391,"Lasell College","MA",-0.178006474382323
+"1747",166452,"Lesley University","MA",-0.682728590344286
+"1748",166513,"University of Massachusetts-Lowell","MA",0.651366604110865
+"1752",166629,"University of Massachusetts-Amherst","MA",1.02160469771698
+"1753",166638,"University of Massachusetts-Boston","MA",0.026270218253398
+"1755",166656,"MCPHS University","MA",-1.93058509604161
+"1756",166674,"Massachusetts College of Art and Design","MA",-0.342077634475147
+"1757",166683,"Massachusetts Institute of Technology","MA",0.931931437400914
+"1758",166692,"Massachusetts Maritime Academy","MA",1.94851895165502
+"1759",166708,"University of Massachusetts Medical School Worcester","MA",-2.39687190947161
+"1760",166717,"William James College","MA",0.665233423663978
+"1763",166850,"Merrimack College","MA",1.1472875251999
+"1764",166869,"MGH Institute of Health Professions","MA",1.00723445926413
+"1767",166939,"Mount Holyoke College","MA",0.772548518467303
+"1771",166984,"School of the Museum of Fine Arts-Boston","MA",-1.12174126294883
+"1774",167057,"The New England Conservatory of Music","MA",-0.102852890028433
+"1775",167093,"New England College of Optometry","MA",0.506026253112878
+"1776",167181,"New England School of Acupuncture","MA",0.665233423663978
+"1777",167215,"New England Law-Boston","MA",0.60900282029035
+"1780",167260,"Nichols College","MA",0.179376399069122
+"1781",167288,"Massachusetts College of Liberal Arts","MA",-0.574623984900466
+"1785",167358,"Northeastern University","MA",1.89884234903332
+"1787",167394,"College of Our Lady of the Elms","MA",0.400420821358377
+"1788",167455,"Pine Manor College","MA",-1.37353259615691
+"1789",167464,"Pope St John XXIII National Seminary","MA",0.329387524855007
+"1792",167598,"Regis College","MA",-0.098976591858712
+"1794",167677,"Saint John's Seminary","MA",0.329387524855007
+"1795",167729,"Salem State University","MA",-0.338533818350095
+"1797",167783,"Simmons College","MA",0.939676879308525
+"1799",167835,"Smith College","MA",1.00128659233769
+"1801",167899,"Springfield College","MA",0.232151341831334
+"1803",167987,"University of Massachusetts-Dartmouth","MA",0.208306791980945
+"1805",168005,"Suffolk University","MA",0.744503313825885
+"1807",168148,"Tufts University","MA",2.57901960174513
+"1809",168227,"Wentworth Institute of Technology","MA",1.11905981984103
+"1810",168254,"Western New England University","MA",1.1387193445476
+"1811",168263,"Westfield State University","MA",0.215398519724914
+"1813",168290,"Wheelock College","MA",-0.430480004407524
+"1814",168342,"Williams College","MA",2.28131381419737
+"1815",168421,"Worcester Polytechnic Institute","MA",2.3373678588745
+"1816",168430,"Worcester State University","MA",0.156421257819628
+"1823",168740,"Andrews University","MI",-0.472117123158584
+"1824",168786,"Aquinas College","MI",-0.357637068593068
+"1825",168838,"Baker College of Owosso","MI",-2.04232306961375
+"1829",169080,"Calvin College","MI",0.464867060334672
+"1830",169099,"Calvin Theological Seminary","MI",1.00723445926413
+"1832",169220,"Michigan School of Professional Psychology","MI",0.664502522586937
+"1833",169248,"Central Michigan University","MI",-0.0567440237532693
+"1836",169327,"Cleary University","MI",0.0829126620755441
+"1838",169424,"Cranbrook Academy of Art","MI",0.665233423663978
+"1839",169442,"College for Creative Studies","MI",-0.182616100242618
+"1840",169479,"Davenport University","MI",-1.72718945980397
+"1854",169628,"Michigan State University-College of Law","MI",1.00723445926413
+"1856",169716,"University of Detroit Mercy","MI",0.195869147502996
+"1859",169798,"Eastern Michigan University","MI",-0.783540166454948
+"1860",169910,"Ferris State University","MI",-0.196382026551645
+"1863",169983,"Kettering University","MI",1.69246740504817
+"1866",170037,"Cornerstone University","MI",-0.553395698545419
+"1869",170082,"Grand Valley State University","MI",0.111177924986768
+"1884",170675,"Lawrence Technological University","MI",0.593288184998935
+"1887",170806,"Madonna University","MI",-0.604758911285111
+"1888",170842,"Marygrove College","MI",-1.97008040282947
+"1890",170976,"University of Michigan-Ann Arbor","MI",2.08286905887077
+"1892",171100,"Michigan State University","MI",1.26326058086401
+"1893",171128,"Michigan Technological University","MI",1.51716339846204
+"1894",171137,"University of Michigan-Dearborn","MI",0.194348360713086
+"1895",171146,"University of Michigan-Flint","MI",-0.623739819217773
+"1900",171298,"Baker College of Muskegon","MI",-2.03862302674805
+"1905",171456,"Northern Michigan University","MI",-0.684821633392841
+"1908",171492,"Northwood University-Michigan","MI",0.0228524884649975
+"1910",171571,"Oakland University","MI",-0.132867969708291
+"1911",171599,"Olivet College","MI",-0.878776100076669
+"1917",172033,"Sacred Heart Major Seminary","MI",1.27255389325947
+"1918",172051,"Saginaw Valley State University","MI",-0.663060935940145
+"1920",172264,"Siena Heights University","MI",-0.524486517854142
+"1924",172334,"Spring Arbor University","MI",-0.263904004162644
+"1927",172477,"Western Michigan University-Thomas M. Cooley Law School","MI",1.00034842139591
+"1929",172608,"Walsh College of Accountancy and Business Administration","MI",-0.0435736896983771
+"1932",172644,"Wayne State University","MI",-0.574333862391264
+"1934",172699,"Western Michigan University","MI",0.066065793450156
+"1935",172705,"Western Theological Seminary","MI",0.664502522586937
+"1943",173045,"Augsburg College","MN",0.493858828141714
+"1946",173124,"Bemidji State University","MN",-0.354944589960525
+"1948",173160,"Bethel University","MN",0.750047274441708
+"1949",173179,"Bethel Seminary-St Paul","MN",-0.617585051725601
+"1953",173300,"Concordia College at Moorhead","MN",0.524258757491557
+"1954",173328,"Concordia University-Saint Paul","MN",0.49496007526932
+"1956",173452,"Martin Luther College","MN",0.150481187337617
+"1964",173629,"Globe University-Woodbury","MN",-1.58504714662888
+"1967",173665,"Hamline University","MN",0.654312069706002
+"1968",173683,"Hazelden Betty Ford Graduate School of Addiction Studies","MN",1.00034842139591
+"1976",173896,"Luther Seminary","MN",1.00723445926413
+"1980",173920,"Minnesota State University-Mankato","MN",0.0497968678186213
+"1982",173957,"Mayo Medical School","MN",0.131549092617629
+"1983",173966,"Mayo School of Health Sciences","MN",0.131549092617629
+"1984",173984,"Argosy University-Twin Cities","MN",-0.987857920339078
+"1987",174020,"Metropolitan State University","MN",-0.293781825296691
+"1988",174066,"University of Minnesota-Twin Cities","MN",1.10313283967806
+"1991",174127,"Minneapolis College of Art and Design","MN",-0.430519980928486
+"1996",174233,"University of Minnesota-Duluth","MN",0.53521927484222
+"1998",174279,"Minnesota School of Business-Richfield","MN",-1.35751840960304
+"2000",174358,"Minnesota State University Moorhead","MN",-0.474103956034486
+"2008",174491,"University of Northwestern-St Paul","MN",-0.0936891281868251
+"2009",174507,"Northwestern Health Sciences University","MN",0.0927083674903269
+"2018",174783,"Saint Cloud State University","MN",-0.0829267638698128
+"2019",174792,"Saint Johns University","MN",1.63379873896104
+"2020",174817,"Saint Mary's University of Minnesota","MN",0.213618327394887
+"2022",174862,"Crown College","MN",-0.695199717894417
+"2023",174899,"The College of Saint Scholastica","MN",0.796509387637974
+"2024",174914,"University of St Thomas","MN",1.46523449707446
+"2026",175005,"St Catherine University","MN",0.198247390718982
+"2035",175078,"Southwest Minnesota State University","MN",-0.563483462369296
+"2037",175139,"United Theological Seminary of the Twin Cities","MN",0.329387524855007
+"2044",175272,"Winona State University","MN",0.143809748852824
+"2045",175281,"William Mitchell College of Law","MN",0.732041965426086
+"2047",175342,"Alcorn State University","MS",-1.64833363143896
+"2048",175421,"Belhaven University","MS",-0.755629383103311
+"2049",175430,"Blue Mountain College","MS",-1.14054494150622
+"2058",175616,"Delta State University","MS",-1.0822664857472
+"2066",175856,"Jackson State University","MS",-1.5317961124365
+"2069",175980,"Millsaps College","MS",0.610716804123813
+"2071",176017,"University of Mississippi","MS",0.231322867611982
+"2072",176035,"Mississippi University for Women","MS",-1.0450652428459
+"2073",176044,"Mississippi Valley State University","MS",-2.41338727425185
+"2074",176053,"Mississippi College","MS",-0.392534454528764
+"2077",176080,"Mississippi State University","MS",0.0558448760165141
+"2085",176372,"University of Southern Mississippi","MS",-0.659300427217679
+"2088",176451,"Wesley Biblical Seminary","MS",1.00034842139591
+"2089",176479,"William Carey University","MS",-0.746913232952194
+"2090",176600,"Aquinas Institute of Theology","MO",1.00034842139591
+"2091",176619,"Assemblies of God Theological Seminary","MO",0.928383187723969
+"2092",176628,"Avila University","MO",-0.382505286804487
+"2094",176664,"Baptist Bible College","MO",-1.10098760027627
+"2097",176789,"Calvary Bible College and Theological Seminary","MO",-0.851600567511157
+"2101",176965,"University of Central Missouri","MO",-0.416439945675051
+"2104",177038,"Cleveland University-Kansas City","KS",-0.348516201666144
+"2106",177065,"Columbia College","MO",-0.813739944671356
+"2108",177092,"Concordia Seminary","MO",0.672119461532195
+"2110",177126,"Covenant Theological Seminary","MO",1.00034842139591
+"2113",177214,"Drury University","MO",-0.897999349270217
+"2115",177278,"Eden Theological Seminary","MO",1.00034842139591
+"2118",177339,"Evangel University","MO",-0.563116282967194
+"2119",177418,"Fontbonne University","MO",-0.564354887348283
+"2120",177427,"Forest Institute of Professional Psychology","MO",0.664502522586937
+"2123",177542,"Hannibal-LaGrange University","MO",-0.745468882895332
+"2130",177719,"Barnes-Jewish College Goldfarb School of Nursing","MO",1.64240782768786
+"2132",177816,"Kenrick Glennon Seminary","MO",2.68741280462615
+"2133",177834,"A T Still University of Health Sciences","MO",-2.34178360652586
+"2136",177940,"Lincoln University","MO",-1.7359266621149
+"2137",177968,"Lindenwood University","MO",-0.418223207574481
+"2139",177986,"Logan University","MO",-0.831754673375374
+"2142",178059,"Maryville University of Saint Louis","MO",0.460937771613588
+"2146",178208,"Midwestern Baptist Theological Seminary","MO",1.52922817047874
+"2149",178244,"Missouri Baptist University","MO",-0.937508529745911
+"2155",178387,"Missouri Western State University","MO",-1.14505023070677
+"2156",178396,"University of Missouri-Columbia","MO",0.804447762232239
+"2157",178402,"University of Missouri-Kansas City","MO",0.212350314957732
+"2158",178411,"Missouri University of Science and Technology","MO",1.53270036221094
+"2159",178420,"University of Missouri-St Louis","MO",-0.342824751797566
+"2163",178518,"Nazarene Theological Seminary","MO",0.329387524855007
+"2165",178615,"Truman State University","MO",0.521781276486852
+"2166",178624,"Northwest Missouri State University","MO",-0.28398084130553
+"2169",178721,"Park University","MO",-0.162696755417299
+"2173",178989,"Research College of Nursing","MO",0.706209619651969
+"2174",179043,"Rockhurst University","MO",0.60282954910068
+"2177",179159,"Saint Louis University","MO",1.20070958625115
+"2183",179265,"St Louis College of Pharmacy","MO",-1.97578989034149
+"2185",179317,"Saint Paul School of Theology","KS",1.00034842139591
+"2186",179326,"Southwest Baptist University","MO",-0.80080839710278
+"2191",179548,"Stephens College","MO",-0.778968125767046
+"2192",179557,"Southeast Missouri State University","MO",-0.52962397166737
+"2193",179566,"Missouri State University-Springfield","MO",-0.33742529422212
+"2197",179812,"Kansas City University of Medicine and Biosciences","MO",1.00034842139591
+"2198",179867,"Washington University in St Louis","MO",2.54904550272606
+"2199",179894,"Webster University","MO",0.00297559575016601
+"2203",179964,"William Woods University","MO",-0.625098348156257
+"2211",180179,"Montana State University-Billings","MT",-0.819051848670893
+"2216",180258,"University of Great Falls","MT",-1.23743133284489
+"2221",180416,"Montana Tech of the University of Montana","MT",0.0351053761748581
+"2222",180461,"Montana State University","MT",-0.137060245085106
+"2223",180489,"The University of Montana","MT",-0.588345443483521
+"2224",180522,"Montana State University-Northern","MT",-0.896007236144671
+"2225",180595,"Rocky Mountain College","MT",-0.0853190206214214
+"2229",180814,"Bellevue University","NE",0.184368360994805
+"2230",180832,"Clarkson College","NE",0.247698531821812
+"2231",180878,"Bryan College of Health Sciences","NE",0.900863464004275
+"2233",180948,"Chadron State College","NE",-0.652190642479869
+"2235",180984,"Concordia University-Nebraska","NE",-0.129359455696778
+"2236",181002,"Creighton University","NE",1.64420078738484
+"2238",181093,"Grace University","NE",-0.668212979366112
+"2239",181127,"Hastings College","NE",0.063278357162451
+"2242",181215,"University of Nebraska at Kearney","NE",-0.129575865741325
+"2244",181297,"Nebraska Methodist College of Nursing & Allied Health","NE",0.559247084023065
+"2247",181330,"Midland University","NE",-0.29347870204391
+"2249",181394,"University of Nebraska at Omaha","NE",-0.131910568080917
+"2252",181428,"University of Nebraska Medical Center","NE",0.65496389735186
+"2253",181446,"Nebraska Wesleyan University","NE",0.615106322108641
+"2254",181464,"University of Nebraska-Lincoln","NE",0.529187315306995
+"2256",181534,"Peru State College","NE",-0.934064034157135
+"2257",181604,"College of Saint Mary","NE",-0.651410848663962
+"2259",181738,"Union College","NE",-0.265710193623913
+"2262",181783,"Wayne State College","NE",-0.440156307632395
+"2272",182281,"University of Nevada-Las Vegas","NV",-0.252487182758319
+"2273",182290,"University of Nevada-Reno","NV",0.301957316394298
+"2276",182458,"Sierra Nevada College","NV",-0.048644042508688
+"2281",182661,"Daniel Webster College","NH",0.620859625590596
+"2282",182670,"Dartmouth College","NH",2.8063604862945
+"2285",182795,"Franklin Pierce University","NH",-0.519029124927595
+"2286",182829,"University of New Hampshire-School of Law","NH",0.991371085335283
+"2290",182980,"New England College","NH",-1.01131248507354
+"2292",183026,"Southern New Hampshire University","NH",-0.151300333801177
+"2295",183044,"University of New Hampshire-Main Campus","NH",0.980289045490663
+"2296",183062,"Keene State College","NH",0.0431477909268612
+"2298",183080,"Plymouth State University","NH",-0.228365367519019
+"2307",183211,"Rivier University","NH",0.0217016040834563
+"2310",183257,"Granite State College","NH",-1.49555397443714
+"2317",183804,"Beth Medrash Govoha","NJ",-1.63418892558443
+"2321",183910,"Caldwell University","NJ",0.0119570779724231
+"2323",183974,"Centenary College","NJ",0.131548578746839
+"2334",184348,"Drew University","NJ",0.954811636962621
+"2339",184603,"Fairleigh Dickinson University-Metropolitan Campus","NJ",0.248234250971511
+"2340",184612,"Felician University","NJ",-0.240575005091004
+"2341",184694,"Fairleigh Dickinson University-College at Florham","NJ",0.444232252859234
+"2343",184773,"Georgian Court University","NJ",-0.082055282225633
+"2344",184782,"Rowan University","NJ",0.491099489273499
+"2351",185129,"New Jersey City University","NJ",-0.5537941966292
+"2353",185262,"Kean University","NJ",-0.0168177929705353
+"2359",185572,"Monmouth University","NJ",0.846658374126963
+"2360",185590,"Montclair State University","NJ",0.516537352469332
+"2365",185758,"New Brunswick Theological Seminary","NJ",0.664502522586937
+"2367",185828,"New Jersey Institute of Technology","NJ",1.44007766087788
+"2373",186122,"Princeton Theological Seminary","NJ",0.671388560455155
+"2374",186131,"Princeton University","NJ",0.825331442461752
+"2376",186201,"Ramapo College of New Jersey","NJ",0.741916037883086
+"2378",186283,"Rider University","NJ",0.728765713091236
+"2380",186371,"Rutgers University-Camden","NJ",1.10838249109138
+"2381",186380,"Rutgers University-New Brunswick","NJ",1.52259007359248
+"2382",186399,"Rutgers University-Newark","NJ",1.26603430828386
+"2385",186432,"Saint Peter's University","NJ",0.000862056876410142
+"2387",186584,"Seton Hall University","NJ",1.1138696468903
+"2389",186618,"College of Saint Elizabeth","NJ",0.161057455943084
+"2391",186867,"Stevens Institute of Technology","NJ",2.39573425504037
+"2392",186876,"Stockton University","NJ",0.483721508511622
+"2395",187046,"Thomas Edison State University","NJ",-0.636780409476857
+"2396",187134,"The College of New Jersey","NJ",1.75952053118678
+"2399",187444,"William Paterson University of New Jersey","NJ",-0.0680271132687446
+"2406",187648,"Eastern New Mexico University-Main Campus","NM",-1.54295209966339
+"2409",187897,"New Mexico Highlands University","NM",-1.40940674473269
+"2413",187967,"New Mexico Institute of Mining and Technology","NM",0.881424393201802
+"2415",187985,"University of New Mexico-Main Campus","NM",-0.573533463309262
+"2419",188030,"New Mexico State University-Main Campus","NM",-0.90436326345623
+"2425",188182,"University of the Southwest","NM",-0.781629238180794
+"2426",188207,"Southwestern College","NM",1.00034842139591
+"2430",188304,"Western New Mexico University","NM",-1.79783181040723
+"2432",188429,"Adelphi University","NY",0.859356824242262
+"2436",188526,"Albany College of Pharmacy and Health Sciences","NY",-1.8391938040599
+"2437",188535,"Albany Law School","NY",0.31479255505688
+"2438",188580,"Albany Medical College","NY",-2.76799245879872
+"2439",188641,"Alfred University","NY",0.226508651202677
+"2450",189015,"Bank Street College of Education","NY",0.672119461532195
+"2451",189088,"Bard College","NY",0.240627060777327
+"2460",189413,"Boricua College","NY",-1.2485871672765
+"2465",189501,"Brooklyn Law School","NY",-3.15508313764756
+"2473",189705,"Canisius College","NY",0.587657571140304
+"2478",189857,"Central Yeshiva Tomchei Tmimim Lubavitz","NY",-2.39257263144977
+"2480",189981,"Christ the King Seminary","NY",0.664502522586937
+"2482",190044,"Clarkson University","NY",1.8867736238737
+"2485",190080,"Colgate Rochester Crozer Divinity School","NY",0.664502522586937
+"2486",190099,"Colgate University","NY",2.31961703899809
+"2487",190114,"Metropolitan College of New York","NY",-1.32613008091896
+"2488",190150,"Columbia University in the City of New York","NY",0.672629815008533
+"2495",190372,"Cooper Union for the Advancement of Science and Art","NY",1.55551081644788
+"2496",190415,"Cornell University","NY",2.75347552396524
+"2497",190424,"Weill Cornell Medical College","NY",0.790356319132154
+"2503",190512,"CUNY Bernard M Baruch College","NY",1.20128996966479
+"2506",190549,"CUNY Brooklyn College","NY",0.131996862521763
+"2507",190558,"College of Staten Island CUNY","NY",-0.649535218738702
+"2508",190567,"CUNY City College","NY",0.0269317861086588
+"2509",190576,"CUNY Graduate School and University Center","NY",2.2370972213298
+"2511",190594,"CUNY Hunter College","NY",0.112893800505399
+"2512",190600,"CUNY John Jay College of Criminal Justice","NY",-0.381137969113208
+"2515",190637,"CUNY Lehman College","NY",-0.495795804589542
+"2518",190664,"CUNY Queens College","NY",0.424521524203471
+"2520",190682,"CUNY School of Law","NY",0.575487477601845
+"2521",190691,"CUNY York College","NY",-0.867574989562892
+"2523",190716,"D'Youville College","NY",0.279539189232847
+"2524",190725,"Daemen College","NY",-0.246596765569204
+"2525",190761,"Dominican College of Blauvelt","NY",0.063266885166259
+"2526",190770,"Dowling College","NY",-0.474343383176891
+"2530",190983,"Elmira College","NY",0.103250823688811
+"2532",191126,"Fashion Institute of Technology","NY",0.636036071356669
+"2534",191205,"Five Towns College","NY",-1.01118916290981
+"2535",191241,"Fordham University","NY",1.59148112467514
+"2539",191320,"The General Theological Seminary","NY",1.00034842139591
+"2546",191630,"Hobart William Smith Colleges","NY",1.2962788844555
+"2547",191649,"Hofstra University","NY",0.857190672003476
+"2548",191676,"Houghton College","NY",0.391132282518813
+"2553",191931,"Iona College","NY",0.860302175392344
+"2556",191968,"Ithaca College","NY",1.18140033242737
+"2560",192040,"Jewish Theological Seminary of America","NY",2.77861241881836
+"2561",192110,"The Juilliard School","NY",0.512587908510421
+"2564",192192,"Keuka College","NY",-0.200448656157059
+"2565",192271,"LIM College","NY",0.140470180485198
+"2566",192323,"Le Moyne College","NY",0.749619341980001
+"2567",192439,"LIU Brooklyn","NY",-0.153930735609697
+"2568",192448,"LIU Post","NY",-0.0210937542961065
+"2571",192554,"LIU Hudson at Rockland","NY",-0.720092509258301
+"2572",192563,"LIU Brentwood","NY",-0.720092509258301
+"2575",192703,"Manhattan College","NY",1.68033262405728
+"2576",192712,"Manhattan School of Music","NY",-0.755255342699553
+"2577",192749,"Manhattanville College","NY",0.558178478252776
+"2580",192819,"Marist College","NY",1.38480920358363
+"2583",192925,"Medaille College","NY",-0.469764425273304
+"2586",193016,"Mercy College","NY",-0.934668843098517
+"2587",193052,"Mesivta Torah Vodaath Rabbinical Seminary","NY",0.997810769585852
+"2589",193070,"Mesivtha Tifereth Jerusalem of America","NY",0.881007390240778
+"2593",193247,"Mirrer Yeshiva Cent Institute","NY",-3.08671263177712
+"2596",193292,"Molloy College","NY",1.0780293628693
+"2597",193308,"Monroe College","NY",-1.3691771637518
+"2599",193353,"Mount Saint Mary College","NY",0.328959008818775
+"2600",193399,"College of Mount Saint Vincent","NY",0.568243841671158
+"2601",193405,"Icahn School of Medicine at Mount Sinai","NY",-3.51617233011866
+"2603",193584,"Nazareth College","NY",0.407982562277016
+"2605",193645,"The College of New Rochelle","NY",-1.4940481736935
+"2606",193654,"The New School","NY",0.158732201126349
+"2608",193751,"New York Chiropractic College","NY",0.336273562723224
+"2610",193821,"New York Law School","NY",0.894486407555873
+"2611",193830,"New York Medical College","NY",1.00723445926413
+"2613",193894,"New York Theological Seminary","NY",0.664502522586937
+"2614",193900,"New York University","NY",1.97878075413786
+"2616",193973,"Niagara University","NY",0.16793899001086
+"2619",194073,"New York College of Podiatric Medicine","NY",0.334449274938458
+"2620",194091,"New York Institute of Technology","NY",0.474563847118817
+"2621",194116,"New York School of Interior Design","NY",-0.075367394527896
+"2622",194161,"Nyack College","NY",-0.530059863784247
+"2627",194310,"Pace University-New York","NY",1.09826510386279
+"2632",194578,"Pratt Institute-Main","NY",-0.0613618998458375
+"2635",194657,"Rabbinical Academy Mesivta Rabbi Chaim Berlin","NY",1.17434633694039
+"2636",194666,"Rabbinical College Bobover Yeshiva Bnei Zion","NY",-1.95918263063837
+"2637",194675,"Rabbinical College of Ch'san Sofer New York","NY",1.8128067372687
+"2640",194763,"Rabbinical Seminary of America","NY",1.09423959645683
+"2641",194824,"Rensselaer Polytechnic Institute","NY",2.36453796579819
+"2643",194958,"Roberts Wesleyan College","NY",0.0948142505802598
+"2645",195003,"Rochester Institute of Technology","NY",1.35551466874475
+"2646",195030,"University of Rochester","NY",2.00753525018178
+"2649",195128,"The Sage Colleges","NY",-0.182910878936388
+"2650",195155,"St Bernard's School of Theology and Ministry","NY",0.329387524855007
+"2651",195164,"St Bonaventure University","NY",0.557636443513711
+"2652",195173,"St Francis College","NY",0.286159912035181
+"2654",195216,"St Lawrence University","NY",1.13839261921518
+"2655",195234,"The College of Saint Rose","NY",0.194576827508484
+"2656",195243,"St. Thomas Aquinas College","NY",0.191731783331197
+"2658",195304,"Sarah Lawrence College","NY",0.120909144464458
+"2661",195474,"Siena College","NY",1.48100978458985
+"2662",195526,"Skidmore College","NY",1.21194038502969
+"2663",195544,"Saint Joseph's College-New York","NY",0.903469036914821
+"2665",195580,"Saint Vladimirs Orthodox Theological Seminary","NY",0.329387524855007
+"2668",195720,"Saint John Fisher College","NY",0.723696479938048
+"2671",195809,"St John's University-New York","NY",0.832343432057684
+"2681",196060,"SUNY at Albany","NY",0.84979167095429
+"2682",196079,"SUNY at Binghamton","NY",1.64969813096742
+"2683",196088,"University at Buffalo","NY",0.978347423196647
+"2684",196097,"Stony Brook University","NY",1.18257943346923
+"2685",196103,"SUNY College of Environmental Science and Forestry","NY",0.348591682799062
+"2686",196112,"SUNY Polytechnic Institute","NY",0.289950939929008
+"2687",196121,"SUNY College at Brockport","NY",0.276961012257438
+"2688",196130,"SUNY Buffalo State","NY",-0.52003578627133
+"2689",196149,"SUNY College at Cortland","NY",0.491645841026002
+"2690",196158,"SUNY at Fredonia","NY",0.0341225896457702
+"2691",196167,"SUNY College at Geneseo","NY",0.92817542631567
+"2692",196176,"State University of New York at New Paltz","NY",0.457768645417792
+"2693",196185,"SUNY Oneonta","NY",0.363133099129651
+"2694",196194,"SUNY College at Oswego","NY",0.0280283964645286
+"2695",196200,"SUNY College at Potsdam","NY",-0.427155578216314
+"2696",196219,"SUNY at Purchase College","NY",-0.38662200257501
+"2697",196228,"SUNY College of Optometry","NY",0.553979497299734
+"2698",196237,"SUNY College at Old Westbury","NY",-0.323438429472503
+"2699",196246,"SUNY College at Plattsburgh","NY",-0.0375661407352862
+"2700",196255,"SUNY Downstate Medical Center","NY",-2.98110780779735
+"2701",196264,"SUNY Empire State College","NY",-0.679469995313042
+"2702",196291,"SUNY Maritime College","NY",1.53511682461177
+"2703",196307,"Upstate Medical University","NY",-1.06675210931001
+"2705",196413,"Syracuse University","NY",1.74626554088158
+"2708",196468,"Teachers College at Columbia University","NY",0.439098371761323
+"2712",196592,"Touro College","NY",-1.22288674468844
+"2714",196680,"Excelsior College","NY",1.00723445926413
+"2718",196884,"Union Theological Seminary in the City of New York","NY",1.00723445926413
+"2720",197027,"United States Merchant Marine Academy","NY",2.2898101149549
+"2721",197045,"Utica College","NY",-0.130803960261783
+"2725",197151,"School of Visual Arts","NY",0.110431294579561
+"2726",197197,"Wagner College","NY",1.15473200794649
+"2736",197647,"Yeshiva Derech Chaim","NY",0.690552946127957
+"2737",197674,"Yeshiva of Nitra Rabbinical College","NY",-3.17502855215486
+"2739",197708,"Yeshiva University","NY",1.68826005508657
+"2740",197735,"Yeshivath Viznitz","NY",-1.50871017840586
+"2741",197744,"Yeshivath Zichron Moshe","NY",0.37305558102238
+"2745",197869,"Appalachian State University","NC",0.0498738596288094
+"2758",198136,"Campbell University","NC",0.227869251603578
+"2762",198215,"Catawba College","NC",-0.312856047893952
+"2773",198419,"Duke University","NC",0.830456878819175
+"2775",198464,"East Carolina University","NC",-0.0492277931466363
+"2777",198507,"Elizabeth City State University","NC",-1.56869266667929
+"2778",198516,"Elon University","NC",1.08808934748037
+"2781",198543,"Fayetteville State University","NC",-1.5688453829169
+"2783",198561,"Gardner-Webb University","NC",-0.593766239985909
+"2785",198598,"Greensboro College","NC",-0.963581132472127
+"2791",198695,"High Point University","NC",-0.329284633163367
+"2799",198835,"Lenoir-Rhyne University","NC",-0.43249851680238
+"2808",198950,"Meredith College","NC",-0.257139908004198
+"2809",198969,"Methodist University","NC",-0.663847419388423
+"2815",199032,"Montreat College","NC",-0.637478918111022
+"2819",199102,"North Carolina A & T State University","NC",-1.04667907565564
+"2820",199111,"University of North Carolina at Asheville","NC",-0.399541422465903
+"2821",199120,"University of North Carolina at Chapel Hill","NC",1.7010452016161
+"2822",199139,"University of North Carolina at Charlotte","NC",0.104159829725176
+"2823",199148,"University of North Carolina at Greensboro","NC",-0.360207856726374
+"2824",199157,"North Carolina Central University","NC",-1.31907401692113
+"2825",199184,"University of North Carolina School of the Arts","NC",-0.57429935657131
+"2826",199193,"North Carolina State University at Raleigh","NC",1.04311418664123
+"2828",199218,"University of North Carolina Wilmington","NC",0.178642548260201
+"2831",199281,"University of North Carolina at Pembroke","NC",-1.22596575579853
+"2832",199306,"Pfeiffer University","NC",-0.717198814995848
+"2833",199315,"Piedmont International University","NC",-0.983066356255908
+"2836",199412,"Queens University of Charlotte","NC",-0.267964554585945
+"2845",199607,"Salem College","NC",-0.423167122106184
+"2848",199643,"Shaw University","NC",-2.14008476166855
+"2859",199847,"Wake Forest University","NC",2.26688250963143
+"2861",199865,"Warren Wilson College","NC",-1.10433518759576
+"2867",199962,"Wingate University","NC",-0.203140874411396
+"2870",199999,"Winston-Salem State University","NC",-1.12892559034426
+"2871",200004,"Western Carolina University","NC",-0.43660203319209
+"2883",200217,"University of Mary","ND",0.267822369299057
+"2885",200253,"Minot State University","ND",-0.455952633758426
+"2887",200280,"University of North Dakota","ND",0.555268976248396
+"2890",200332,"North Dakota State University-Main Campus","ND",0.551191072941814
+"2897",200572,"Valley City State University","ND",-0.272057000826687
+"2902",200800,"University of Akron Main Campus","OH",-0.841033135373671
+"2908",201061,"Art Academy of Cincinnati","OH",-0.898229007964105
+"2910",201104,"Ashland University","OH",-0.0882274386321006
+"2914",201195,"Baldwin Wallace University","OH",0.563126458192419
+"2916",201371,"Bluffton University","OH",-0.20645908379228
+"2919",201441,"Bowling Green State University-Main Campus","OH",-0.255113141524604
+"2924",201548,"Capital University","OH",-0.0512508112635631
+"2928",201645,"Case Western Reserve University","OH",2.15871751864653
+"2929",201654,"Cedarville University","OH",0.381411198190613
+"2932",201690,"Central State University","OH",-2.34637312155559
+"2936",201858,"Cincinnati Christian University","OH",-1.04911630932766
+"2938",201885,"University of Cincinnati-Main Campus","OH",-0.0951022784542075
+"2940",201946,"University of Cincinnati-Clermont College","OH",-0.710114832813481
+"2941",201955,"University of Cincinnati-Blue Ash College","OH",-0.760652697744392
+"2947",202073,"Cleveland Institute of Music","OH",0.392076599477323
+"2948",202134,"Cleveland State University","OH",-0.702121905533053
+"2956",202480,"University of Dayton","OH",1.17186776646956
+"2957",202514,"Defiance College","OH",-0.456142999902503
+"2964",202763,"The University of Findlay","OH",0.0171818615755595
+"2965",202806,"Franklin University","OH",-0.336361513827931
+"2972",203067,"Hebrew Union College-Jewish Institute of Religion","NY",0.664502522586937
+"2973",203085,"Heidelberg University","OH",-0.46402345997083
+"2974",203128,"Hiram College","OH",-0.162235100069845
+"2982",203368,"John Carroll University","OH",1.09661196799064
+"2991",203517,"Kent State University at Kent","OH",-0.544645469399763
+"2994",203544,"Kettering College","OH",0.742340375044493
+"2995",203580,"Lake Erie College","OH",-0.928294496694891
+"3002",203757,"Lourdes University","OH",-1.12981795909002
+"3003",203775,"Malone University","OH",-0.0503222947512048
+"3004",203845,"Marietta College","OH",0.267923983811291
+"3008",203997,"Methodist Theological School in Ohio","OH",1.00034842139591
+"3009",204006,"Miami University-Hamilton","OH",-0.103604823085011
+"3010",204015,"Miami University-Middletown","OH",-0.190182940785378
+"3011",204024,"Miami University-Oxford","OH",0.884050521386742
+"3015",204176,"Mount Carmel College of Nursing","OH",1.03475426298662
+"3017",204194,"Mount Vernon Nazarene University","OH",0.034972212724505
+"3018",204200,"Mount Saint Joseph University","OH",0.0549848025001379
+"3020",204264,"Muskingum University","OH",-0.296911398924721
+"3028",204468,"Notre Dame College","OH",-0.53629821683305
+"3029",204477,"Northeast Ohio Medical University","OH",0.671388560455155
+"3030",204486,"University of Northwestern Ohio","OH",-0.559857754130245
+"3031",204501,"Oberlin College","OH",0.87219644171023
+"3034",204617,"Ohio Dominican University","OH",-0.680345792863495
+"3036",204635,"Ohio Northern University","OH",1.59263255220597
+"3046",204796,"Ohio State University-Main Campus","OH",0.731614034899719
+"3051",204857,"Ohio University-Main Campus","OH",0.0125118485255266
+"3056",204936,"Otterbein University","OH",0.0521395514653087
+"3060",204990,"Payne Theological Seminary","OH",1.00034842139591
+"3061",205027,"Pontifical College Josephinum","OH",1.99508549018161
+"3064",205124,"Rabbinical College Telshe","OH",0.553526473546882
+"3067",205203,"University of Rio Grande","OH",-1.44126910167836
+"3069",205443,"Shawnee State University","OH",-1.32199886818282
+"3080",205957,"Franciscan University of Steubenville","OH",0.0453746084461817
+"3084",206048,"Tiffin University","OH",-0.682089865140963
+"3085",206084,"University of Toledo","OH",-0.297138639083716
+"3090",206215,"Trinity Lutheran Seminary","OH",0.665233423663978
+"3092",206279,"Union Institute & University","OH",-0.875808066288144
+"3098",206288,"United Theological Seminary","OH",1.00034842139591
+"3100",206330,"Urbana University","OH",-0.944401639529709
+"3101",206349,"Ursuline College","OH",-0.15383281024859
+"3104",206437,"Walsh University","OH",0.015637824216519
+"3107",206491,"Wilberforce University","OH",-1.35780478242505
+"3108",206507,"Wilmington College","OH",-0.51204394143215
+"3109",206516,"Winebrenner Theological Seminary","OH",0.664502522586937
+"3112",206604,"Wright State University-Main Campus","OH",-0.533158629592979
+"3114",206622,"Xavier University","OH",0.835251386468923
+"3116",206695,"Youngstown State University","OH",-1.11075959519175
+"3119",206835,"Oklahoma Wesleyan University","OK",0.141678723825959
+"3120",206862,"Southern Nazarene University","OK",0.149018661201866
+"3123",206914,"Cameron University","OK",-1.3979433084975
+"3126",206941,"University of Central Oklahoma","OK",-0.541576030283376
+"3129",207041,"East Central University","OK",-1.13498968620852
+"3136",207209,"Langston University","OK",-2.09200629341329
+"3139",207263,"Northeastern State University","OK",-1.05805994125898
+"3143",207306,"Northwestern Oklahoma State University","OK",-0.862053298273015
+"3144",207315,"Oklahoma State University Center for Health Sciences","OK",1.00723445926413
+"3145",207324,"Oklahoma Christian University","OK",-0.399448557322255
+"3146",207342,"University of Oklahoma-Health Sciences Center","OK",-0.375453469094067
+"3148",207388,"Oklahoma State University-Main Campus","OK",0.480701925748291
+"3150",207403,"Oklahoma Baptist University","OK",-0.354157434686115
+"3152",207458,"Oklahoma City University","OK",-0.00275211733591163
+"3153",207500,"University of Oklahoma-Norman Campus","OK",0.867516115048448
+"3156",207582,"Oral Roberts University","OK",-0.537009325499955
+"3161",207689,"St. Gregory's University","OK",-0.710502045722148
+"3166",207847,"Southeastern Oklahoma State University","OK",-1.04610842030075
+"3168",207865,"Southwestern Oklahoma State University","OK",-0.546566755934877
+"3171",207971,"University of Tulsa","OK",0.668303537394243
+"3188",208488,"Concordia University-Portland","OR",-0.109948478414637
+"3191",208646,"Eastern Oregon University","OR",-0.86051679591754
+"3194",208822,"George Fox University","OR",0.300418442964332
+"3198",209056,"Lewis & Clark College","OR",0.644490584234503
+"3201",209108,"Marylhurst University","OR",-1.03232603248651
+"3204",209241,"Mount Angel Seminary","OR",2.01090273514486
+"3206",209287,"Multnomah University","OR",-0.850764050321145
+"3207",209296,"National College of Natural Medicine","OR",0.665233423663978
+"3209",209409,"Northwest Christian University","OR",0.13191613771509
+"3210",209490,"Oregon Health & Science University","OR",0.869096897028524
+"3211",209506,"Oregon Institute of Technology","OR",0.571849577743264
+"3212",209533,"Oregon College of Art and Craft","OR",1.45536232264197
+"3213",209542,"Oregon State University","OR",0.554514057520306
+"3214",209551,"University of Oregon","OR",0.316100248981218
+"3215",209603,"Pacific Northwest College of Art","OR",-1.78860228074154
+"3216",209612,"Pacific University","OR",0.163115721090337
+"3223",209807,"Portland State University","OR",-0.20358139697882
+"3224",209825,"University of Portland","OR",1.2897013581395
+"3225",209922,"Reed College","OR",0.449663351999114
+"3230",210146,"Southern Oregon University","OR",-0.779559072096551
+"3235",210331,"Corban University","OR",-0.308678382354273
+"3238",210368,"Western Seminary","OR",0.664502522586937
+"3241",210401,"Willamette University","OR",1.05346451755118
+"3242",210429,"Western Oregon University","OR",-0.43278067431341
+"3243",210438,"University of Western States","OR",1.42335575535086
+"3249",210571,"Albright College","PA",0.410037983963555
+"3254",210739,"DeSales University","PA",0.795129705192075
+"3256",210775,"Alvernia University","PA",-0.221074181904305
+"3265",211024,"Summit University of Pennsylvania","PA",-0.868501733076349
+"3267",211088,"Arcadia University","PA",0.180743064311741
+"3268",211130,"Biblical Theological Seminary","PA",0.329387524855007
+"3270",211158,"Bloomsburg University of Pennsylvania","PA",0.330121142199351
+"3272",211273,"Bryn Mawr College","PA",1.80553012170033
+"3273",211291,"Bucknell University","PA",2.42663262917117
+"3280",211352,"Cabrini University","PA",-0.129144436924132
+"3281",211361,"California University of Pennsylvania","PA",-0.363855802449318
+"3283",211431,"Carlow University","PA",-0.103563160991649
+"3284",211440,"Carnegie Mellon University","PA",2.56552871432893
+"3285",211468,"Cedar Crest College","PA",0.403445222843996
+"3287",211556,"Chatham University","PA",-0.562541697591247
+"3288",211583,"Chestnut Hill College","PA",-0.504081618691163
+"3289",211608,"Cheyney University of Pennsylvania","PA",-1.94834522552225
+"3292",211644,"Clarion University of Pennsylvania","PA",-0.506167787768476
+"3295",211893,"Curtis Institute of Music","PA",2.61720670859454
+"3298",211981,"Delaware Valley University","PA",-0.0255767398649861
+"3300",212018,"Pennsylvania State University-Dickinson Law","PA",-0.456045140551268
+"3302",212054,"Drexel University","PA",1.62382163989255
+"3305",212106,"Duquesne University","PA",1.52905740889012
+"3306",212115,"East Stroudsburg University of Pennsylvania","PA",0.0988476439342291
+"3307",212133,"Eastern University","PA",0.0619584238260966
+"3308",212160,"Edinboro University of Pennsylvania","PA",-0.808360717658513
+"3309",212197,"Elizabethtown College","PA",0.906062498350416
+"3324",212443,"Evangelical Theological Seminary","PA",1.00034842139591
+"3327",212601,"Gannon University","PA",0.617160629818713
+"3328",212656,"Geneva College","PA",-0.0230833528969218
+"3333",212771,"Gratz College","PA",2.84505032939901
+"3334",212832,"Gwynedd Mercy University","PA",0.844701394504762
+"3343",212984,"Holy Family University","PA",0.401472008366842
+"3346",213011,"Immaculata University","PA",0.335396653132392
+"3347",213020,"Indiana University of Pennsylvania-Main Campus","PA",-0.332118225554792
+"3353",213303,"Keystone College","PA",-1.10092618348549
+"3354",213321,"King's College","PA",0.622051568209319
+"3356",213349,"Kutztown University of Pennsylvania","PA",-0.0298681378482983
+"3357",213358,"La Roche College","PA",-0.238404192163326
+"3358",213367,"La Salle University","PA",0.847279878710815
+"3361",213400,"Lancaster Bible College","PA",-0.638203936993104
+"3362",213446,"Lancaster Theological Seminary","PA",1.00034842139591
+"3366",213507,"Lebanon Valley College","PA",0.709690477640912
+"3369",213543,"Lehigh University","PA",2.57673280604474
+"3373",213598,"Lincoln University","PA",-1.36963951873481
+"3374",213613,"Lock Haven University","PA",-0.36710325044952
+"3376",213631,"Lutheran Theological Seminary at Gettysburg","PA",0.665233423663978
+"3377",213640,"Lutheran Theological Seminary at Philadelphia","PA",0.665233423663978
+"3381",213783,"Mansfield University of Pennsylvania","PA",-0.423546752802106
+"3382",213826,"Marywood University","PA",-0.201884782154081
+"3384",213987,"Mercyhurst University","PA",0.0171866022374889
+"3387",214041,"Millersville University of Pennsylvania","PA",0.23617951236095
+"3388",214069,"Misericordia University","PA",0.64590924979795
+"3390",214148,"Moore College of Art and Design","PA",-0.710073113917804
+"3391",214157,"Moravian College","PA",0.805864922628589
+"3392",214166,"Mount Aloysius College","PA",-0.573891624634734
+"3395",214272,"Neumann University","PA",-0.339710430073252
+"3402",214564,"Salus University","PA",0.973302311704374
+"3404",214591,"Pennsylvania State University-Penn State Erie-Behrend College","PA",0.821908010104913
+"3405",214607,"Pennsylvania State University-Penn State Great Valley","PA",-0.456045140551268
+"3406",214616,"Pennsylvania State University-College of Medicine","PA",-0.456045140551268
+"3415",214713,"Pennsylvania State University-Penn State Harrisburg","PA",0.71858795442016
+"3420",214777,"Pennsylvania State University-Main Campus","PA",1.14071810068019
+"3430",214971,"Pennsylvania Academy of the Fine Arts","PA",-0.968047579315511
+"3435",215062,"University of Pennsylvania","PA",0.851348705849405
+"3436",215099,"Philadelphia University","PA",0.59115985311404
+"3437",215105,"The University of the Arts","PA",-0.850392553933727
+"3438",215114,"Cairn University-Langhorne","PA",-0.336093858285569
+"3439",215123,"Philadelphia College of Osteopathic Medicine","PA",-2.72076471016851
+"3440",215132,"University of the Sciences","PA",2.28156231713311
+"3445",215293,"University of Pittsburgh-Pittsburgh Campus","PA",1.13036924839584
+"3451",215424,"Pittsburgh Theological Seminary","PA",1.00034842139591
+"3453",215442,"Point Park University","PA",-0.460861098624263
+"3458",215619,"Reconstructionist Rabbinical College","PA",0.329387524855007
+"3459",215628,"Reformed Presbyterian Theological Seminary","PA",1.00034842139591
+"3462",215655,"Robert Morris University","PA",0.287929523290301
+"3464",215691,"Rosemont College","PA",0.311651789329241
+"3465",215743,"Saint Francis University","PA",0.752617179811742
+"3466",215770,"Saint Joseph's University","PA",1.57144872840912
+"3467",215798,"Saint Vincent College","PA",0.60438841327229
+"3468",215813,"Saint Vincent Seminary","PA",-0.729798074998885
+"3470",215929,"University of Scranton","PA",1.56802735416096
+"3471",215947,"Seton Hill University","PA",-0.438140066196334
+"3475",216010,"Shippensburg University of Pennsylvania","PA",0.296081817341133
+"3476",216038,"Slippery Rock University of Pennsylvania","PA",-0.0231133147791142
+"3477",216047,"Saint Charles Borromeo Seminary-Overbrook","PA",2.19948721879604
+"3487",216339,"Temple University","PA",0.674045406199647
+"3489",216366,"Thomas Jefferson University","PA",0.382556487584595
+"3495",216463,"Trinity Episcopal School for Ministry","PA",0.329387524855007
+"3500",216597,"Villanova University","PA",2.53219881070553
+"3504",216694,"Waynesburg University","PA",0.348957694627838
+"3506",216764,"West Chester University of Pennsylvania","PA",0.593409528355338
+"3510",216816,"Westminster Theological Seminary","PA",1.00034842139591
+"3512",216852,"Widener University-Main Campus","PA",0.763656265850899
+"3513",216931,"Wilkes University","PA",0.821432379349485
+"3514",217013,"Wilson College","PA",-0.686673690998819
+"3516",217059,"York College Pennsylvania","PA",0.528328559646413
+"3520",217156,"Brown University","RI",2.56081600413472
+"3521",217165,"Bryant University","RI",1.90870464721326
+"3522",217235,"Johnson & Wales University-Providence","RI",-0.510747381176884
+"3526",217402,"Providence College","RI",1.90692723252293
+"3527",217420,"Rhode Island College","RI",-0.424611770541557
+"3529",217484,"University of Rhode Island","RI",0.699557008039715
+"3530",217493,"Rhode Island School of Design","RI",0.88408712142853
+"3531",217518,"Roger Williams University","RI",0.553229101128143
+"3532",217536,"Salve Regina University","RI",0.847607155176514
+"3538",217633,"Anderson University","SC",-0.75878550586495
+"3539",217688,"Charleston Southern University","SC",-0.847146485076918
+"3542",217749,"Bob Jones University","SC",2.20982410656296
+"3543",217776,"Southern Wesleyan University","SC",-0.393037412780095
+"3545",217819,"College of Charleston","SC",0.132869466979856
+"3548",217864,"Citadel Military College of South Carolina","SC",1.01610675107636
+"3549",217873,"Claflin University","SC",-1.60482183434687
+"3550",217882,"Clemson University","SC",1.25851555374314
+"3553",217925,"Columbia International University","SC",-0.597548990040146
+"3554",217934,"Columbia College","SC",-1.06861925342975
+"3555",217961,"Converse College","SC",-0.843939294152821
+"3557",217998,"Erskine College","SC",-0.185295267942388
+"3560",218061,"Francis Marion University","SC",-1.14006518003003
+"3561",218070,"Furman University","SC",1.19844872122161
+"3566",218229,"Lander University","SC",-0.856776157952308
+"3568",218265,"Lenoir-Rhyne University-Lutheran Theological Southern Seminary","SC",1.00034842139591
+"3569",218335,"Medical University of South Carolina","SC",-1.17286314404071
+"3573",218441,"North Greenville University","SC",-1.02860579389155
+"3577",218645,"University of South Carolina-Aiken","SC",-0.635655158908941
+"3579",218663,"University of South Carolina-Columbia","SC",0.535902352644803
+"3584",218724,"Coastal Carolina University","SC",-0.613062196906653
+"3585",218733,"South Carolina State University","SC",-1.66051364699519
+"3586",218742,"University of South Carolina-Upstate","SC",-0.77786952091239
+"3587",218751,"Sherman College of Straight Chiropractic","SC",0.336273562723224
+"3596",218964,"Winthrop University","SC",-0.55903826365459
+"3599",219000,"Augustana University","SD",0.322033672850607
+"3601",219046,"Black Hills State University","SD",-0.947036771884954
+"3603",219082,"Dakota State University","SD",-0.388438678607226
+"3604",219091,"Dakota Wesleyan University","SD",-0.834971661293509
+"3609",219198,"Mount Marty College","SD",-0.671788952629681
+"3612",219240,"Sioux Falls Seminary","SD",1.00034842139591
+"3613",219259,"Northern State University","SD",-0.719707566759244
+"3614",219277,"Oglala Lakota College","SD",-3.02766426192858
+"3617",219347,"South Dakota School of Mines and Technology","SD",0.703671401556334
+"3618",219356,"South Dakota State University","SD",0.0865564724221175
+"3619",219374,"Sinte Gleska University","SD",-3.05914946251656
+"3620",219383,"University of Sioux Falls","SD",-0.357103658341376
+"3625",219471,"University of South Dakota","SD",-0.0482311989809781
+"3631",219602,"Austin Peay State University","TN",-1.02802721489461
+"3633",219709,"Belmont University","TN",0.341142935453772
+"3635",219790,"Bryan College-Dayton","TN",-0.32943745366101
+"3636",219806,"Carson-Newman University","TN",-0.431299345653004
+"3638",219833,"Christian Brothers University","TN",0.242162889673347
+"3639",219842,"Pentecostal Theological Seminary","TN",0.665233423663978
+"3644",219949,"Cumberland University","TN",-0.772994561944638
+"3645",219976,"Lipscomb University","TN",-0.0563394033177784
+"3649",220075,"East Tennessee State University","TN",-0.781900857695278
+"3652",220136,"Emmanuel Christian Seminary","TN",1.00034842139591
+"3654",220181,"Fisk University","TN",-1.12708325524476
+"3656",220215,"Freed-Hardeman University","TN",-0.428055673106098
+"3664",220473,"Johnson University","TN",-0.672754946689649
+"3666",220516,"King University","TN",-0.194504337780881
+"3667",220552,"South College","TN",-2.23362400524989
+"3671",220613,"Lee University","TN",-0.719038267585558
+"3672",220631,"Lincoln Memorial University","TN",-0.545236638315265
+"3678",220792,"Meharry Medical College","TN",-2.97554811129256
+"3679",220808,"Memphis College of Art","TN",-1.50684313450295
+"3681",220862,"University of Memphis","TN",-0.827186002736359
+"3682",220871,"Memphis Theological Seminary","TN",1.00034842139591
+"3683",220978,"Middle Tennessee State University","TN",-0.624145564374439
+"3684",220996,"Middle Tennessee School of Anesthesia Inc","TN",0.665233423663978
+"3685",221014,"Milligan College","TN",-0.28624172310937
+"3697",221351,"Rhodes College","TN",1.53007440474941
+"3703",221519,"Sewanee-The University of the South","TN",0.832177032768543
+"3711",221661,"Southern Adventist University","TN",-0.208860039882711
+"3712",221670,"Southern College of Optometry","TN",0.913401374925849
+"3714",221740,"The University of Tennessee-Chattanooga","TN",-0.724358203203961
+"3715",221759,"The University of Tennessee-Knoxville","TN",0.536569819767249
+"3716",221768,"The University of Tennessee-Martin","TN",-0.633910881479731
+"3719",221838,"Tennessee State University","TN",-1.12360848056552
+"3720",221847,"Tennessee Technological University","TN",-0.364049930366722
+"3721",221856,"Tennessee Temple University","NC",-1.36502307867101
+"3722",221892,"Trevecca Nazarene University","TN",-0.201048833456958
+"3724",221953,"Tusculum College","TN",-0.749727917964637
+"3725",221971,"Union University","TN",0.119200890958814
+"3727",221999,"Vanderbilt University","TN",2.37080459090459
+"3733",222178,"Abilene Christian University","TX",0.0427945576383319
+"3737",222831,"Angelo State University","TX",-0.741952071901185
+"3741",222983,"Austin College","TX",0.951925117628078
+"3743",223001,"Austin Presbyterian Theological Seminary","TX",1.00034842139591
+"3746",223117,"Baptist Missionary Association Theological Seminary","TX",2.36788045318616
+"3747",223223,"Baylor College of Medicine","TX",-2.65895815333513
+"3748",223232,"Baylor University","TX",0.892003382403654
+"3760",224004,"Concordia University-Texas","TX",-0.576199059708313
+"3763",224147,"Texas A & M University-Corpus Christi","TX",-0.471288622595043
+"3766",224226,"Dallas Baptist University","TX",-0.121685606557297
+"3769",224305,"Dallas Theological Seminary","TX",1.00034842139591
+"3770",224323,"University of Dallas","TX",0.541108852155599
+"3774",224545,"Texas A & M University-Texarkana","TX",-1.69697643537894
+"3775",224554,"Texas A & M University-Commerce","TX",-0.699529580735274
+"3788",225247,"Hardin-Simmons University","TX",-0.297370146816844
+"3791",225399,"Houston Baptist University","TX",-0.208509526657672
+"3792",225414,"University of Houston-Clear Lake","TX",-0.679879210166425
+"3794",225432,"University of Houston-Downtown","TX",-0.788500599727022
+"3795",225502,"University of Houston-Victoria","TX",-1.11398173885542
+"3796",225511,"University of Houston","TX",0.515732074761855
+"3798",225548,"Howard Payne University","TX",-0.808374130778702
+"3799",225575,"Huston-Tillotson University","TX",-1.81118072008978
+"3800",225627,"University of the Incarnate Word","TX",-0.276030348141991
+"3809",226091,"Lamar University","TX",-0.634573990995553
+"3814",226152,"Texas A & M International University","TX",-0.324374362989318
+"3816",226231,"LeTourneau University","TX",0.484647560977931
+"3819",226383,"Lubbock Christian University","TX",-0.523905417117663
+"3821",226471,"University of Mary Hardin-Baylor","TX",-0.252920953889711
+"3827",226833,"Midwestern State University","TX",-0.436998412561901
+"3838",227216,"University of North Texas","TX",0.00829436574773103
+"3841",227289,"Oblate School of Theology","TX",0.329387524855007
+"3846",227331,"Our Lady of the Lake University","TX",-1.0161509484747
+"3847",227368,"The University of Texas Rio Grande Valley","TX",-0.554256057091647
+"3848",227377,"The University of Texas at Brownsville","TX",-1.59078299547124
+"3852",227526,"Prairie View A & M University","TX",-1.1700899137259
+"3854",227757,"Rice University","TX",2.49447015811074
+"3857",227845,"Saint Edward's University","TX",0.548179828768667
+"3859",227863,"University of St Thomas","TX",0.399459294467585
+"3860",227881,"Sam Houston State University","TX",-0.12801845116444
+"3865",228042,"Schreiner University","TX",-0.758911359357521
+"3867",228149,"St Mary's University","TX",0.321552700102326
+"3870",228194,"South Texas College of Law","TX",1.00034842139591
+"3873",228246,"Southern Methodist University","TX",1.64599949187785
+"3876",228325,"Southwestern Assemblies of God University","TX",-1.24183048902917
+"3878",228431,"Stephen F Austin State University","TX",-0.497888629504488
+"3879",228459,"Texas State University","TX",0.157345670285121
+"3880",228468,"Southwestern Adventist University","TX",-0.507943596815703
+"3882",228501,"Sul Ross State University","TX",-1.04797005393573
+"3883",228529,"Tarleton State University","TX",-0.385241261606162
+"3886",228635,"University of Texas Southwestern Medical Center","TX",-3.13973569965702
+"3887",228644,"The University of Texas Health Science Center at San Antonio","TX",0.537947474124121
+"3888",228653,"The University of Texas Medical Branch","TX",0.489256132555158
+"3891",228705,"Texas A & M University-Kingsville","TX",-0.62212969727862
+"3892",228723,"Texas A & M University-College Station","TX",1.62730589327483
+"3893",228769,"The University of Texas at Arlington","TX",0.0300148968401649
+"3894",228778,"The University of Texas at Austin","TX",1.57673859018788
+"3895",228787,"The University of Texas at Dallas","TX",0.882901345732857
+"3896",228796,"The University of Texas at El Paso","TX",-0.568200776898723
+"3897",228802,"The University of Texas at Tyler","TX",-0.0997271417581128
+"3898",228866,"Texas Chiropractic College Foundation Inc","TX",-0.459659390646823
+"3899",228875,"Texas Christian University","TX",1.17496335341889
+"3901",228909,"University of North Texas Health Science Center","TX",-2.69902927609109
+"3903",229018,"The University of Texas of the Permian Basin","TX",-0.335631803787464
+"3904",229027,"The University of Texas at San Antonio","TX",-0.417949857349207
+"3906",229063,"Texas Southern University","TX",-2.08135157905134
+"3907",229115,"Texas Tech University","TX",0.701550176762883
+"3909",229160,"Texas Wesleyan University","TX",-0.548341271564884
+"3910",229179,"Texas Woman's University","TX",-0.0362457956876186
+"3911",229267,"Trinity University","TX",1.70035561460702
+"3912",229300,"The University of Texas Health Science Center at Houston","TX",-1.16033617275762
+"3915",229337,"Texas Tech University Health Sciences Center","TX",0.661925556374053
+"3922",229780,"Wayland Baptist University","TX",-0.562190821623117
+"3924",229814,"West Texas A & M University","TX",-0.413878213928609
+"3930",230038,"Brigham Young University-Provo","UT",1.73339737669361
+"3948",230603,"Southern Utah University","UT",-0.307756892090672
+"3952",230728,"Utah State University","UT",0.0710664186556134
+"3953",230737,"Utah Valley University","UT",-0.254858967903075
+"3955",230764,"University of Utah","UT",0.900089907051279
+"3956",230782,"Weber State University","UT",-0.209437671362028
+"3957",230807,"Westminster College","UT",0.535011009027078
+"3958",230816,"Bennington College","VT",-0.778881260035935
+"3960",230834,"Castleton University","VT",-0.642070716907472
+"3961",230852,"Champlain College","VT",0.0554129145630908
+"3963",230889,"Goddard College","VT",-1.52558984033768
+"3964",230898,"Green Mountain College","VT",-1.03313998144876
+"3965",230913,"Johnson State College","VT",-1.13701024200009
+"3966",230931,"Lyndon State College","VT",-1.05767226273649
+"3968",230959,"Middlebury College","VT",2.24423212897067
+"3970",230995,"Norwich University","VT",0.502377915593606
+"3972",231059,"Saint Michael's College","VT",0.916187694715332
+"3973",231068,"SIT Graduate Institute","VT",0.671388560455155
+"3974",231077,"College of St Joseph","VT",-0.67823885647787
+"3977",231147,"Vermont Law School","VT",0.275571298998373
+"3979",231174,"University of Vermont","VT",0.803481010090919
+"3982",231420,"Averett University","VA",-0.434337539122595
+"3986",231624,"College of William and Mary","VA",1.99488550147198
+"3987",231651,"Regent University","VA",-0.233677895920927
+"3990",231712,"Christopher Newport University","VA",0.328453826730141
+"3994",231837,"Jefferson College of Health Sciences","VA",0.545750463694466
+"3997",231970,"Eastern Virginia Medical School","VA",-2.79543380624614
+"3999",232025,"Emory & Henry College","VA",-0.313449396309909
+"4000",232043,"Eastern Mennonite University","VA",-0.00436314770797344
+"4003",232186,"George Mason University","VA",1.35344166588408
+"4006",232265,"Hampton University","VA",-0.102575475717084
+"4007",232308,"Hollins University","VA",-0.702998360629547
+"4009",232423,"James Madison University","VA",1.46977929325527
+"4012",232557,"Liberty University","VA",-0.653264506907449
+"4013",232566,"Longwood University","VA",0.111012392284077
+"4015",232609,"Lynchburg College","VA",0.104158935649422
+"4017",232672,"Mary Baldwin College","VA",-0.764174461584519
+"4018",232681,"University of Mary Washington","VA",1.03511973385885
+"4019",232706,"Marymount University","VA",0.508052771698
+"4022",232797,"American National University","VA",-2.56037792751623
+"4026",232937,"Norfolk State University","VA",-1.34603383165121
+"4028",232982,"Old Dominion University","VA",-0.00866746933582576
+"4034",233277,"Radford University","VA",0.228206888567422
+"4037",233301,"Randolph College","VA",-0.444328037955025
+"4042",233374,"University of Richmond","VA",2.12082145646958
+"4046",233541,"Shenandoah University","VA",-0.303539539044651
+"4052",233684,"Strayer University-Virginia","VA",-0.314410742571273
+"4063",233718,"Sweet Briar College","VA",0.0624817837251926
+"4066",233842,"Union Presbyterian Seminary","VA",0.329387524855007
+"4070",233921,"Virginia Polytechnic Institute and State University","VA",1.79708453323019
+"4072",234030,"Virginia Commonwealth University","VA",0.0433443053325987
+"4073",234076,"University of Virginia-Main Campus","VA",2.26967359582374
+"4076",234137,"Virginia University of Lynchburg","VA",2.0470704237056
+"4077",234155,"Virginia State University","VA",-1.17237426259247
+"4078",234164,"Virginia Union University","VA",-1.75654450632496
+"4081",234207,"Washington and Lee University","VA",2.62075628664159
+"4094",234827,"Central Washington University","WA",0.163878725364351
+"4096",234915,"City University of Seattle","WA",-1.00202678851589
+"4103",235097,"Eastern Washington University","WA",-0.153208654817002
+"4107",235167,"The Evergreen State College","WA",-0.727789359962552
+"4110",235316,"Gonzaga University","WA",1.44025104414319
+"4113",235422,"Heritage University","WA",-1.84186327516287
+"4119",235547,"Bastyr University","WA",-1.16725938174866
+"4129",236133,"Northwest University","WA",-0.292957512648741
+"4132",236230,"Pacific Lutheran University","WA",0.697799730080765
+"4134",236328,"University of Puget Sound","WA",1.09400423357965
+"4136",236452,"Saint Martin's University","WA",0.239886878706022
+"4140",236577,"Seattle Pacific University","WA",0.746031211722976
+"4141",236595,"Seattle University","WA",1.39058679724297
+"4150",236896,"Walla Walla University","WA",0.220316973175026
+"4151",236939,"Washington State University","WA",0.800728021938107
+"4155",236948,"University of Washington-Seattle Campus","WA",1.69504675370155
+"4158",237011,"Western Washington University","WA",0.516971259251786
+"4161",237066,"Whitworth University","WA",0.418671251481063
+"4163",237118,"Alderson Broaddus University","WV",0.0140897447147101
+"4172",237312,"University of Charleston","WV",-0.415583600401062
+"4174",237330,"Concord University","WV",-1.13565894568902
+"4176",237367,"Fairmont State University","WV",-1.1335146880215
+"4181",237525,"Marshall University","WV",-0.823871625112283
+"4189",237640,"Ohio Valley University","WV",-1.05798509462732
+"4193",237783,"Salem International University","WV",-1.97455941498659
+"4194",237792,"Shepherd University","WV",-0.622076629488618
+"4197",237880,"West Virginia School of Osteopathic Medicine","WV",-2.30834950074745
+"4198",237899,"West Virginia State University","WV",-1.77938173392239
+"4202",237969,"West Virginia Wesleyan College","WV",0.138686805561347
+"4209",238032,"West Virginia University","WV",0.310411523476813
+"4210",238078,"Wheeling Jesuit University","WV",0.311189460422893
+"4214",238193,"Alverno College","WI",-0.796277432257815
+"4215",238263,"Madison Area Technical College","WI",-1.19063091591874
+"4216",238324,"Bellin College","WI",1.35265298927958
+"4219",238430,"Cardinal Stritch University","WI",0.130902675049555
+"4220",238458,"Carroll University","WI",0.0882189613670217
+"4221",238476,"Carthage College","WI",0.265168913737314
+"4222",238616,"Concordia University-Wisconsin","WI",-0.0403891984373533
+"4223",238661,"Edgewood College","WI",0.21204762085232
+"4229",238980,"Lakeland College","WI",-0.265238871712065
+"4232",239071,"Maranatha Baptist University","WI",-0.870848714256665
+"4233",239080,"Marian University","WI",-0.278423532776294
+"4234",239105,"Marquette University","WI",1.63326906612687
+"4235",239169,"Medical College of Wisconsin","WI",-2.56413439095458
+"4239",239318,"Milwaukee School of Engineering","WI",1.47473902060159
+"4241",239390,"Mount Mary University","WI",-0.531139004679407
+"4242",239424,"Nashotah House","WI",0.329387524855007
+"4246",239503,"Northland International University","WI",-0.763213560092573
+"4249",239637,"Sacred Heart School of Theology","WI",0.665233423663978
+"4250",239716,"Saint Norbert College","WI",0.706854435537089
+"4251",239743,"Silver Lake College of the Holy Family","WI",-0.579502210014909
+"4256",240107,"Viterbo University","WI",-0.172380551265248
+"4260",240189,"University of Wisconsin-Whitewater","WI",0.0915712397280305
+"4262",240213,"Wisconsin School of Professional Psychology","WI",0.329387524855007
+"4264",240268,"University of Wisconsin-Eau Claire","WI",0.441972635023912
+"4265",240277,"University of Wisconsin-Green Bay","WI",-0.30894676232841
+"4266",240329,"University of Wisconsin-La Crosse","WI",0.590510646873037
+"4268",240365,"University of Wisconsin-Oshkosh","WI",-0.0808728639991288
+"4269",240374,"University of Wisconsin-Parkside","WI",-0.843993249805801
+"4270",240392,"Herzing University-Madison","WI",-0.651077423505644
+"4271",240417,"University of Wisconsin-Stout","WI",0.141787612449646
+"4272",240426,"University of Wisconsin-Superior","WI",-0.761735537569685
+"4273",240444,"University of Wisconsin-Madison","WI",1.54080344300435
+"4274",240453,"University of Wisconsin-Milwaukee","WI",-0.204304441941715
+"4275",240462,"University of Wisconsin-Platteville","WI",0.309099885998388
+"4276",240471,"University of Wisconsin-River Falls","WI",-0.0371406361436905
+"4277",240480,"University of Wisconsin-Stevens Point","WI",-0.0405432849712345
+"4287",240727,"University of Wyoming","WY",0.409510087542097
+"4290",240754,"University of Guam","GU",-1.45119682247666
+"4294",241100,"American University of Puerto Rico","PR",-2.6875800019626
+"4295",241128,"American University of Puerto Rico","PR",-2.71625899167761
+"4298",241191,"Universidad Adventista de las Antillas","PR",-2.25599237479553
+"4299",241216,"Atlantic University College","PR",-2.35822217919064
+"4300",241225,"Universidad Central de Bayamon","PR",-2.48339658874908
+"4301",241304,"Columbia Central University-Caguas","PR",-2.60864701036972
+"4302",241331,"Carlos Albizu University-San Juan","PR",-2.13837585667548
+"4303",241377,"Caribbean University-Bayamon","PR",-2.88399116210272
+"4304",241386,"Caribbean University-Carolina","PR",-2.74348760040038
+"4305",241395,"Pontifical Catholic University of Puerto Rico-Arecibo","PR",-2.77827790961758
+"4306",241410,"Pontifical Catholic University of Puerto Rico-Ponce","PR",-2.49275024954072
+"4310",241739,"Universidad Metropolitana","PR",-2.57830188932547
+"4311",241766,"Puerto Rico Conservatory of Music","PR",-1.5775316732665
+"4312",241793,"Center for Advanced Studies On Puerto Rico and the Caribbean","PR",0.329387524855007
+"4327",242617,"Inter American University of Puerto Rico-San German","PR",-2.39262945512288
+"4328",242626,"Inter American University of Puerto Rico-Aguadilla","PR",-2.52426024106335
+"4329",242635,"Inter American University of Puerto Rico-Arecibo","PR",-2.54146034471948
+"4330",242644,"Inter American University of Puerto Rico-Barranquitas","PR",-2.38379887114062
+"4331",242653,"Inter American University of Puerto Rico-Metro","PR",-2.53501167584576
+"4332",242662,"Inter American University of Puerto Rico-Ponce","PR",-2.50776806261217
+"4333",242680,"Inter American University of Puerto Rico-Fajardo","PR",-2.61195191604159
+"4334",242699,"Inter American University of Puerto Rico-Guayama","PR",-2.51215198881597
+"4335",242705,"Inter American University of Puerto Rico-Bayamon","PR",-2.57523665103353
+"4336",242723,"Inter American University of Puerto Rico-School of Law","PR",-2.99140285732878
+"4345",243081,"Ponce School of Medicine and Health Sciences","PR",0.664502522586937
+"4353",243197,"University of Puerto Rico-Mayaguez","PR",1.71694531354632
+"4354",243203,"University of Puerto Rico-Medical Sciences","PR",0.664502522586937
+"4356",243221,"University of Puerto Rico-Rio Piedras","PR",1.31525626940759
+"4357",243346,"Universidad Del Este","PR",-2.77490264561665
+"4359",243443,"Universidad del Sagrado Corazon","PR",-2.24573429431235
+"4360",243498,"Seminario Evangelico de Puerto Rico","PR",0.329387524855007
+"4361",243568,"Universidad Central Del Caribe","PR",1.55148023861952
+"4362",243577,"Universidad Politecnica de Puerto Rico","PR",-1.77711884331541
+"4363",243586,"Pontifical Catholic University of Puerto Rico-Mayaguez","PR",-2.80502283525293
+"4364",243601,"Universidad Del Turabo","PR",-2.70366315639753
+"4367",243665,"University of the Virgin Islands","VI",-1.40175462615147
+"4369",243744,"Stanford University","CA",0.951113860315069
+"4370",243780,"Purdue University-Main Campus","IN",1.38690860863637
+"4372",243823,"Parker University","TX",0.279661219270388
+"4373",243832,"EDP Univeristy of Puerto Rico Inc-San Juan","PR",-2.78015475383798
+"4377",244190,"Widener University-Delaware Law School","DE",1.20634414377572
+"4392",245652,"St. John's College","NM",-0.745541968438652
+"4395",245838,"Antioch University-Los Angeles","CA",-1.69711195599325
+"4396",245847,"Antioch University-Santa Barbara","CA",-1.69711195599325
+"4397",245865,"Antioch University-New England","NH",-1.69711195599325
+"4398",245883,"Antioch University-Seattle","WA",-1.66954075038327
+"4399",245892,"Antioch University-Midwest","OH",-1.69711195599325
+"4400",245953,"Mid-America Christian University","OK",-0.810699742888226
+"4410",246345,"Houston Graduate School of Theology","TX",0.665233423663978
+"4415",246789,"Unification Theological Seminary","NY",0.665233423663978
+"4423",247162,"Ecumenical Theological Seminary","MI",0.664502522586937
+"4429",247825,"Austin Graduate School of Theology","TX",1.00723445926413
+"4461",251312,"South University-Columbia","SC",-2.06347669532522
+"4462",260293,"Everest University-Brandon","FL",-2.23080480012855
+"4471",260901,"Kaplan University-Davenport Campus","IA",-1.56634284286341
+"4475",260956,"Knowledge Systems Institute","IL",0.329387524855007
+"4490",262022,"Bethel Seminary-San Diego","CA",-0.617585051725601
+"4492",262086,"Brandman University","CA",0.442814685266238
+"4514",363721,"University of the District of Columbia-David A Clarke School of Law","DC",-1.82471839923354
+"4515",363907,"Caribbean University-Ponce","PR",-2.8736998928697
+"4516",363916,"Caribbean University-Vega Baja","PR",-2.82056734811244
+"4517",363934,"University of Advancing Technology","AZ",-0.124603947978703
+"4549",365426,"Mayo Graduate School","MN",0.131549092617629
+"4557",366003,"South Florida Bible College and Theological Seminary","FL",2.77122272401137
+"4565",366368,"New York Academy of Art","NY",1.00034842139591
+"4575",366605,"Southwest Acupuncture College-Santa Fe","NM",1.00723445926413
+"4581",366711,"California State University-San Marcos","CA",0.199865060190976
+"4582",366748,"Argosy University-Hawaii","HI",-0.582628522565349
+"4583",366793,"Baptist Theological Seminary at Richmond","VA",1.00034842139591
+"4599",367839,"Colorado Heights University","CO",1.45337470667531
+"4601",367884,"Hodges University","FL",-1.09531158829771
+"4603",367936,"Argosy University-Atlanta","GA",-1.56502629467687
+"4604",367954,"University of St Augustine for Health Sciences","CA",0.664502522586937
+"4622",369002,"Massachusetts School of Law","MA",1.00723445926413
+"4630",369659,"Oregon College of Oriental Medicine","OR",0.329387524855007
+"4673",374024,"Adler Graduate School","MN",1.00034842139591
+"4737",377555,"University of Washington-Bothell Campus","WA",1.39091977159641
+"4738",377564,"University of Washington-Tacoma Campus","WA",1.083921693277
+"4746",378576,"Pacific College of Oriental Medicine-San Diego","CA",1.33047009343733
+"4752",379782,"Center for Advanced Legal Studies","TX",-0.788989878914221
+"4761",380465,"University of Phoenix-Utah","UT",-0.424632613598373
+"4766",381352,"Colorado School of Traditional Chinese Medicine","CO",1.00034842139591
+"4770",381459,"Phoenix Seminary","AZ",0.329387524855007
+"4782",382063,"University of Phoenix-Puerto Rico","PR",-0.36503518305837
+"4795",383020,"Midwest College of Oriental Medicine-Racine","WI",1.00723445926413
+"4815",384306,"Acupuncture and Integrative Medicine College-Berkeley","CA",1.00723445926413
+"4824",385619,"Everglades University","FL",-0.318154555761353
+"4837",390701,"Everest University-South Orlando","FL",-2.18480600177543
+"4865",401223,"World Mission University","CA",2.24677559181979
+"4866",401250,"Yo San University of Traditional Chinese Medicine","CA",1.00034842139591
+"4870",402615,"Colorado Technical University-Sioux Falls","SD",-0.166936323032361
+"4873",402828,"Widener University-Commonwealth Law School","PA",-0.200233394687624
+"4880",404073,"Baker College of Auburn Hills","MI",-2.14087734078894
+"4881",404082,"Baker College of Clinton Township","MI",-2.1136436318298
+"4882",404222,"Inter American University of Puerto Rico-School of Optometry","PR",-2.99140285732878
+"4883",404338,"Schiller International University","FL",1.09352614665289
+"4904",405997,"University of Phoenix-New Mexico","NM",-0.384294549921818
+"4944",407629,"Lake Erie College of Osteopathic Medicine","PA",1.00034842139591
+"4963",409254,"Erikson Institute","IL",0.665233423663978
+"4967",409616,"Roger Williams University School of Law","RI",-0.533883066068078
+"4969",409698,"California State University-Monterey Bay","CA",-0.310293643525922
+"4989",413413,"Capella University","MN",0.0083085029421065
+"4991",413644,"Southwest Acupuncture College-Albuquerque","NM",1.00723445926413
+"5006",414160,"Baker College of Jackson","MI",-2.03371483741184
+"5015",414595,"Pacific College of Oriental Medicine-New York","NY",1.88436252590075
+"5016",414708,"Baker College Center for Graduate Studies","MI",-2.04469315459761
+"5020",414878,"Trine University-Regional/Non-Traditional Campuses","IN",-1.21992890017897
+"5023",414966,"Phillips Theological Seminary","OK",1.00034842139591
+"5079",418126,"New York College of Health Professions","NY",-1.06765386705403
+"5132",419457,"Argosy University-Washington DC","VA",-0.420741207205325
+"5139",420006,"Everest University-Melbourne","FL",-2.26961713158437
+"5141",420042,"University of Phoenix-Hawaii","HI",-0.390502692954937
+"5146",420246,"Southwest College of Naturopathic Medicine & Health Sciences","AZ",1.00034842139591
+"5148",420307,"Virginia College-Birmingham","AL",-2.03650110079247
+"5164",420705,"Bakke Graduate University","TX",0.329387524855007
+"5166",420866,"Argosy University-Schaumburg","IL",0.340478564019826
+"5187",423643,"Midwestern University-Glendale","AZ",-3.07701429617106
+"5193",426314,"Embry-Riddle Aeronautical University-Worldwide","FL",0.903256462062999
+"5213",428259,"Ottawa University-Milwaukee","WI",-1.09331313865719
+"5214",428268,"Argosy University-Tampa","FL",-1.38275589900335
+"5219",429085,"American College of Acupuncture and Oriental Med","TX",1.00723445926413
+"5220",429094,"AOMA Graduate School of Integrative Medicine","TX",1.00723445926413
+"5224",430087,"Colorado Technical University-Greenwood Village","CO",-0.34478631875142
+"5230",430184,"Strayer University-Maryland","MD",-0.540717873728844
+"5251",430591,"American College of Traditional Chinese Medicine","CA",0.664502522586937
+"5252",430670,"San Juan Bautista School of Medicine","PR",0.974771743684455
+"5253",430704,"Texas Health and Science University","TX",1.00034842139591
+"5292",432223,"University of Phoenix-Washington","WA",-0.244102854003561
+"5293",432241,"University of Phoenix-Oregon","OR",-0.46534066889007
+"5296",432348,"Appalachian School of Law","VA",1.00034842139591
+"5297",432357,"LIU Hudson at Westchester","NY",-0.720092509258301
+"5309",433387,"Western Governors University","UT",-0.801981796241022
+"5314",433660,"Florida Gulf Coast University","FL",-0.177107209861757
+"5330",434441,"Florida College of Integrative Medicine","FL",1.00723445926413
+"5343",434715,"Florida Coastal School of Law","FL",1.00034842139591
+"5350",434973,"University of Phoenix-Maryland","MD",-0.565970484718325
+"5351",435000,"Louisiana State University Health Sciences Center-Shreveport","LA",-2.52662930849498
+"5356",436094,"Argosy University-Phoenix","AZ",-1.81653912332512
+"5360",436261,"Southwest Acupuncture College-Boulder","CO",1.00723445926413
+"5364",436438,"Argosy University-Orange County","CA",-1.62398607039195
+"5369",436614,"International Baptist College and Seminary","AZ",1.89853349959965
+"5399",438151,"Stevens-Henager College","UT",-1.57732611782145
+"5413",438498,"Stratford University","VA",-1.32453499047776
+"5415",438586,"American InterContinental University-Atlanta","GA",-0.993597981434862
+"5416",438601,"American InterContinental University-South Florida","FL",-0.810379077730652
+"5424",438902,"Everest University-Jacksonville","FL",-1.99443279356394
+"5426",439020,"Midwest College of Oriental Medicine-Chicago","IL",1.00723445926413
+"5427",439057,"Argosy University-Seattle","WA",-1.64698937791249
+"5434",439297,"University of Phoenix-Ohio","OH",-0.353799446481649
+"5438",439394,"East West College of Natural Medicine","FL",1.00723445926413
+"5441",439446,"Atlantic Institute of Oriental Medicine","FL",1.00723445926413
+"5454",439701,"The King's University","TX",-0.895696261501632
+"5458",439783,"New York College of Traditional Chinese Medicine","NY",1.00723445926413
+"5460",439817,"Northeastern Seminary","NY",0.665233423663978
+"5467",439914,"Seattle Institute of Oriental Medicine","WA",0.329387524855007
+"5469",439969,"Acupuncture and Massage College","FL",-2.0210724566111
+"5473",440031,"Keck Graduate Institute","CA",0.329387524855007
+"5489",440411,"Marlboro College Graduate & Professional Studies","VT",-1.94754161196318
+"5490",440420,"University of Phoenix-Massachusetts","MA",-0.584605349606347
+"5491",440457,"University of Phoenix-Wisconsin","WI",-0.622979011354552
+"5492",440466,"University of Phoenix-Idaho","ID",-0.533095603574083
+"5509",440916,"Southern University Law Center","LA",-1.96364135155927
+"5523",441104,"Richmont Graduate University","TN",0.664502522586937
+"5524",441131,"The Seattle School of Theology & Psychology","WA",0.665233423663978
+"5532",441308,"University of the Rockies","CO",1.00034842139591
+"5542",441478,"National Graduate School of Quality Management","MA",1.00034842139591
+"5546",441511,"Apex School of Theology","NC",2.56628949422335
+"5570",441937,"California State University-Channel Islands","CA",1.95577660998778
+"5577",442064,"Won Institute of Graduate Studies","PA",0.329387524855007
+"5580",442161,"University of Phoenix-Illinois","IL",-0.4340247993889
+"5583",442222,"Argosy University-Dallas","TX",-1.85004898726395
+"5586",442295,"Ave Maria School of Law","FL",1.00034842139591
+"5608",442806,"Edward Via College of Osteopathic Medicine","VA",1.00034842139591
+"5610",442842,"Pacific College of Oriental Medicine-Chicago","IL",2.71622936177803
+"5613",442897,"Ottawa University-Jeffersonville","IN",-1.09331313865719
+"5622",443049,"Faith Evangelical College & Seminary","WA",2.19020533579092
+"5624",443076,"Hood Theological Seminary","NC",1.00034842139591
+"5643",443410,"DigiPen Institute of Technology","WA",1.79160419535697
+"5649",443544,"University of Phoenix-Indiana","IN",-0.629154889341433
+"5660",443702,"Bexley Hall Seabury Western Theological Seminary Federation  Inc.","IL",0.329387524855007
+"5662",443766,"Strayer University-Tennessee","TN",-0.715206362644377
+"5666",443784,"Strayer University-Pennsylvania","PA",-0.575409935510679
+"5685",444103,"Byzantine Catholic Seminary of Saints Cyril and Methodius","PA",0.329387524855007
+"5686",444130,"Northcentral University","AZ",0.862471164218441
+"5687",444158,"Colorado Technical University-Online","CO",-0.311239367815526
+"5708",444413,"Beis Medrash Heichal Dovid","NY",0.437932963407945
+"5728",444699,"Institute of Clinical Acupuncture & Oriental Med","HI",0.665233423663978
+"5731",444723,"Jones International University","CO",0.80735096943018
+"5734",444778,"Charlotte Christian College and Theological Seminary","NC",1.18694941705433
+"5746",445027,"American InterContinental University-Online","IL",-0.745138468434593
+"5752",445133,"American InterContinental University-Houston","TX",-0.771362422939245
+"5753",445188,"University of California-Merced","CA",2.18482677656429
+"5761",445267,"Central Methodist University-College of Graduate and Extended Studies","MO",-1.7179954681995
+"5764",445319,"University of Phoenix-Minnesota","MN",-0.664823160510707
+"5770",445391,"University of Phoenix-Kentucky","KY",-0.67121860971949
+"5787",445735,"Roseman University of Health Sciences","NV",1.00723445926413
+"5797",445869,"Institute for the Psychological Sciences","VA",0.329387524855007
+"5804",446002,"American Academy of Acupuncture and Oriental Medicine","MN",1.00034842139591
+"5805",446039,"Arizona School of Acupuncture and Oriental Medicine","AZ",1.00034842139591
+"5806",446048,"Ave Maria University","FL",1.63579252835009
+"5829",446394,"Maple Springs Baptist Bible College and Seminary","MD",0.267938069870248
+"5844",446640,"Harrisburg University of Science and Technology","PA",1.43687515984025
+"5859",446932,"Union Graduate College","NY",1.00034842139591
+"5877",447272,"Argosy University-Los Angeles","CA",-1.97946560444488
+"5901",447698,"Phoenix Institute of Herbal Medicine & Acupuncture","AZ",1.00034842139591
+"5910",447801,"University of East-West Medicine","CA",1.00723445926413
+"5943",448284,"Doane University-Graduate and Professional Studies","NE",-1.06138145052665
+"5944",448309,"Shorter University-College of Adult & Professional Programs","GA",-0.251931233632383
+"5958",448567,"University of Phoenix-South Carolina","SC",-0.4357343174652
+"5973",448734,"Argosy University-Denver","CO",-1.42633014170269
+"5979",448822,"University of Phoenix-Connecticut","CT",-0.409532388954178
+"5980",448840,"University of South Florida-St Petersburg","FL",-0.462233915237098
+"5986",449038,"Strayer University-Florida","FL",-0.591509994831776
+"6019",449339,"American Public University System","WV",1.4777775316951
+"6057",449870,"University of the West","CA",2.16261303592924
+"6060",449931,"Averett University-Non-Traditional Programs","VA",-1.13842012913255
+"6089",450298,"Strayer University-Delaware","DE",-0.0175155878674805
+"6090",450304,"Brite Divinity School","TX",-0.28147470746003
+"6091",450377,"Strayer University-Alabama","AL",-0.954287166963859
+"6097",450456,"University of Phoenix-Alabama","AL",-0.564822504387102
+"6100",450526,"Argosy University-Inland Empire","CA",-1.56729643281034
+"6101",450535,"Argosy University-Nashville","TN",-1.90256503069995
+"6121",450766,"LIU Riverhead","NY",-0.720092509258301
+"6133",450933,"Columbia Southern University","AL",1.65462124587907
+"6134",450942,"Arizona Summit Law School","AZ",1.00034842139591
+"6137",450979,"Trident University International","CA",1.61462025626238
+"6144",451060,"Digital Media Arts College","FL",1.2352938302249
+"6145",451079,"Academy for Five Element Acupuncture","FL",0.329387524855007
+"6149",451130,"Wolford College","FL",0.664502522586937
+"6176",451510,"Charleston School of Law","SC",0.664502522586937
+"6190",451671,"University of South Florida-Sarasota-Manatee","FL",-1.20250127612032
+"6222",452090,"Argosy University-Salt Lake City","UT",-1.83197882318588
+"6228",453163,"Strayer University-North Carolina","NC",-0.845163883154899
+"6235",453215,"Strayer University-New Jersey","NJ",-1.12729114065688
+"6271",454582,"Ottawa University-Online","KS",-1.09331313865719
+"6277",454689,"Taft University System","CO",1.00034842139591
+"6289",454829,"Aspen University","CO",0.704080769404694
+"6290",454838,"Institute of Taoist Education and Acupuncture","CO",0.664502522586937
+"6315",455099,"Urshan Graduate School of Theology","MO",0.329387524855007
+"6318",455169,"Charlotte School of Law","NC",0.664502522586937
+"6338",455433,"The Chicago School of Professional Psychology at Irvine","CA",1.00034842139591
+"6352",455682,"The Chicago School of Professional Psychology at Westwood","CA",1.00034842139591
+"6361",455804,"Institute of World Politics","DC",0.664502522586937
+"6362",455813,"Pontifical John Paul II Institute for Studies on Marriage and Family","DC",0.329387524855007
+"6379",455992,"Vermont College of Fine Arts","VT",0.664502522586937
+"6401",456348,"Argosy University-Phoenix Online Division","AZ",-1.41126935810647
+"6412",456481,"Polytechnic University of Puerto Rico-Miami","FL",-1.2866417348157
+"6413",456490,"Polytechnic University of Puerto Rico-Orlando","FL",-1.49720579500163
+"6416",456542,"The Commonwealth Medical College","PA",0.329387524855007
+"6422",456621,"Strayer University-West Virginia","WV",-1.2608901637154
+"6435",456834,"Globe University-Minneapolis","MN",-2.46545799689111
+"6456",457271,"Academy for Jewish Religion-California","CA",0.329387524855007
+"6473",457484,"Pacific Rim Christian University","HI",-1.28819862547759
+"6531",458159,"Pinchot University","WA",0.329387524855007
+"6580",458919,"Strayer University-Georgia","GA",-0.869561994982946
+"6591",458964,"Strayer University-South Carolina","SC",-0.492494514477374
+"6621",459222,"Southern California University SOMA","CA",0.329387524855007
+"6669",459736,"Touro University California","CA",0.664502522586937
+"6671",459824,"Touro University Nevada","NV",0.664502522586937
+"6679",459994,"Strayer University-Global Region","DC",-0.80786783323453
