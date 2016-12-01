@@ -28,17 +28,23 @@ dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
 # Proportion of Pell Grant
-dummy['ProportionPellGrant'] = 
+dummy['ProportionPellGrant'] = as.numeric(college$PCTPELL)
 
 # Proportion of low income student
-dummy['ProportionLowIncomeStudent'] = 
+dummy['ProportionLowIncomeStudent'] = as.numeric(college$INC_PCT_LO)
+
   
 # Median debt
-dummy['MedianDebt'] = 
+dummy['MedianDebt'] = as.numeric(college$GRAD_DEBT_MDN)
+
 
 # Percentage of first generation
-dummy['ProportionFirstGeneration'] = 
+dummy['ProportionFirstGeneration'] = as.numeric()
+college$FIRST_GEN
 
+PAR_ED_PCT_1STGEN
+
+FIRSTGEN_COMP_ORIG_YR6_RT
 
 
 # We only take 4-year institute
