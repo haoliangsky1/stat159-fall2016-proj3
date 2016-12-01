@@ -44,9 +44,10 @@ for (i in 1:nrow(dummy)){
   Score[i] = sum(weight * scaledDummy[i, 6:ncol(dummy)])
 }
 
+
 n = nrow(dummy)
 for (i in 1:20) {
-  print(as.vector(college$INSTNM[which(Score == sort(Score,partial=n-i)[n-i])]))
+  print(as.vector(dummy$INSTNM[which(Score == sort(Score,partial=n-i)[n-i])]))
 }
 
 Score[which('Harvard University' == dummy$INSTNM)]
@@ -61,6 +62,27 @@ Score[which('University of California-Berkeley' == dummy$INSTNM)]
 Score[which('University of California-Los Angeles' == dummy$INSTNM)]
 Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
 
-
 summary(Score)
+
+
+dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'Score')]
+CA = dummyScore[dummyScore$STABBR=='CA',]
+for (i in 1:10) {
+  n = nrow(CA)
+  print(as.vector(CA$INSTNM[which(CA$Score == sort(CA$Score,partial=n-i)[n-i])]))
+}
+
+MA = dummyScore[dummyScore$STABBR=='MA',]
+for (i in 1:10) {
+  n = nrow(MA)
+  print(as.vector(MA$INSTNM[which(MA$Score == sort(MA$Score,partial=n-i)[n-i])]))
+}
+
+NY = dummyScore[dummyScore$STABBR=='NY',]
+for (i in 1:10) {
+  n = nrow(NY)
+  print(as.vector(NY$INSTNM[which(NY$Score == sort(NY$Score,partial=n-i)[n-i])]))
+}
+
+
 
