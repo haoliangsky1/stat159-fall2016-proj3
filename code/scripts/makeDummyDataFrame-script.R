@@ -28,6 +28,17 @@ dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
 # Proportion of Pell Grant
+dummy['ProportionPellGrant'] = 
+
+# Proportion of low income student
+dummy['ProportionLowIncomeStudent'] = 
+  
+# Median debt
+dummy['MedianDebt'] = 
+
+# Percentage of first generation
+dummy['ProportionFirstGeneration'] = 
+
 
 
 # We only take 4-year institute
@@ -41,8 +52,9 @@ scaledDummy = dummy[,1:4]
 scaledDummy[,5:ncol(dummy)] <- scale(dummy[,5:ncol(dummy)], center = TRUE, scale = TRUE)
 
 Score = c()
-weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5)
 colnames(dummy)[6:ncol(dummy)]
+weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5)
+
 for (i in 1:nrow(dummy)){
   Score[i] = sum(weight * scaledDummy[i, 6:ncol(dummy)])
 }
