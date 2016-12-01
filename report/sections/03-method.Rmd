@@ -1,0 +1,6 @@
+---
+title: "Stat159 Project 3: Add a title "
+author: "Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen"
+date: "11/27/2016"
+output: pdf_document
+---
