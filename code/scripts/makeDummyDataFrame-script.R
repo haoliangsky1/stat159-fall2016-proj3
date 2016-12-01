@@ -14,21 +14,30 @@ dummy['NetPrice75-110'] = college$NPT44_PUB + college$NPT44_PRIV
 dummy['NetPrice110+'] = college$NPT45_PUB + college$NPT45_PRIV
 
 # Repayment Rate
-dummy['3YearRepay'] = college$COMPL_RPY_3YR_RT
-dummy['5YearRepay'] = college$COMPL_RPY_5YR_RT
-dummy['7YearRepay'] = college$COMPL_RPY_7YR_RT
+dummy['3YearRepay'] = as.numeric(college$COMPL_RPY_3YR_RT)
+dummy['5YearRepay'] = as.numeric(college$COMPL_RPY_5YR_RT)
 
 # Completion Rate
 dummy['4YearCompletion'] = college$C150_4
 
+# Earning
+dummy['10YearMeanEarning'] = as.numeric(college$MN_EARN_WNE_P10)
+dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
+
+# Employment:
+#dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
 # We only take 4-year institute
-dummy = dummy[dummy$HIGHDEG == 4,]
+dummy = dummy[dummy$HIGHDEG %in% c(3,4),]
+
+# Replace all PrivacySuppressed
+dummy[dummy == 'PrivacySuppressed'] = NA
+
+# Mean Centering and Standardizing
+scaledDummy = dummy[,1:3]
+scaledDummy[,4:ncol(dummy)] <- scale(dummy[,4:ncol(dummy)], center = TRUE, scale = TRUE)
+
+Score = c()
 
 
 
-
-'MEDIAN_HH_INC', 'POVERTY_RATE', 'COUNT_NWNE_P10', 'COUNT_WNE_P10', 'MN_EARN_WNE_P10', 'MD_EARN_WNE_P10', 'PCT25_EARN_WNE_P10', 'PCT75_EARN_WNE_P10','SD_EARN_WNE_P10', 'COUNT_WNE_INC1_P10', 'COUNT_WNE_INC2_P10', 'COUNT_WNE_INC3_P10', 'GT_25K_P10', 'GRAD_DEBT_MDN_SUPP', 'COMPL_RPY_3YR_RT_SUPP', 'FIRSTGEN_RPY_3YR_RT_SUPP', 'NOTFIRSTGEN_RPY_3YR_RT_SUPP' 
-
-
-# Standardization
