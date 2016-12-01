@@ -18,6 +18,10 @@ dummy['3YearRepay'] = college$COMPL_RPY_3YR_RT
 dummy['5YearRepay'] = college$COMPL_RPY_5YR_RT
 dummy['7YearRepay'] = college$COMPL_RPY_7YR_RT
 
+# Completion Rate
+dummy['4YearCompletion'] = college$C150_4
+
+
 # We only take 4-year institute
 dummy = dummy[dummy$HIGHDEG == 4,]
 
