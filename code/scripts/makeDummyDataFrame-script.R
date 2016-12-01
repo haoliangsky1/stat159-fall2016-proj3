@@ -5,7 +5,7 @@
 #college = read.csv('data/combinedData.csv')
 
 
-dummy = college[,c(2,3:6)]
+dummy = college[,c('UNITID', 'INSTNM','HIGHDEG','UGDS')]
 # Net Price
 dummy['NetPrice0-30'] =  college$NPT41_PUB + college$NPT41_PRIV
 dummy['NetPrice30-48'] = college$NPT42_PUB + college$NPT42_PRIV
@@ -13,9 +13,14 @@ dummy['NetPrice48-75'] = college$NPT43_PUB + college$NPT43_PRIV
 dummy['NetPrice75-110'] = college$NPT44_PUB + college$NPT44_PRIV
 dummy['NetPrice110+'] = college$NPT45_PUB + college$NPT45_PRIV
 
+# Repayment Rate
+dummy['3YearRepay'] = college$COMPL_RPY_3YR_RT
+dummy['5YearRepay'] = college$COMPL_RPY_5YR_RT
+dummy['7YearRepay'] = college$COMPL_RPY_7YR_RT
 
 # We only take 4-year institute
 dummy = dummy[dummy$HIGHDEG == 4,]
+
 
 
 
