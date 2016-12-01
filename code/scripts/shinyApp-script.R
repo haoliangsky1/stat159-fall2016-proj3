@@ -9,25 +9,26 @@ stateList = college$STABBR
 
 ui = fluidPage(
   # This is the title
-  titlePanel('Hello World'),
+  titlePanel('Custom College Match'),
   
   # Main Panel
-  mainPanel('Please add in some description so that the user can have a general idea of the project'),
+  mainPanel('Custom Colllege Match finds the best schools for you to find the strongest schools for the best value.
+             Based on your information we will show you the top 5 schools for you based on factors such as net price, completion rate, and average earnings after graduation.'),
   
   # Sidebar
   sidebarPanel('whatever you consider fit here'),
   
  
-  fluidRow(
-    column(2,
-           # Select a state
-           selectInput(inputId = 'state', label = 'Choose a State', choices = sort(stateList)),
-           #plotOutput('plot'),
-           # Select Race/Ethnicity
-           selectInput("ethnicity", label = 'Choose Ethnicity',
-                       choices = c('None','White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
-    )
-  ),
+  #fluidRow(
+  #  column(2,
+  #         # Select a state
+  #         selectInput(inputId = 'state', label = 'Choose a State', choices = sort(stateList)),
+  #         #plotOutput('plot'),
+  #         # Select Race/Ethnicity
+  #         selectInput("ethnicity", label = 'Choose Ethnicity',
+  #                     choices = c('None','White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')),
+  #  )
+  #),
   
 	# First Generation
 	radioButtons('firstGeneration', label = 'First Generation?', choices = c('Yes', 'No')),
