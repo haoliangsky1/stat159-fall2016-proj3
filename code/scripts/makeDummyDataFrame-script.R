@@ -28,7 +28,7 @@ dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
 # We only take 4-year institute
-dummy = dummy[dummy$HIGHDEG %in% c(3,4),]
+dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
 
 # Replace all PrivacySuppressed
 dummy[dummy == 'PrivacySuppressed'] = NA
@@ -38,6 +38,19 @@ scaledDummy = dummy[,1:3]
 scaledDummy[,4:ncol(dummy)] <- scale(dummy[,4:ncol(dummy)], center = TRUE, scale = TRUE)
 
 Score = c()
+weight = c(-0.05, -0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.2, 0.5, 0.5)
+colnames(dummy)[5:ncol(dummy)]
+for (i in 1:nrow(dummy)){
+  Score[i] = sum(weight * scaledDummy[i, 5:ncol(dummy)])
+}
 
+n = nrow(dummy)
+for (i in 1:20) {
+  print(as.vector(college$INSTNM[which(Score == sort(Score,partial=n-i)[n-i])]))
+}
 
+Score[which('Harvard University' == dummy$INSTNM)]
+Score[which('Stanford University' == dummy$INSTNM)]
+Score[which('University of California-Berkeley' == dummy$INSTNM)]
+summary(Score)
 
