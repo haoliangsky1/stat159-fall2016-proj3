@@ -5,7 +5,7 @@
 #college = read.csv('data/combinedData.csv')
 
 
-dummy = college[,c('UNITID', 'INSTNM','HIGHDEG','UGDS')]
+dummy = college[,c('UNITID', 'INSTNM','STABBR', 'HIGHDEG','UGDS')]
 # Net Price
 dummy['NetPrice0-30'] =  college$NPT41_PUB + college$NPT41_PRIV
 dummy['NetPrice30-48'] = college$NPT42_PUB + college$NPT42_PRIV
@@ -34,14 +34,14 @@ dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
 dummy[dummy == 'PrivacySuppressed'] = NA
 
 # Mean Centering and Standardizing
-scaledDummy = dummy[,1:3]
-scaledDummy[,4:ncol(dummy)] <- scale(dummy[,4:ncol(dummy)], center = TRUE, scale = TRUE)
+scaledDummy = dummy[,1:4]
+scaledDummy[,5:ncol(dummy)] <- scale(dummy[,5:ncol(dummy)], center = TRUE, scale = TRUE)
 
 Score = c()
-weight = c(-0.05, -0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.2, 0.5, 0.5)
-colnames(dummy)[5:ncol(dummy)]
+weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5)
+colnames(dummy)[6:ncol(dummy)]
 for (i in 1:nrow(dummy)){
-  Score[i] = sum(weight * scaledDummy[i, 5:ncol(dummy)])
+  Score[i] = sum(weight * scaledDummy[i, 6:ncol(dummy)])
 }
 
 n = nrow(dummy)
@@ -50,7 +50,17 @@ for (i in 1:20) {
 }
 
 Score[which('Harvard University' == dummy$INSTNM)]
+Score[which('Massachusetts Institute of Technology' == dummy$INSTNM)]
 Score[which('Stanford University' == dummy$INSTNM)]
+Score[which('Cornell University' == dummy$INSTNM)]
+Score[which('Yale University' == dummy$INSTNM)]
+Score[which('Princeton University' == dummy$INSTNM)]
+Score[which('University of Chicago' == dummy$INSTNM)]
+Score[which('New York University' == dummy$INSTNM)]
 Score[which('University of California-Berkeley' == dummy$INSTNM)]
+Score[which('University of California-Los Angeles' == dummy$INSTNM)]
+Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
+
+
 summary(Score)
 
