@@ -19,6 +19,8 @@ library(xtable)
 library(maps)
 library(shiny)
 library(Hmisc)
+library(ggmap)
+
 
 sink("../../session-info.txt", append = TRUE)
 cat("Session Information\n\n")
