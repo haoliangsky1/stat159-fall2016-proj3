@@ -10,11 +10,11 @@ library(maps)
 
 dummy = college[,c('UNITID', 'INSTNM','STABBR', 'HIGHDEG','UGDS', 'LONGITUDE', 'LATITUDE')]
 # Net Price
-dummy['NetPrice0-30'] =  college$NPT41_PUB + college$NPT41_PRIV
-dummy['NetPrice30-48'] = college$NPT42_PUB + college$NPT42_PRIV
-dummy['NetPrice48-75'] = college$NPT43_PUB + college$NPT43_PRIV
-dummy['NetPrice75-110'] = college$NPT44_PUB + college$NPT44_PRIV
-dummy['NetPrice110+'] = college$NPT45_PUB + college$NPT45_PRIV
+dummy['NetPrice0To30'] =  college$NPT41_PUB + college$NPT41_PRIV
+dummy['NetPrice30To48'] = college$NPT42_PUB + college$NPT42_PRIV
+dummy['NetPrice48To75'] = college$NPT43_PUB + college$NPT43_PRIV
+dummy['NetPrice75To110'] = college$NPT44_PUB + college$NPT44_PRIV
+dummy['NetPrice110Up'] = college$NPT45_PUB + college$NPT45_PRIV
 
 # Repayment Rate
 dummy['3YearRepay'] = as.numeric(college$COMPL_RPY_3YR_RT)
@@ -83,11 +83,12 @@ summary(Score)
 dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'LONGITUDE', 'LATITUDE')]
 dummyScore['Score'] = Score
 stateList = c('AL', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'ID', 'IL', 'IN','IA','KS', 'KY','LA','ME','MD','MA','MI','MN','MS','MO','MT', 'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY')
-dummyScore = dummyScore[dummyScore$STABBR %in% stateList,]
+#dummyScore = dummyScore[dummyScore$STABBR %in% stateList,]
 # Output the csv for shinyApp
 
-write.csv(dummyScore, file = 'data/schoolRanking.csv')
-
+#write.csv(dummyScore, file = 'data/schoolRanking.csv')
+dummy['Score'] = Score
+write.csv(dummy, file = 'data/schoolRanking.csv')
 
 # Preparing data for ggplot
 p = ggplot()
