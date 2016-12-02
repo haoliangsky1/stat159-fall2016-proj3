@@ -70,15 +70,27 @@ ui = fluidPage(
            #numericInput(inputId = 'ACTWriting', label = 'Input ACT Writing Score', value=NA)
     )
   ),
+  sliderInput('I dont know yet',
+              label = 'I dont know yet: ',
+              min = 0, max =100, value = c(0, 100)),
+  
   actionButton("action", label= 'Go'),
   br(),
   fluidRow(
-    DT::dataTableOutput('table')
+    column(2, h1('Lets put some text here'),
+           textOutput('text1')
+           ),
+    column(3, h1('Now is the table'),
+           DT::dataTableOutput('table')
+           )
   ),
   br()
   )
 # Define server logic required to draw a histogram
 server = function(input, output) {
+  output$text1 = renderText({
+    paste('Welcome, student from', input$state)
+  })
   
   output$plot = renderPlot({
     stateName = input$state
