@@ -49,6 +49,9 @@ mapPoints = ggmap(map) +
 mapPoints
 dev.off()
 
+png('code/shinyApp/www/ggplot-schoolDistribution.png')
+mapPoints
+dev.off()
 
 ## Admission Rate, We may use 40% as threshold
 temp = year15[year15$UNITID %in% college$UNITID, ]
@@ -69,6 +72,10 @@ mapPoints = ggmap(map) +
   geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size= 1-ADM_RATE), alpha = .3,
              color = 'red') + scale_size(name = 'Undergraduate Rejection Rate') 
 
+mapPoints
+dev.off()
+
+png('code/shinyApp/www/ggplot-admissionRateDistribution.png')
 mapPoints
 dev.off()
 
