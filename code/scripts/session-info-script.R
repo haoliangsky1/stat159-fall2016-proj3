@@ -21,6 +21,11 @@ library(shiny)
 library(Hmisc)
 library(ggmap)
 library(DT)
+library(RCurl)
+library(RJSONIO)
+library(PKI)
+library(packrat)
+library(rsconnect)
 
 
 sink("../../session-info.txt", append = TRUE)
