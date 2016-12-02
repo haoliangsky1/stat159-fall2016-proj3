@@ -1,7 +1,7 @@
 library(ggmap)
 
 plotGeo = function(stateName, df){
-	if (stateName == 'all') {
+	if (stateName == 'None') {
 		map = get_map(location = 'North America', zoom = 4)
 		mapPoints = ggmap(map) + geom_point(data=df, aes(x = LONGITUDE, y = LATITUDE, size= Score), alpha= .3, color = 'red') + scale_size('Score')
 		} else {
