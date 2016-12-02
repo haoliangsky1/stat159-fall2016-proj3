@@ -8,13 +8,14 @@ library(leaflet)
 library(DT)
 
 source('plotGeo.R')
-source('makeTable.R')
+source('makeRankingTable.R')
+
 
 dummyScore = read.csv('../../data/schoolRanking.csv')
 college = read.csv('../../data/combinedData.csv')
 
 # Preparing data for the ggplot:
-stateList = college$STABBR
+stateList = as.vector(sort(unique(college$STABBR)))
 all_states = map_data('state')
 all_states[]
 
@@ -34,24 +35,24 @@ ui = fluidPage(
     mainPanel(
       h1('Introduction'),
       helpText('Custom Colllege Match finds the best schools for you to find the strongest schools for the best value.
-               Based on your information we will show you the top 5 schools for you based on factors such as net price, completion rate, and average earnings after graduation.'),
+               Based on your information we will show you the top 10 schools for you based on factors such as net price, completion rate, and average earnings after graduation.'),
       fluidRow(
         column(5, h4('Basic Informaiton'), 
-               selectInput(inputId = 'state', label = 'Choose a State', choices = sort(stateList), selected = 'None'),
+               selectInput(inputId = 'state', label = 'Choose a State', choices = c('None', stateList), selected = 'None'),
                # Select Race/Ethnicity
                selectInput(inputId = "ethnicity", label = 'Choose Ethnicity',
-                           choices = c('White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander'), 
+                           choices = c('None','White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander'), 
                            selected= 'None')
       ),
       column(5, h4('Financial Aid'),
              # Select financial aid level - Data has net cost after financial aid based on family income
              selectInput(inputId = 'familyIncome', label = 'Choose family income level', 
-                         choices = c('$0-$30,000','$30,001-$48,000','$48,001-$75,000','$75,001-$110,000','$110,000+')),
+                         choices = c('None','$0-$30,000','$30,001-$48,000','$48,001-$75,000','$75,001-$110,000','$110,000+'), selected = 'None'),
              br(),
              h4('Intended Major'),
              # Select an intended major - Current list is placeholder
              selectInput(inputId = 'intendedMajor', label = 'Choose an intended major', 
-                         choices = c('Computer Science','Literature','Mathematics','Engineering','Social Studies','Visual and Perfoming Arts','Business','History'))
+                         choices = c('None','Computer Science','Literature','Mathematics','Engineering','Social Studies','Visual and Perfoming Arts','Business','History'), selected = 'None')
         
       )
     ),
@@ -89,10 +90,12 @@ ui = fluidPage(
             textOutput('text1'),
             textOutput('text2'),
             h4('lets first show a map:'),
-            plotOutput('map'),
+            plotOutput('mapState'),
             br(),
-            h4('then we may layout the table:'),
+            h4('Here are the schools we recommend. Choose one to proceed:'),
             DT::dataTableOutput('table')
+            #h4('then we may layout the table:'),
+            #DT::dataTableOutput('table')
   )
   )
 # Define server logic required to draw a histogram
@@ -106,15 +109,15 @@ server = function(input, output) {
   })
   
   output$mapNational =renderPlot({
-    plotGeo('all', dummyScore)
+    plotGeo('None', dummyScore)
   })
   
-  output$map = renderPlot({
+  output$mapState = renderPlot({
     stateName = input$state
     plotGeo(stateName, dummyScore)
-    #tags$div(img(src = 'choiceOfState.png'))
-    
   })
+  
+  
   output$table = DT::renderDataTable(DT::datatable({
     stateName = input$state
     ethnicity = input$ethnicity
@@ -123,17 +126,10 @@ server = function(input, output) {
     SATCR = input$SATCriticalReading
     ACTEng = input$ACTEnglish
     ACTMath = input$ACTMath
+    schoolRanking = makeRankingTable(dummyScore, stateName)
     #table = makeTable(dummyScore, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath)
-    table = matrix(1,1)
   }))
-  
-  
-  
-  # First make a graph of the choice of state:
-  #output$plot  = renderPlot({
-  #  stateName = input$state
-  #	})
-}
+  }
 
 # Run the application 
 shinyApp(ui = ui, server = server)
