@@ -4,8 +4,11 @@
 #setwd("~/Desktop/Fall_2016/Stat159/stat159-fall2016-proj3/")
 #college = read.csv('data/combinedData.csv')
 
+library(ggplot2)
+library(maps)
 
-dummy = college[,c('UNITID', 'INSTNM','STABBR', 'HIGHDEG','UGDS')]
+
+dummy = college[,c('UNITID', 'INSTNM','STABBR', 'HIGHDEG','UGDS', 'LONGITUDE', 'LATITUDE')]
 # Net Price
 dummy['NetPrice0-30'] =  college$NPT41_PUB + college$NPT41_PRIV
 dummy['NetPrice30-48'] = college$NPT42_PUB + college$NPT42_PRIV
@@ -42,15 +45,15 @@ dummy['ProportionFirstGeneration'] = as.numeric(college$FIRST_GEN)
 dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
 
 # Replace all PrivacySuppressed
-dummy[dummy == 'PrivacySuppressed'] = NA
+dummy[dummy == 'PrivacySuppressed'] = 0
 
 # Mean Centering and Standardizing
-scaledDummy = dummy[,1:4]
-scaledDummy[,5:ncol(dummy)] <- scale(dummy[,5:ncol(dummy)], center = TRUE, scale = TRUE)
+scaledDummy = dummy[,1:7]
+scaledDummy[,8:ncol(dummy)] <- scale(dummy[,8:ncol(dummy)], center = TRUE, scale = TRUE)
 
 Score = c()
-colnames(dummy)[6:ncol(dummy)]
-weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5, 0.2, -0.1, 0.1)
+colnames(dummy)[8:ncol(dummy)]
+weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.1)
 
 for (i in 1:nrow(dummy)){
   Score[i] = sum(weight * scaledDummy[i, 6:ncol(dummy)])
@@ -77,10 +80,33 @@ Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
 summary(Score)
 
 
-dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR')]
+dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'LONGITUDE', 'LATITUDE')]
 dummyScore['Score'] = Score
+stateList = c('AL', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'ID', 'IL', 'IN','IA','KS', 'KY','LA','ME','MD','MA','MI','MN','MS','MO','MT', 'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY')
+dummyScore = dummyScore[dummyScore$STABBR %in% stateList,]
 # Output the csv for shinyApp
+
 write.csv(dummyScore, file = 'data/schoolRanking.csv')
+
+
+# Preparing data for ggplot
+p = ggplot()
+p = p + geom_polygon(data = all_states, 
+                     aes(x=long, y= lat, group = group), color = 'white')
+temp = dummyScore[dummyScore$STABBR == stateName, ]
+p = p + geom_point(data = temp, aes(x = LONGITUDE, y = LATITUDE, size = Score),
+               color = 'red') + scale_size(name = 'Score')
+p
+
+
+library(ggmap)
+map = get_map(location = 'North America', zoom =4)
+mapPoints = ggmap(map) +
+  geom_point(data = dummyScore, aes(x = LONGITUDE, y = LATITUDE, size= Score), alpha = .3,
+             color = 'red') + scale_size(name = 'Score') 
+
+mapPoints
+
 
 CA = dummyScore[dummyScore$STABBR=='CA',]
 for (i in 1:10) {
