@@ -1,11 +1,27 @@
 #setwd("~/Desktop/Fall_2016/Stat159/stat159-fall2016-proj3/")
 #setwd("C:/Users/andre/Dropbox/College/Fall 16/Stat159/stat159-fall2016-proj3")
-library(ggplot2)
 library(stringr)
 library(shiny)
+library(plyr)
+library(maps)
+library(ggplot2)
+library(grDevices)
+library(leaflet)
 
-college = read.csv('../../data/schoolRanking.csv')
+dummyScore = read.csv('../../data/schoolRanking.csv')
+
+# Preparing data for the ggplot:
 stateList = college$STABBR
+all_states = map_data('state')
+all_states[]
+
+
+
+
+
+
+
+
 
 shinyUI = fluidPage(
   # This is the title
@@ -51,15 +67,45 @@ shinyUI = fluidPage(
            numericInput('ACTWriting', label = 'Input ACT Writing Score', value=NA)
            )
     ),
-  submitButton("Submit")
+  actionButton("action", label= 'Go'),
+  br()
+  
+#  plot('plot')
   #plotOutput('plot'),
 	)
+p = ggplot()
+p = p + geom_polygon(data = all_states[all_states$region == 'california',], 
+                     aes(x=long, y= lat, group = group), color = 'white')
+temp = dummyScore[dummyScore$STABBR == stateName, ]
+temp = temp[order(-temp$Score), ]
+p = p + geom_point(data = temp[1:20,], aes(x = LONGITUDE, y = LATITUDE, size = Score),
+                   color = 'red') + scale_size(name = 'Score')
+p
 
 shinyServer = function(input, output) {
-	output$scatterplot  = renderPlot({
-		name = input$state
-		})
+  stateName =input$state
+  output$plot = renderPlot({
+    stateName = input$state
+    plotGeo()
+  })
+
+
+  
+  # First make a graph of the choice of state:
+	#output$plot  = renderPlot({
+	#  stateName = input$state
+	#	})
 }
+
+plotGeo = function(){
+  map = get_map(location = 'North America', zoom =4)
+  mapPoints = ggmap(map) +
+    geom_point(data = dummyScore, aes(x = LONGITUDE, y = LATITUDE, size= Score), alpha = .3,
+               color = 'red') + scale_size(name = 'Score') 
+  
+  mapPoints
+}
+
 
 shinyApp(ui = shinyUI, server = shinyServer)
 
