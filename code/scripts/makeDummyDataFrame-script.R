@@ -30,21 +30,12 @@ dummy['10YearMedianEarning'] = as.numeric(college$MD_EARN_WNE_P10)
 # Proportion of Pell Grant
 dummy['ProportionPellGrant'] = as.numeric(college$PCTPELL)
 
-# Proportion of low income student
-dummy['ProportionLowIncomeStudent'] = as.numeric(college$INC_PCT_LO)
-
-  
 # Median debt
 dummy['MedianDebt'] = as.numeric(college$GRAD_DEBT_MDN)
 
 
 # Percentage of first generation
-dummy['ProportionFirstGeneration'] = as.numeric()
-college$FIRST_GEN
-
-PAR_ED_PCT_1STGEN
-
-FIRSTGEN_COMP_ORIG_YR6_RT
+dummy['ProportionFirstGeneration'] = as.numeric(college$FIRST_GEN)
 
 
 # We only take 4-year institute
@@ -59,7 +50,7 @@ scaledDummy[,5:ncol(dummy)] <- scale(dummy[,5:ncol(dummy)], center = TRUE, scale
 
 Score = c()
 colnames(dummy)[6:ncol(dummy)]
-weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5)
+weight = c(-0.05, -0.05, -0.05, 0.05, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5, 0.2, -0.1, 0.1)
 
 for (i in 1:nrow(dummy)){
   Score[i] = sum(weight * scaledDummy[i, 6:ncol(dummy)])
@@ -86,7 +77,8 @@ Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
 summary(Score)
 
 
-dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'Score')]
+dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR')]
+dummyScore['Score'] = Score
 # Output the csv for shinyApp
 write.csv(dummyScore, file = 'data/schoolRanking.csv')
 
