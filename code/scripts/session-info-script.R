@@ -20,6 +20,7 @@ library(maps)
 library(shiny)
 library(Hmisc)
 library(ggmap)
+library(DT)
 
 
 sink("../../session-info.txt", append = TRUE)
