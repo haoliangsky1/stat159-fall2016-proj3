@@ -3,15 +3,13 @@
 
 
 
-makeTable = function(df, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath) {
+makeTable = function(df, rawDF, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath) {
 	# We want to deliver a table with essential information for the top 10 choices in state or even nationally
 	state = df[df$STABBR == stateName,]
-	state = state[order(-state$Score),]
-	# Select the first 10 schools
-	state = state[1:10,]
 	schoolID = as.vector(state$UNITID)
 	schoolName = as.vector(state$STABBR)
 	schoolScore = as.numeric(state$Score)
+
 
 	# Create a new data frame for the information
 	result = data.frame('Name' = schoolName)
@@ -33,5 +31,32 @@ makeTable = function(df, stateName, ethnicity, income, SATMath, SATCR, ACTEng, A
 	}
 	result['Net Price for Selected Family Income'] = netPrice
 
+	# Ethnicity
+	temp = rawDF[rawDF$STABBR %in% schoolName, ]
+	choices = c('None','White', 'Black or African American', 'Hispanic', 'Asian', 'American Indian/Alaska Native', 'Native Hawaiian/Pacific Islander')
+	percentageOfEthnicity = c()
+	if (ethnicity == 'White') {
+		percentageOfEthnicity = temp$UGDS_WHITE
+	} else if (ethnicity == 'Black or African American') {
+		percentageOfEthnicity = temp$UGDS_BLACK
+	} else if (ethnicity == 'Hispanic') {
+		percentageOfEthnicity = temp$UGDS_HISP
+	} else if (ethnicity == 'Asian') {
+		percentageOfEthnicity = temp$UGDS_ASIAN
+	} else if (ethnicity == 'American Indian/Alaska Native') {
+		percentageOfEthnicity = temp$UGDS_AIAN
+	} else if (ethnicity == 'Native Hawaiian/Pacific Islander') {
+		percentageOfEthnicity = temp$UGDS_NHPI
+	}
+	result['Percentage of Selected Ethnicity'] = percentageOfEthnicity
 
+
+	output = result[order(-result$Score),]
+	# Select the first 10 schools
+	output = output[1:10,]
+	return(output)
 }
+
+
+
+
