@@ -7,6 +7,7 @@ library(plyr)
 library(maps)
 library(ggplot2)
 library(grDevices)
+library(ggmap)
 args = commandArgs(trailingOnly =TRUE)
 college = read.csv(args[1], header =T)
 college = college[,2:ncol(college)]
@@ -34,13 +35,18 @@ stateData = stateData[is.na(stateData$UGDS) == FALSE,]
 
 # Output as plot
 png('images/ggplot-schoolDistribution.png')
-p = ggplot()
-p = p + geom_polygon(data = all_states, 
-                     aes(x=long, y= lat, group = group), color = 'white')
-p = p + geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size = UGDS),
-                   color = 'red') + scale_size(name = 'Undergraduate Enrollment ')
-#p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
-p
+# p = ggplot()
+# p = p + geom_polygon(data = all_states, 
+#                      aes(x=long, y= lat, group = group), color = 'white')
+# p = p + geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size = UGDS),
+#                    color = 'red') + scale_size(name = 'Undergraduate Enrollment ')
+# p
+map = get_map(location = 'North America', zoom =4)
+mapPoints = ggmap(map) +
+  geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size= UGDS), alpha = .3,
+             color = 'red') + scale_size(name = 'Undergraduate Enrollment') 
+
+mapPoints
 dev.off()
 
 
@@ -51,13 +57,19 @@ admissionData =  temp[!is.na(temp$ADM_RATE), ]
 admissionData = admissionData[admissionData$ADM_RATE < 0.4, ]
 # Output as plot
 png('images/ggplot-admissionRateDistribution.png')
-p = ggplot()
-p = p + geom_polygon(data = all_states, 
-                     aes(x=long, y= lat, group = group), color = 'white')
-p = p + geom_point(data = admissionData, aes(x = LONGITUDE, y = LATITUDE, size = 1-ADM_RATE),
-                   color = 'red') + scale_size(name = 'Undergraduate Rejection Rate')
-#p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
-p
+# p = ggplot()
+# p = p + geom_polygon(data = all_states, 
+#                      aes(x=long, y= lat, group = group), color = 'white')
+# p = p + geom_point(data = admissionData, aes(x = LONGITUDE, y = LATITUDE, size = 1-ADM_RATE),
+#                    color = 'red') + scale_size(name = 'Undergraduate Rejection Rate')
+# #p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
+# p
+map = get_map(location = 'North America', zoom =4)
+mapPoints = ggmap(map) +
+  geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size= 1-ADM_RATE), alpha = .3,
+             color = 'red') + scale_size(name = 'Undergraduate Rejection Rate') 
+
+mapPoints
 dev.off()
 
 
