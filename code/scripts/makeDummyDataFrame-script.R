@@ -78,6 +78,20 @@ Score[which('University of California-Los Angeles' == dummy$INSTNM)]
 Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
 
 summary(Score)
+Score = Score + ()
+
+normalize = function(vec) {
+  rangeOfVec = max(vec, na.rm= T) - min(vec, na.rm = T)
+  if (rangeOfVec == 0) {
+    rangeOfVec = 1
+  }
+  result = vec + rangeOfVec
+  multiplier = 100 / rangeOfVec
+  return(result * multiplier)
+
+}
+
+Score = round(Score, digit = 2)
 
 
 dummyScore = dummy[,c('UNITID', 'INSTNM', 'STABBR', 'LONGITUDE', 'LATITUDE')]
