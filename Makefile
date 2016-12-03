@@ -2,8 +2,10 @@
 .PHONY: all data clean tests eda report slides session
 
 # Output
-rmd = report/sections/*.Rnw
-
+csv = data/*.csv
+RData = data/*.RData
+png = images/*.png
+rnw = report/sections/*.Rnw
 
 # PHONY targets
 all: $(output)
@@ -15,13 +17,13 @@ data:
 	curl -O https://ed-public-download.apps.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip
 	mv CollegeScorecard_Raw_Data.zip data/CollegeScorecard_Raw_Data.zip
 	unzip data/CollegeScorecard_Raw_Data.zip -d data/rawData/
-	python code/function/cleanUp.py
 
 	# The Post-school earnings data set
 	curl -O https://ed-public-download.apps.cloud.gov/downloads/Most-Recent-Cohorts-Treasury-Elements.csv
 	mv Most-Recent-Cohorts-Treasury-Elements.csv data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv
 
 	# Merge the data
+	python code/function/cleanUp.py
 	Rscript code/scripts/mergeData-script.R
 
 tests:
@@ -33,12 +35,11 @@ eda:
 	Rscript code/scripts/eda-script.R data/combinedData.csv
 
 
-report:
+report: $(rnw)
 	# concatinate the files into one
-	cat$(rnw) > report/report.Rnw
+	#cat $(rnw) > report/report.Rnw
 	# generate report.pdf
-	Rscript -e 'library(rsweave); render("report/report.Rnw")'
-
+	Rscript -e "library(knitr); knit2pdf('report/report.Rnw', output = 'report/report.tex')"
 
 shinyApp:
 	# generate the shinyApp for the project
