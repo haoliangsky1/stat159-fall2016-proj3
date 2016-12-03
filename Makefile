@@ -28,7 +28,7 @@ data:
 
 tests:
 	# run the unit tests of the self-defiend functions
-	Rscript code/test-that.
+	Rscript code/test-that.R
 
 eda:
 	# perform the exploratory data analysis
