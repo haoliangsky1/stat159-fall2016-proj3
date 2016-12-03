@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 NOV 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2016 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**02-data.tex
-(./02-data.tex
+**00-abstract.tex
+(./00-abstract.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -78,8 +78,8 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./02-data.aux)
-\openout1 = `02-data.aux'.
+(./00-abstract.aux)
+\openout1 = `00-abstract.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -155,124 +155,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 57.
+(Font)              <12> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 57.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 57.
-
-Overfull \hbox (31.54706pt too wide) in paragraph at lines 64--65
-\OT1/cmr/m/n/10 goals". The link to the data can be found [here](https://colleg
-escorecard.ed.gov/data/).
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
-
-Overfull \hbox (91.30638pt too wide) in paragraph at lines 79--86
- [][] 
- []
+(Font)              <6> on input line 58.
 
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package color Info: Redefining color shadecolor on input line 97.
-
-<../../images/ggplot-schoolDistribution.png, id=10, 481.8pt x 481.8pt>
-File: ../../images/ggplot-schoolDistribution.png Graphic file (type png)
-
-<use ../../images/ggplot-schoolDistribution.png>
-Package pdftex.def Info: ../../images/ggplot-schoolDistribution.png used on inp
-ut line 99.
-(pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
-Package color Info: Redefining color shadecolor on input line 112.
-
-<../../images/ggplot-admissionRateDistribution.png, id=12, 481.8pt x 481.8pt>
-File: ../../images/ggplot-admissionRateDistribution.png Graphic file (type png)
-
-
-<use ../../images/ggplot-admissionRateDistribution.png>
-Package pdftex.def Info: ../../images/ggplot-admissionRateDistribution.png used
- on input line 114.
-(pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
- [2 <../../images/ggplot-schoolDistribution.png>] [3 <../../images/ggplot-admis
-sionRateDistribution.png>]
-Package color Info: Redefining color shadecolor on input line 202.
- <../../images/piechart-enrollmentEthnicity.png, id=22, 481.8pt x 481.8pt>
-File: ../../images/piechart-enrollmentEthnicity.png Graphic file (type png)
-
-<use ../../images/piechart-enrollmentEthnicity.png>
-Package pdftex.def Info: ../../images/piechart-enrollmentEthnicity.png used on 
-input line 204.
-(pdftex.def)             Requested size: 250.93842pt x 250.93442pt.
-
-Overfull \hbox (126.55676pt too wide) in paragraph at lines 219--227
- [][] 
- []
-
-<../../images/histogram-SATCRMedian.png, id=23, 481.8pt x 481.8pt> [4 <../../im
-ages/piechart-enrollmentEthnicity.png>]
-File: ../../images/histogram-SATCRMedian.png Graphic file (type png)
-
-<use ../../images/histogram-SATCRMedian.png>
-Package pdftex.def Info: ../../images/histogram-SATCRMedian.png used on input l
-ine 240.
-(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
-
-Overfull \hbox (24.72311pt too wide) in paragraph at lines 247--254
- [][] 
- []
-
-<../../images/histogram-SATMTMedian.png, id=28, 481.8pt x 481.8pt>
-File: ../../images/histogram-SATMTMedian.png Graphic file (type png)
-
-<use ../../images/histogram-SATMTMedian.png>
-Package pdftex.def Info: ../../images/histogram-SATMTMedian.png used on input l
-ine 262.
-(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
-
-Overfull \hbox (24.72311pt too wide) in paragraph at lines 269--276
- [][] 
- []
-
-[5 <../../images/histogram-SATCRMedian.png> <../../images/histogram-SATMTMedian
-.png>] <../../images/histogram-ACTENMedian.png, id=34, 481.8pt x 481.8pt>
-File: ../../images/histogram-ACTENMedian.png Graphic file (type png)
-
-<use ../../images/histogram-ACTENMedian.png>
-Package pdftex.def Info: ../../images/histogram-ACTENMedian.png used on input l
-ine 286.
-(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
-
-<../../images/histogram-ACTMTMedian.png, id=35, 481.8pt x 481.8pt>
-File: ../../images/histogram-ACTMTMedian.png Graphic file (type png)
-
-<use ../../images/histogram-ACTMTMedian.png>
-Package pdftex.def Info: ../../images/histogram-ACTMTMedian.png used on input l
-ine 308.
-(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
- [6 <../../images/histogram-ACTENMedian.png> <../../images/histogram-ACTMTMedia
-n.png>] [7] [8] (./02-data.aux) ) 
+(./00-abstract.aux) ) 
 Here is how much of TeX's memory you used:
- 1665 strings out of 493014
- 25098 string characters out of 6133351
- 87678 words of memory out of 5000000
- 5193 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 1622 strings out of 493014
+ 23565 string characters out of 6133351
+ 81678 words of memory out of 5000000
+ 5160 multiletter control sequences out of 15000+600000
+ 7280 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,23p,631b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb>
-Output written on 02-data.pdf (8 pages, 262407 bytes).
+ 38i,6n,23p,289b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb>
+Output written on 00-abstract.pdf (1 page, 48041 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
