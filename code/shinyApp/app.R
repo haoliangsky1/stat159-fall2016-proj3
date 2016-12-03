@@ -38,6 +38,7 @@ ui = fluidPage(
                Based on your information we will show you the top 10 schools for you based on factors such as net price, completion rate, and average earnings after graduation.'),
       fluidRow(
         column(5, h4('Basic Informaiton'), 
+               # take out states like AS
                selectInput(inputId = 'state', label = 'Choose a State', choices = c('None', stateList), selected = 'None'),
                # Select Race/Ethnicity
                selectInput(inputId = "ethnicity", label = 'Choose Ethnicity',
