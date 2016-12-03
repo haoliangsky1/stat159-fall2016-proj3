@@ -1,21 +1,21 @@
-This folder contains the codes that are used in the production of this project.
+Welcome to the code/ directory. This folder contains the code that is used in the production of this project.
 
-The *functions* folder currently contains the python script for parsing and cleaning the raw dataset. Any users of this project are welcome to adding any scripts that may be convenient for specific purpose.
+The *functions*/ subdirectory contains the python scripts for parsing and cleaning the raw college scorecard dataset. Any users of this project are welcome to add any scripts that they desire for any purpose.
 
-The *scripts* contains:
+The *scripts*/ subdirectory contains:
 
-* *eda-script.R* contains the code for Exploratory Data Analysis (EDA) for this project, including:
+* *eda-script.R* carries out Exploratory Data Analysis (EDA) on the data to gain a semblance of understanding - including:
 
-    -  Calculating the summary statistics of ......
+    -  Calculating the summary statistics
 
-    - Drawing histograms, piecharts, and boxplots for ......
+    - Drawing histograms, piecharts, and boxplots
 
-    - Creating frequency tables, including........
+    - Creating frequency tables
 
-    - 
+    - And various other exploratory activities.
 
-* *mergeData-script.R * contains the code for merging the dataset parsed by the python code mentioned above. It takes in five years of data for educational institutions and the post graduation salary dataset and returns a merged dataset.
+* *mergeData-script.R* merges the dataset parsed by the python code mentioned above. It takes in the last five years of data for educational institutions and the post graduation salary dataset, returning a merged dataset.
 
-* *session-info-script.R* contains the code for print the session information and environment for this project, including any R packages used for this project.
+* *session-info-script.R* prints the session information and environment for this project, including all R packages used for this project.
 
-* *shinyApp-script.R* contains the code for generating the shinyApp for this project.
+* *shinyApp-script.R* generates the shinyApp for this project.
