@@ -25,6 +25,7 @@ data:
 	# Merge the data
 	python code/function/cleanUp.py
 	Rscript code/scripts/mergeData-script.R
+	cp -b data/combinedData.csv code/shinyApp/combinedData.csv
 
 tests:
 	# run the unit tests of the self-defiend functions
@@ -42,7 +43,10 @@ report: $(rnw)
 	Rscript -e "library(knitr); knit2pdf('report/report.Rnw', output = 'report/report.tex')"
 
 shinyApp:
+	Rscript code/script/makeDummyDataFrame-script.R data/combinedData.csv
 	# generate the shinyApp for the project
+	Rscript -e "shiny::runApp('code/shinyApp')"
+
 
 
 slides:
