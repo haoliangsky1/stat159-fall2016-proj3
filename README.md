@@ -1,6 +1,6 @@
 # stat159-fall2016-proj3: 
 # College. Where should I apply? 
-####An interactive app to help you decide
+###An interactive app to help you decide
 
 ## Introduction
 
