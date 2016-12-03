@@ -11,13 +11,14 @@ source('plotGeo.R')
 source('makeRankingTable.R')
 
 
-dummyScore = read.csv('../../data/schoolRanking.csv')
-college = read.csv('../../data/combinedData.csv')
+dummyScore = read.csv('schoolRanking.csv')
+college = read.csv('combinedData.csv')
 
 # Preparing data for the ggplot:
-stateList = as.vector(sort(unique(college$STABBR)))
+stateList = c('AL', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'ID', 'IL', 'IN','IA','KS', 'KY','LA','ME','MD','MA','MI','MN','MS','MO','MT', 'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY')
+
 all_states = map_data('state')
-all_states[]
+
 
 # Define UI for the application 
 ui = fluidPage(
