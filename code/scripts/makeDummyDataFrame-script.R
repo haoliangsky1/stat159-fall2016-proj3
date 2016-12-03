@@ -4,8 +4,13 @@
 #setwd("~/Desktop/Fall_2016/Stat159/stat159-fall2016-proj3/")
 #college = read.csv('data/combinedData.csv')
 
+args = commandArgs(trailingOnly =TRUE)
+college = read.csv(args[1], header =T)
+college = college[,2:ncol(college)]
+
 library(ggplot2)
 library(maps)
+source('code/functions/normalize.R')
 
 
 dummy = college[,c('UNITID', 'INSTNM','STABBR', 'HIGHDEG','UGDS', 'LONGITUDE', 'LATITUDE')]
@@ -77,19 +82,9 @@ Score[which('University of California-Berkeley' == dummy$INSTNM)]
 Score[which('University of California-Los Angeles' == dummy$INSTNM)]
 Score[which('Ohio State University-Main Campus' == dummy$INSTNM)]
 
+Score = normalize(Score, 0, 100)
 summary(Score)
-Score = Score + ()
 
-normalize = function(vec) {
-  rangeOfVec = max(vec, na.rm= T) - min(vec, na.rm = T)
-  if (rangeOfVec == 0) {
-    rangeOfVec = 1
-  }
-  result = vec + rangeOfVec
-  multiplier = 100 / rangeOfVec
-  return(result * multiplier)
-
-}
 
 Score = round(Score, digit = 2)
 
@@ -103,6 +98,9 @@ stateList = c('AL', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'ID', 'IL', 
 #write.csv(dummyScore, file = 'data/schoolRanking.csv')
 dummy['Score'] = Score
 write.csv(dummy, file = 'data/schoolRanking.csv')
+write.csv(dummy, file = 'code/shinyApp/schoolRanking.csv')
+
+
 
 # Preparing data for ggplot
 p = ggplot()
