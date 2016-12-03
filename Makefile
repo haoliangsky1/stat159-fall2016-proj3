@@ -60,6 +60,7 @@ clean:
 	# Clean 
 	# rm -f session-info.txt
 	# rm -f data/*.csv
+	# rm -f data/rData/*.*
 	# rm -f images/*.*
 	# rm -f report/*.pdf
 	

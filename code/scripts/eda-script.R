@@ -8,6 +8,7 @@ library(maps)
 library(ggplot2)
 library(grDevices)
 library(ggmap)
+source('code/functions/getSummary.R')
 args = commandArgs(trailingOnly =TRUE)
 college = read.csv(args[1], header =T)
 college = college[,2:ncol(college)]
@@ -34,7 +35,8 @@ stateData = stateData[stateData$STABBR %in% stateList,]
 stateData = stateData[is.na(stateData$UGDS) == FALSE,]
 
 # Output as plot
-png('images/ggplot-schoolDistribution.png')
+print('plotting: ggmap-schoolDistribution.png')
+png('images/ggmap-schoolDistribution.png')
 # p = ggplot()
 # p = p + geom_polygon(data = all_states, 
 #                      aes(x=long, y= lat, group = group), color = 'white')
@@ -49,7 +51,7 @@ mapPoints = ggmap(map) +
 mapPoints
 dev.off()
 
-png('code/shinyApp/www/ggplot-schoolDistribution.png')
+png('code/shinyApp/www/ggmap-schoolDistribution.png')
 mapPoints
 dev.off()
 
@@ -59,7 +61,8 @@ temp = temp[temp$STABBR %in% stateList, ]
 admissionData =  temp[!is.na(temp$ADM_RATE), ]
 admissionData = admissionData[admissionData$ADM_RATE < 0.4, ]
 # Output as plot
-png('images/ggplot-admissionRateDistribution.png')
+print('plotting: ggmap-admissionRateDistribution.png')
+png('images/ggmap-admissionRateDistribution.png')
 # p = ggplot()
 # p = p + geom_polygon(data = all_states, 
 #                      aes(x=long, y= lat, group = group), color = 'white')
@@ -75,7 +78,7 @@ mapPoints = ggmap(map) +
 mapPoints
 dev.off()
 
-png('code/shinyApp/www/ggplot-admissionRateDistribution.png')
+png('code/shinyApp/www/ggmap-admissionRateDistribution.png')
 mapPoints
 dev.off()
 
@@ -85,9 +88,11 @@ HBCUTable = count(college, 'HBCU')
 HBCUTable[,1] = c('No', 'Yes')
 HBCUTable$RelativeFrequency = HBCUTable$freq / sum(HBCUTable$freq)
 colnames(HBCUTable)[2] = 'Frequency'
+print('table: Flag for Historically Black College and University')
 save(HBCUTable, file = 'data/rData/table-HBCU.RData')
 
 
+print('table: Flag for predominantly black institution')
 # Flag for predominantly black institution
 PBITable = count(college, 'PBI')
 PBITable[,1] = c('No', 'Yes')
@@ -95,7 +100,7 @@ PBITable$RelativeFrequency = PBITable$freq / sum(PBITable$freq)
 colnames(PBITable)[2] = 'Frequency'
 save(PBITable, file = 'data/rData/table-PBI.RData')
 
-
+print('table: Flag for Alaska Native Hawaiian serving institution')
 # Flag for Alaska Native Hawaiian serving institution
 ANNHITable = count(college, 'ANNHI')
 ANNHITable[,1] = c('No', 'Yes')
@@ -103,7 +108,7 @@ ANNHITable$RelativeFrequency = ANNHITable$freq / sum(ANNHITable$freq)
 colnames(ANNHITable)[2] = 'Frequency'
 save(ANNHITable, file = 'data/rData/table-ANNHI.RData')
 
-
+print('table: Flag for tribal college and university')
 # Flag for tribal college and university
 TRIBALTable = count(college, 'TRIBAL')
 TRIBALTable[,1] = c('No', 'Yes')
@@ -111,7 +116,7 @@ TRIBALTable$RelativeFrequency = TRIBALTable$freq / sum(TRIBALTable$freq)
 colnames(TRIBALTable)[2] = 'Frequency'
 save(TRIBALTable, file = 'data/rData/table-TRIBAL.RData')
 
-
+print('table: Flag for Asian American Native American PacificIslander-serving institution')
 # Flag for Asian American Native American PacificIslander-serving institution
 AANAPIITable = count(college, 'AANAPII')
 AANAPIITable[,1] = c('No', 'Yes')
@@ -119,7 +124,7 @@ AANAPIITable$RelativeFrequency = AANAPIITable$freq / sum(AANAPIITable$freq)
 colnames(AANAPIITable)[2] = 'Frequency'
 save(AANAPIITable, file = 'data/rData/table-AANAPII.RData')
 
-
+print('table: Flag for Hispanic-serving institution')
 # Flag for Hispanic-serving institution
 HSITable = count(college, 'HSI')
 HSITable[,1] = c('No', 'Yes')
@@ -142,6 +147,7 @@ ugdsNhpi = college$UGDS_NHPI
 # Total Share of enrollment of undergraduate degree-seeking students who are non-resident aliens
 ugdsNra = college$UGDS_NRA
 
+print('plotting: piechart-enrollmentEthnicity.png')
 ugdsPiechart = c(mean(ugdsWhite), mean(ugdsBlack), mean(ugdsHisp), mean(ugdsAsian), mean(ugdsAian),  mean(ugdsNhpi) ,mean(ugdsNra))
 #save(ugdsPiechart, file = 'data/rData/ugdsPiechart.RData')
 png('images/piechart-enrollmentEthnicity.png')
@@ -152,28 +158,31 @@ dev.off()
 
 
 # Make a parrelle plot here to compare the net price of public and private institutions
-par(mfrow=c(1,2))
-hist(college$NPT4_PUB[college$NPT4_PUB>0])
-hist(college$NPT4_PRIV[college$NPT4_PRIV>0])
-par(mfrow=c(1,1))
+
+# par(mfrow=c(1,2))
+# hist(college$NPT4_PUB[college$NPT4_PUB>0])
+# hist(college$NPT4_PRIV[college$NPT4_PRIV>0])
+# par(mfrow=c(1,1))
 
 NPPub = getSummary(college$NPT4_PUB[college$NPT4_PUB>0])
 NPPriv = getSummary(college$NPT4_PRIV[college$NPT4_PRIV>0])
 NPTable = rbind(NPPub, NPPriv)
 rownames(NPTable) = c('Public', 'Private')
+print('table: netPrice')
 save(NPTable, file = 'data/rData/table-netPrice.RData')
 
 temp = college$COSTT4_A
 
-png('images/ggplot-schoolDistribution.png')
-p = ggplot()
-p = p + geom_polygon(data = all_states, 
-                     aes(x=long, y= lat, group = group), color = 'white')
-p = p + geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size = COSTT4_A),
-                   color = 'red') + scale_size(name = 'Average Cost of Attendance ')
-#p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
-p
-dev.off()
+
+# png('images/ggplot-schoolDistribution.png')
+# p = ggplot()
+# p = p + geom_polygon(data = all_states, 
+#                      aes(x=long, y= lat, group = group), color = 'white')
+# p = p + geom_point(data = stateData, aes(x = LONGITUDE, y = LATITUDE, size = COSTT4_A),
+#                    color = 'red') + scale_size(name = 'Average Cost of Attendance ')
+# #p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
+# p
+# dev.off()
 
 
 temp = college$TUITIONFEE_IN
@@ -183,20 +192,13 @@ temp = college$TUITIONFEE_PROG
 
 temp = college$INEXPFTE
 
-# Compute the summary statistics for quantitative variables
-getSummary = function(vector){
-  temp = matrix(nrow = 1, ncol = 9, byrow= T)
-  temp[1,] = c(min(vector, na.rm=T), max(vector, na.rm=T), (max(vector, na.rm=T) - min(vector, na.rm=T)), median(vector, na.rm=T), quantile(vector, na.rm=T)[[2]], quantile(vector, na.rm=T)[[4]], IQR(vector, na.rm=T), mean(vector, na.rm=T),sd(vector, na.rm=T))
-  colnames(temp) = c('Min.', 'Max.', 'Range', 'Median', '25th', '75th', 'IQR', 'Mean', 'SD')
-  return(temp)
-}
-
 
 
 # Entrance Test Score Summary
 # SAT
 SATCR = college$SATVRMID
 SATCR = SATCR[SATCR != 0]
+print('plotting: histogram-SATCRMedian.png')
 png('images/histogram-SATCRMedian.png')
 hist(SATCR, main = 'Histogram of Median of SAT Critical Reading Scores')
 #abline(v = mean(SATCR), col = 'red')
@@ -207,6 +209,7 @@ length(SATCR)
 
 SATMT = college$SATMTMID
 SATMT = SATMT[SATMT != 0]
+print('plotting: histogram-SATMTMedian.png')
 png('images/histogram-SATMTMedian.png')
 hist(SATMT, main = 'Histogram of Median of SAT Math Scores')
 dev.off()
@@ -216,6 +219,7 @@ save(SATMTTable, file = 'data/rData/table-SATMT.RData')
 # ACT
 ACTEN = college$ACTENMID
 ACTEN = ACTEN[ACTEN != 0]
+print('plotting: histogram-ACTENMedian.png')
 png('images/histogram-ACTENMedian.png')
 hist(ACTEN, main = 'Histogram of Median of ACT English')
 dev.off()
@@ -227,6 +231,7 @@ length(ACTEN)
 
 ACTMT = college$ACTMTMID
 ACTMT = ACTMT[ACTMT != 0]
+print('plotting: histogram-ACTMTMedian.png')
 png('images/histogram-ACTMTMedian.png')
 hist(ACTMT, main = 'Histogram of Median of ACT Math')
 dev.off()
