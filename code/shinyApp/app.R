@@ -152,11 +152,12 @@ server = function(input, output) {
     stateName = input$state
     ethnicity = input$ethnicity
     income = input$familyIncome
+    major = input$intendedMajor
     satMath = input$SATMath
     satCR = input$SATCriticalReading
     actEng = input$ACTEnglish
     actMath = input$ACTMath
-    schoolTable = makeSchoolTable(dummy, college, id, stateName, ethnicity, income, satMath, satCR, actEng, actMath)
+    schoolTable = makeSchoolTable(dummy, college, id, stateName, ethnicity, income, major, satMath, satCR, actEng, actMath)
   }))
   }
 
