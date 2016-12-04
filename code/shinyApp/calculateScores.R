@@ -1,9 +1,9 @@
 # This function calculates the Scores given the input of the user
 library(microbenchmark)
 
-calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefaultWeights=FALSE, major) {
+calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, major = 'None', useDefaultWeights=FALSE) {
 	if (useDefaultWeights == TRUE) {
-		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, rep(0.1,9))
+		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)
 	} else {
 	  weight = rep(0, 22)
 	  if (income == '$0-$30,000') {
@@ -38,25 +38,27 @@ calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefault
 	    weight[13] = 0.2
 	  }
 	  #Intended Major
-	  if (major == 'Computer Science') {
-	    weight[14] = 0.5
-	    } else if (major == 'Literature') {
-	      weight[15] = 0.5
-	      } else if (major == 'Mathematics/Statistics'){
-	        weight[16] = 0.5
-	        } else if (major == 'Engineering') {
-	          weight[17] = 0.5
-	          } else if (major == 'Social Studies/Humanities') {
-	            weight[18] = 0.5
-	            } else if (major == 'Visual and Performing Arts') {
-	              weight[19] = 0.5
-	              } else if (major == 'Business') {
-	                weight[20] = 0.5
-	                } else if (major == 'History') {
-	                  weight[21] = 0.5
-	                  } else if (major == 'Life Science/Health') {
-	                    weight[22] = 0.5
-	                    }
+	  if (major == 'None') {
+	    weight[14:22] = 0.1
+	    } else if (major == 'Computer Science') {
+	      weight[14] = 0.5
+	      } else if (major == 'Literature') {
+	        weight[15] = 0.5
+	        } else if (major == 'Mathematics/Statistics'){
+	          weight[16] = 0.5
+	          } else if (major == 'Engineering') {
+	            weight[17] = 0.5
+	            } else if (major == 'Social Studies/Humanities') {
+	              weight[18] = 0.5
+	              } else if (major == 'Visual and Performing Arts') {
+	                weight[19] = 0.5
+	                } else if (major == 'Business') {
+	                  weight[20] = 0.5
+	                  } else if (major == 'History') {
+	                    weight[21] = 0.5
+	                    } else if (major == 'Life Science/Health') {
+	                      weight[22] = 0.5
+	                      }
 	}
 	# Centralization
 	df = centralization(dummy)

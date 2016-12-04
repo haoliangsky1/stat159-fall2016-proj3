@@ -52,7 +52,8 @@ ui = fluidPage(
              h4('Intended Major'),
              # Select an intended major - Current list is placeholder
              selectInput(inputId = 'intendedMajor', label = 'Choose an intended major', 
-                         choices = c('None','Computer Science','Literature','Mathematics/Statistics','Engineering','Social Studies/Humanities','Visual and Perfoming Arts','Business','History', 'Life Science/Health'), selected = 'None')
+                         choices = c('None','Computer Science','Literature','Mathematics/Statistics','Engineering','Social Studies/Humanities',
+                                     'Visual and Perfoming Arts','Business','History', 'Life Science/Health'), selected = 'None')
         
       )
     ),
@@ -126,6 +127,7 @@ server = function(input, output) {
     SATCR = input$SATCriticalReading
     ACTEng = input$ACTEnglish
     ACTMath = input$ACTMath
+    major = input$intendedMajor
     schoolRanking = makeRankingTable(dummyScore, stateName)
     #table = makeTable(dummyScore, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath)
   }))
