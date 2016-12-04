@@ -6,7 +6,7 @@ The *scripts*/ subdirectory contains:
 
 * *eda-script.R* carries out Exploratory Data Analysis (EDA) on the data to gain a semblance of understanding - including:
 
-    -  Calculating the summary statistics
+    - Calculating the summary statistics
 
     - Drawing histograms, piecharts, and boxplots
 
@@ -19,3 +19,14 @@ The *scripts*/ subdirectory contains:
 * *session-info-script.R* prints the session information and environment for this project, including all R packages used for this project.
 
 * *shinyApp-script.R* generates the shinyApp for this project.
+
+The *shinyApp*/ subdirectory contains:
+
+* *app* is the central script for generating the Shiny App. It defines the UI for the application and utilizes the helper functions (described below) to return a list of recommended colleges. 
+
+* *calculateScores* is a helper function that calculates the scores for colleges based on predictors as noted in commented code. This script determines the weights for the various predictors.
+
+* *makeRankingTable* is a helper function that creates a table with relevant information to display for the recommended schools.
+
+* *plotGeo* 
+
