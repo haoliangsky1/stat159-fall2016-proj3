@@ -2,6 +2,7 @@
 # and select columns as dummy variables for modeling and shinyApp
 
 #setwd("~/Desktop/Fall_2016/Stat159/stat159-fall2016-proj3/")
+#setwd("C:/Users/andre/Dropbox/College/Fall 16/Stat159/stat159-fall2016-proj3")
 #college = read.csv('data/combinedData.csv')
 
 args = commandArgs(trailingOnly =TRUE)
@@ -45,9 +46,28 @@ dummy['MedianDebt'] = as.numeric(college$GRAD_DEBT_MDN)
 # Percentage of first generation
 dummy['ProportionFirstGeneration'] = as.numeric(college$FIRST_GEN)
 
+# Proportion of Degrees Awarded by Major
+# Computer Science
+dummy['DegreesComputerScience'] = as.numeric(college$PCIP11) + as.numeric(college$PCIP41)
+# Literature
+dummy['DegreesLiterature'] = as.numeric(college$PCIP23) + as.numeric(college$PCIP25)
+# Mathematics and Statistics
+dummy['DegreesMathematics'] = as.numeric(college$PCIP27)
+# Engineering
+dummy['DegreesEngineering'] = as.numeric(college$PCIP14) + as.numeric(college$PCIP15) + as.numeric(college$PCIP47) + as.numeric(college$PCIP48) + as.numeric(college$PCIP49)
+# Social Studies and Humanities
+dummy['DegreesSocialStudies'] = as.numeric(college$PCIP24) + as.numeric(college$PCIP42) + as.numeric(college$PCIP45)
+# Visual and Performing Arts
+dummy['DegreesVisualPerformingArts'] = as.numeric(college$PCIP50)
+# Business
+dummy['DegreesBusiness'] = as.numeric(college$PCIP52)
+# History
+dummy['DegreesHistory'] = as.numeric(college$PCIP54)
+# Life Science/Health
+dummy['DegreesLifeScienceHealth'] = as.numeric(college$PCIP26) + as.numeric(college$PCIP51) 
+
 # We only take 4-year institute
 dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
-
 
 # Replace all PrivacySuppressed
 dummy[dummy == 'PrivacySuppressed'] = 0

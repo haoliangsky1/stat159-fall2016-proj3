@@ -1,11 +1,11 @@
 # This function calculates the Scores given the input of the user
 library(microbenchmark)
 
-calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefaultWeights=FALSE) {
+calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefaultWeights=FALSE, major) {
 	if (useDefaultWeights == TRUE) {
-		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2)
+		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, rep(0.1,9))
 	} else {
-	  weight = rep(0, 13)
+	  weight = rep(0, 22)
 	  if (income == '$0-$30,000') {
 	    weight[1] = -0.5
 	    } else if (income == '$30,001-$48,000') {
@@ -36,7 +36,27 @@ calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefault
 	  # First generation
 	  if (firstGen == TRUE) {
 	    weight[13] = 0.2
-	    }
+	  }
+	  #Intended Major
+	  if (major == 'Computer Science') {
+	    weight[14] = 0.5
+	    } else if (major == 'Literature') {
+	      weight[15] = 0.5
+	      } else if (major == 'Mathematics/Statistics'){
+	        weight[16] = 0.5
+	        } else if (major == 'Engineering') {
+	          weight[17] = 0.5
+	          } else if (major == 'Social Studies/Humanities') {
+	            weight[18] = 0.5
+	            } else if (major == 'Visual and Performing Arts') {
+	              weight[19] = 0.5
+	              } else if (major == 'Business') {
+	                weight[20] = 0.5
+	                } else if (major == 'History') {
+	                  weight[21] = 0.5
+	                  } else if (major == 'Life Science/Health') {
+	                    weight[22] = 0.5
+	                    }
 	}
 	# Centralization
 	df = centralization(dummy)
