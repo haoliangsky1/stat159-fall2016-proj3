@@ -26,6 +26,7 @@ library(RJSONIO)
 library(PKI)
 library(packrat)
 library(rsconnect)
+library(microbenchmark)
 
 
 sink("../../session-info.txt", append = TRUE)
