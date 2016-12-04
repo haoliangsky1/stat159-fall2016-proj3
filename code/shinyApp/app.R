@@ -133,7 +133,7 @@ server = function(input, output) {
   
   output$mapState = renderPlot({
     stateName = input$state
-    dummyScore =  calculateScores(dummy, input$familyIncome, input$firstGeneration)
+    dummyScore =  calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
     plotGeo(stateName, dummyScore)
   })
   
@@ -141,7 +141,7 @@ server = function(input, output) {
     stateName = input$state
     income = input$familyIncome
     firstGen = input$firstGeneration
-    dummyScore = calculateScores(dummy, input$familyIncome, input$firstGeneration)
+    dummyScore = calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
     schoolRanking = makeRankingTable(dummyScore, stateName, income, firstGen)
   }))
   
