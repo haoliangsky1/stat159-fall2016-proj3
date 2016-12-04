@@ -3,7 +3,7 @@
 
 
 
-makeTable = function(df, rawDF, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath) {
+makeSchoolTable = function(df, rawDF, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath) {
 	# We want to deliver a table with essential information for the top 10 choices in state or even nationally
 	if (stateName == 'None') {
 		return
