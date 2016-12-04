@@ -133,16 +133,16 @@ server = function(input, output) {
   
   output$mapState = renderPlot({
     stateName = input$state
-    dummyScore =  calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
-    plotGeo(stateName, dummyScore)
+    dummyNewScore =  calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
+    plotGeo(stateName, dummyNewScore)
   })
   
   output$table = DT::renderDataTable(DT::datatable({
     stateName = input$state
     income = input$familyIncome
     firstGen = input$firstGeneration
-    dummyScore = calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
-    schoolRanking = makeRankingTable(dummyScore, stateName, income, firstGen)
+    dummyNewScore = calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
+    schoolRanking = makeRankingTable(dummyNewScore, stateName, income, firstGen)
   }))
   
   output$schoolTable = DT::renderDataTable(DT::datatable({
