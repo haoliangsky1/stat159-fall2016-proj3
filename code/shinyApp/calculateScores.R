@@ -47,7 +47,7 @@ calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, useDefault
 	# Score = weight * df[, 8:ncol(df)]
 	
 	m = as.matrix(df[,9:ncol(df)])
-	Score = rowSums(m, na.rm=T)
+	Score = rowSums(m %*% diag(weight), na.rm=T)
 	
 	Score = normalize(Score, 0, 100)
 	Score = round(Score, 2)
