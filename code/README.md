@@ -28,5 +28,4 @@ The *shinyApp*/ subdirectory contains:
 
 * *makeRankingTable* is a helper function that creates a table with relevant information to display for the recommended schools.
 
-* *plotGeo* 
-
+* *plotGeo* is a helper function that plots the locations of recommended universities of a given state.
