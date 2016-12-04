@@ -57,7 +57,8 @@ ui = fluidPage(
              h4('Intended Major'),
              # Select an intended major - Current list is placeholder
              selectInput(inputId = 'intendedMajor', label = 'Choose an intended major', 
-                         choices = c('None','Computer Science','Literature','Mathematics','Engineering','Social Studies','Visual and Perfoming Arts','Business','History'), selected = 'None')
+                         choices = c('None','Computer Science','Literature','Mathematics/Statistics','Engineering','Social Studies/Humanities',
+                                     'Visual and Perfoming Arts','Business','History', 'Life Science/Health'), selected = 'None')
         
       )
     ),
@@ -141,7 +142,8 @@ server = function(input, output) {
     stateName = input$state
     income = input$familyIncome
     firstGen = input$firstGeneration
-    dummyNewScore = calculateScores(dummy, input$familyIncome, input$firstGeneration, useDefaultWeights = FALSE)
+    major = input$intendedMajor
+    dummyNewScore = calculateScores(dummy, income, firstGen, major, useDefaultWeights = FALSE)
     schoolRanking = makeRankingTable(dummyNewScore, stateName, income, firstGen)
   }))
   
