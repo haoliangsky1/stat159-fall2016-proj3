@@ -9,9 +9,12 @@ library(DT)
 
 source('plotGeo.R')
 source('makeRankingTable.R')
+source('makeSchoolTable.R')
+source('calculateScores.R')
 
 
-dummyScore = read.csv('schoolRanking.csv')
+dummy = read.csv('schoolRanking.csv')
+dummyScore = calculateScores(dummy, useDefaultWeights=TRUE)
 college = read.csv('combinedData.csv')
 
 # Preparing data for the ggplot:
@@ -86,20 +89,24 @@ ui = fluidPage(
     )
   ),
   # Main Panel
-  mainPanel(h1('This is the panel for responses'),
-            p(''),
-            br(),
-            textOutput('text1'),
-            textOutput('text2'),
-            h4('lets first show a map:'),
-            plotOutput('mapState'),
-            br(),
-            h4('Here are the schools we recommend. Choose one to proceed:'),
-            DT::dataTableOutput('table')
-            #h4('then we may layout the table:'),
-            #DT::dataTableOutput('table')
+  sidebarLayout(
+    sidebarPanel(h2('Colleges in your state'),
+                 plotOutput('mapState'),
+                 h4('Please enter an ID you would like more information:'),
+                 numericInput(inputId = 'schoolID', label = 'ID', value = NA)
+    ),
+    mainPanel(h1('Here are the schools we recommend. Choose one to proceed:'),
+              textOutput('text1'),
+              textOutput('text2'),
+              p('We take into consideration of'),
+              DT::dataTableOutput('table')
+    )
+  ),
+  mainPanel(
+    textOutput('text3'),
+    DT::dataTableOutput('schoolTable')
   )
-  )
+)
 # Define server logic required to draw a histogram
 server = function(input, output) {
   output$text1 = renderText({
@@ -109,27 +116,45 @@ server = function(input, output) {
     paste('So we see that you selected a range from,',
           input$range[1], ' to ', input$range[2])
   })
+  output$text3 = renderText({
+    id = input$schoolID
+    name = dummyScore$INSTNM[dummyScore$UNITID == id]
+    if (is.na(name)) {
+      paste('Waiting for choice')
+    } else {
+      paste('Following are the information for', name
+      )
+    }
+  })
   
-  output$mapNational =renderPlot({
+  output$mapNational = renderPlot({
     plotGeo('None', dummyScore)
   })
   
   output$mapState = renderPlot({
     stateName = input$state
+    dummyScore =  calculateScores(dummy, input$familyIncome, input$firstGeneration)
     plotGeo(stateName, dummyScore)
   })
   
-  
   output$table = DT::renderDataTable(DT::datatable({
+    stateName = input$state
+    income = input$familyIncome
+    firstGen = input$firstGeneration
+    dummyScore = calculateScores(dummy, input$familyIncome, input$firstGeneration)
+    schoolRanking = makeRankingTable(dummyScore, stateName, income, firstGen)
+  }))
+  
+  output$schoolTable = DT::renderDataTable(DT::datatable({
+    id = input$schoolID
     stateName = input$state
     ethnicity = input$ethnicity
     income = input$familyIncome
-    SATMath = input$SATMath
-    SATCR = input$SATCriticalReading
-    ACTEng = input$ACTEnglish
-    ACTMath = input$ACTMath
-    schoolRanking = makeRankingTable(dummyScore, stateName)
-    #table = makeTable(dummyScore, stateName, ethnicity, income, SATMath, SATCR, ACTEng, ACTMath)
+    satMath = input$SATMath
+    satCR = input$SATCriticalReading
+    actEng = input$ACTEnglish
+    actMath = input$ACTMath
+    schoolTable = makeSchoolTable(dummy, college, id, stateName, ethnicity, income, satMath, satCR, actEng, actMath)
   }))
   }
 
