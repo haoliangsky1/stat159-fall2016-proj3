@@ -11,3 +11,5 @@ This data comes from the US Department of Education College Scorecard (https://c
 * *combinedData* takes the most recent years' data and consolidates them into one dataset. 
 
 * *combinedYearData* does not include salary information.
+
+* *schoolRanking* is a greatly reduced file with relevant variables used to calculate scores and is dynamically modified by the app.
