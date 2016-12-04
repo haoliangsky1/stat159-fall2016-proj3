@@ -5,3 +5,11 @@ This folder contains the data used and generated in the production of this proje
 * The *reducedData*/ subdirectory contains the CSV files created in the cleaning process by the *cleanUp.py* in the project. To see the actual scripts that carried out this process, please refer to the python and R scripts in the *code* folder.
 
 * The *rData* folder contains the *rData* objects generated in this project for the production of the report and the shinyApp.
+
+This data comes from the US Department of Education College Scorecard (https://collegescorecard.ed.gov/data/). We decided to only include data from the 5 most recent years because school profiles may fluctuate rapidly with regards to admissions and tuition requirements. 
+
+* *combinedData* takes the most recent years' data and consolidates them into one dataset. 
+
+* *combinedYearData* does not include salary information.
+
+* *schoolRanking* is a greatly reduced file with relevant variables used to calculate scores and is dynamically modified by the app.
