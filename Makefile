@@ -22,6 +22,7 @@ session-info.txt: session.sh
 
 data/rData/*.RData:
 	Rscript code/scripts/eda-script.R data/combinedData.csv
+	Rscript code/scripts/makeDummyDataFrame-script.R data/combinedData.csv
 
 images/*.png:
 	Rscript code/scripts/eda-script.R data/combinedData.csv
