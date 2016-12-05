@@ -123,6 +123,7 @@ Then, we may look at the
 \subsubsection{Ethnicity}
 
 We can also look at the historical statistics for educational conditions for minority groups. For such causes have long been drawing attention from the society and the public still complain about it.
+
 \begin{table}[ht]
 \centering
 \begin{tabular}{rlrr}
@@ -197,7 +198,7 @@ We can also look at the historical statistics for educational conditions for min
 \end{table}
 
 
-From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S.. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
+From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
@@ -213,8 +214,16 @@ From the tables above, we can see that the minority groups are under-represented
 From the pie chart above, we may see that ..............................
 
 \subsubsection{Net Price}
-Net price is the ....................
+Net price is the cost of attending an institution(public or private), which includes tuition and fees, books and supplies, and living expenses).
 
+For this project, we are interested in the Average Net Price,  which is derived from the full cost of attendance (including tuition and fees, books and supplies, and living expenses) minus federal, state, and institutional aid, for full-time, first-time undergraduate Title IV-receiving students. 
+
+Average net price (NPT4_* for _PUB [public colleges; for
+public institutions, this metric is limited to those undergraduates who pay in-state tuition] and _PRIV [private colleges]) includes a weighted
+average of all full-time, first-time undergraduate Title IV-receiving. 
+
+
+Here, sumammary statistics is provided for both Private and Public Institutions
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
@@ -229,8 +238,41 @@ Public & 126.32 & 27055.80 & 26929.48 & 8604.50 & 6217.02 & 12397.31 & 6180.28 &
 \end{table}
 
 
-From the table above, we can see that ............................
+From the table above, we can see that the Net Price of Private Colleges are much higher than those of Public Colleges. All summary statistics of Private Colleges are much higher numbers and they are higher than Public Colleges by a factor of 3 or 4.
 
+The following are the histograms for Net Price of both Public and Private colleges
+
+
+
+{\centering \includegraphics[width=150px]{../images/histogram-NPPub} 
+
+}
+
+
+
+
+{\centering \includegraphics[width=150px]{../images/histogram-NPriv} 
+
+}
+
+
+
+
+From 2 histograms, we can see that the net price for public institution is skewed-left, while net price of private colleges tends to follow a normal distribution. 
+
+In addition, average net price is then categorized into different income quintiles for students. 
+
+_ (1) $0-$30,000; 
+
+_ (2) $30,001-$48,000; 
+
+_ (3) $48,001-$75,000; 
+
+_ (4) $75,001-$110,000
+
+_ (5) $110,000+.
+ 
+FOr each quintile, average net price is divided into 'Public' or 'Private'. 
 
 \subsubsection{Standardized Test Scores}
 

@@ -49,7 +49,7 @@ xtable(weightTable)
 We may first have a look at the geographical distribution of colleges in the dataset. For the purpose of graphing, the plot only shows colleges in mainland United States.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggmap-schoolDistribution.png")
+knitr::include_graphics("../images/ggplot-schoolDistribution.png")
 @
 
 We may see that blablablablabla
@@ -57,12 +57,13 @@ We may see that blablablablabla
 
 Then, we may look at the 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggmap-admissionRateDistribution.png")
+knitr::include_graphics("../images/ggplot-admissionRateDistribution.png")
 @
 
 \subsubsection{Ethnicity}
 
 We can also look at the historical statistics for educational conditions for minority groups. For such causes have long been drawing attention from the society and the public still complain about it.
+
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', results='asis'>>=
 load('../data/rData/table-HBCU.RData')
 xtable(HBCUTable, caption = 'Flag for Historically Black College and University')
@@ -83,7 +84,7 @@ load('../data/rData/table-AANAPII.RData')
 xtable(AANAPIITable, caption = 'Flag for Asian American, Native American, Pacific Islander-serving Institution')
 @
 
-From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S.. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
+From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="250px">>=
 knitr::include_graphics("../images/piechart-enrollmentEthnicity.png")
@@ -92,15 +93,45 @@ knitr::include_graphics("../images/piechart-enrollmentEthnicity.png")
 From the pie chart above, we may see that ..............................
 
 \subsubsection{Net Price}
-Net price is the ....................
+Net price is the cost of attending an institution(public or private), which includes tuition and fees, books and supplies, and living expenses).
 
+For this project, we are interested in the Average Net Price,  which is derived from the full cost of attendance (including tuition and fees, books and supplies, and living expenses) minus federal, state, and institutional aid, for full-time, first-time undergraduate Title IV-receiving students. 
+
+Average net price (NPT4_* for _PUB [public colleges; for
+public institutions, this metric is limited to those undergraduates who pay in-state tuition] and _PRIV [private colleges]) includes a weighted
+average of all full-time, first-time undergraduate Title IV-receiving. 
+
+
+Here, sumammary statistics is provided for both Private and Public Institutions
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', results='asis'>>=
 load('../data/rData/table-netPrice.RData')
 xtable(NPTable, caption = 'Summary Statistics for Net Price of Public and Private Institutions')
 @
 
-From the table above, we can see that ............................
+From the table above, we can see that the Net Price of Private Colleges are much higher than those of Public Colleges. All summary statistics of Private Colleges are much higher numbers and they are higher than Public Colleges by a factor of 3 or 4.
 
+The following are the histograms for Net Price of both Public and Private colleges
+
+<<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', results='asis', out.width="150px">>=
+knitr::include_graphics("../images/histogram-NPPub.png")
+knitr::include_graphics("../images/histogram-NPriv.png")
+@
+
+From 2 histograms, we can see that the net price for public institution is skewed-left, while net price of private colleges tends to follow a normal distribution. 
+
+In addition, average net price is then categorized into different income quintiles for students. 
+
+_ (1) $0-$30,000; 
+
+_ (2) $30,001-$48,000; 
+
+_ (3) $48,001-$75,000; 
+
+_ (4) $75,001-$110,000
+
+_ (5) $110,000+.
+ 
+FOr each quintile, average net price is divided into 'Public' or 'Private'. 
 
 \subsubsection{Standardized Test Scores}
 
