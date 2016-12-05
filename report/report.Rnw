@@ -61,7 +61,7 @@ xtable(weightTable)
 We may first have a look at the geographical distribution of colleges in the dataset. For the purpose of graphing, the plot only shows colleges in mainland United States.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggplot-schoolDistribution.png")
+knitr::include_graphics("../images/ggmap-schoolDistribution.png")
 @
 
 We may see that blablablablabla
@@ -69,7 +69,7 @@ We may see that blablablablabla
 
 Then, we may look at the 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggplot-admissionRateDistribution.png")
+knitr::include_graphics("../images/ggmap-admissionRateDistribution.png")
 @
 
 \subsubsection{Ethnicity}

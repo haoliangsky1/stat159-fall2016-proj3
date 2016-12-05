@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2016 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 DEC 2016 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -203,25 +203,25 @@ Overfull \hbox (91.30638pt too wide) in paragraph at lines 92--99
  []
 
 Package color Info: Redefining color shadecolor on input line 110.
-<../images/ggplot-schoolDistribution.png, id=10, 481.8pt x 481.8pt>
-File: ../images/ggplot-schoolDistribution.png Graphic file (type png)
+<../images/ggmap-schoolDistribution.png, id=10, 481.8pt x 481.8pt>
+File: ../images/ggmap-schoolDistribution.png Graphic file (type png)
 
-<use ../images/ggplot-schoolDistribution.png>
-Package pdftex.def Info: ../images/ggplot-schoolDistribution.png used on input 
-line 112.
+<use ../images/ggmap-schoolDistribution.png>
+Package pdftex.def Info: ../images/ggmap-schoolDistribution.png used on input l
+ine 112.
 (pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
  [2]
 Package color Info: Redefining color shadecolor on input line 125.
 
-<../images/ggplot-admissionRateDistribution.png, id=16, 481.8pt x 481.8pt>
-File: ../images/ggplot-admissionRateDistribution.png Graphic file (type png)
+<../images/ggmap-admissionRateDistribution.png, id=16, 481.8pt x 481.8pt>
+File: ../images/ggmap-admissionRateDistribution.png Graphic file (type png)
 
-<use ../images/ggplot-admissionRateDistribution.png>
-Package pdftex.def Info: ../images/ggplot-admissionRateDistribution.png used on
- input line 127.
+<use ../images/ggmap-admissionRateDistribution.png>
+Package pdftex.def Info: ../images/ggmap-admissionRateDistribution.png used on 
+input line 127.
 (pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
- [3 <../images/ggplot-schoolDistribution.png>] [4 <../images/ggplot-admissionRa
-teDistribution.png>]
+ [3 <../images/ggmap-schoolDistribution.png>] [4 <../images/ggmap-admissionRate
+Distribution.png>]
 Package color Info: Redefining color shadecolor on input line 215.
 
 <../images/piechart-enrollmentEthnicity.png, id=25, 481.8pt x 481.8pt>
@@ -280,7 +280,7 @@ Package pdftex.def Info: ../images/histogram-ACTMTMedian.png used on input line
 ] [8] [9] (./report.aux) ) 
 Here is how much of TeX's memory you used:
  1665 strings out of 493014
- 25004 string characters out of 6133351
+ 24994 string characters out of 6133351
  87678 words of memory out of 5000000
  5193 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
@@ -292,7 +292,7 @@ c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr17.pfb>
-Output written on report.pdf (9 pages, 431326 bytes).
+Output written on report.pdf (9 pages, 431287 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
