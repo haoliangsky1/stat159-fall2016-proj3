@@ -51,6 +51,7 @@ stat159-fall2016-project3/
       tests/
          ...
       shinyApp/
+         README.md
          ...
          www/
    data/
@@ -77,8 +78,6 @@ stat159-fall2016-project3/
          06-conclusions.Rnw
    slides/
       README.md
-      ...
-   shinyApp/
       ...
 ```
 
