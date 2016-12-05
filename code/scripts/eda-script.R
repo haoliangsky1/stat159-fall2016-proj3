@@ -174,66 +174,66 @@ save(NPTable, file = 'data/rData/table-netPrice.RData')
 temp = college$COSTT4_A
 
 
-#Analyze collumns :
-#NPT college$NPT41_PUB + college$NPT41_PRIV
-#average net price by income quintile
-NPPub_Q1:
-  #(1) $0-$30,000;
-  NPPub_Q1 = getSummary(college$NPT41_PUB[college$NPT41_PUB>0])
-NPPriv_Q1 = getSummary(college$NPT41_PRIV[college$NPT41_PRIV>0])
-NPTable_Q1 = rbind(NPPub_Q1, NPPriv_Q1)
-rownames(NPTable_Q1) = c('Public quantile 1', 'Private quantile 1')
+# #Analyze collumns :
+# #NPT college$NPT41_PUB + college$NPT41_PRIV
+# #average net price by income quintile
+# # NPPub_Q1:
+#   #(1) $0-$30,000;
+# NPPub_Q1 = getSummary(college$NPT41_PUB[college$NPT41_PUB>0])
+# NPPriv_Q1 = getSummary(college$NPT41_PRIV[college$NPT41_PRIV>0])
+# NPTable_Q1 = rbind(NPPub_Q1, NPPriv_Q1)
+# rownames(NPTable_Q1) = c('Public quantile 1', 'Private quantile 1')
 
-  #histogram for Public college
-png('images/histogram-NPPub_Q1.png')
-hist(NPPub_Q1, main = 'Histogram of Average Net Price in Quantile 1')
-dev.off()
+#   #histogram for Public college
+# png('images/histogram-NPPub_Q1.png')
+# hist(NPPub_Q1, main = 'Histogram of Average Net Price in Quantile 1')
+# dev.off()
 
-  #histogram for private colleges
-png('images/histogram-NPPriv_Q1.png')
-hist(NPPriv_Q1, main = 'Histogram of Average Net Price for Private colleges in Quantile 1')
-dev.off()
+#   #histogram for private colleges
+# png('images/histogram-NPPriv_Q1.png')
+# hist(NPPriv_Q1, main = 'Histogram of Average Net Price for Private colleges in Quantile 1')
+# dev.off()
 
-  #(2)$30,001-$48,000; 
-NPPub_Q2 = getSummary(college$NPT42_PUB[college$NPT42_PUB>0])
-NPPriv_Q2 = getSummary(college$NPT42_PRIV[college$NPT42_PRIV>0])
-NPTable_Q2 = rbind(NPPub_Q2, NPPriv_Q2)
-rownames(NPTable_Q2) = c('Public quantile 2', 'Private quantile 2')
-print('table: netPrice')
-save(NPTable_Q2, file = 'data/rData/table-netPrice_quintile2.RData')
-
-
-#save
-#hist(college$NPT42_PUB[college$NPT42_PUB>0], main = "Historgram of  average net price by income quintile 1(Public colleges)" )
-#hist(college$NPT42_PRIV[college$NPT42_PRIV>0])
+#   #(2)$30,001-$48,000; 
+# NPPub_Q2 = getSummary(college$NPT42_PUB[college$NPT42_PUB>0])
+# NPPriv_Q2 = getSummary(college$NPT42_PRIV[college$NPT42_PRIV>0])
+# NPTable_Q2 = rbind(NPPub_Q2, NPPriv_Q2)
+# rownames(NPTable_Q2) = c('Public quantile 2', 'Private quantile 2')
+# print('table: netPrice')
+# save(NPTable_Q2, file = 'data/rData/table-netPrice_quintile2.RData')
 
 
- # (3) $48,001-$75,000; 
-NPPub_Q3 = getSummary(college$NPT43_PUB[college$NPT43_PUB>0])
-NPPriv_Q3 = getSummary(college$NPT43_PRIV[college$NPT43_PRIV>0])
-NPTable_Q3 = rbind(NPPub_Q3, NPPriv_Q3)
-rownames(NPTable_Q3) = c('Public quantile 3', 'Private quantile 3')
-print('table: netPrice')
-save(NPTable_Q3, file = 'data/rData/table-netPrice_quintile3.RData')
+# #save
+# #hist(college$NPT42_PUB[college$NPT42_PUB>0], main = "Historgram of  average net price by income quintile 1(Public colleges)" )
+# #hist(college$NPT42_PRIV[college$NPT42_PRIV>0])
 
 
-#  (4) $75,001-$110,000;
+#  # (3) $48,001-$75,000; 
+# NPPub_Q3 = getSummary(college$NPT43_PUB[college$NPT43_PUB>0])
+# NPPriv_Q3 = getSummary(college$NPT43_PRIV[college$NPT43_PRIV>0])
+# NPTable_Q3 = rbind(NPPub_Q3, NPPriv_Q3)
+# rownames(NPTable_Q3) = c('Public quantile 3', 'Private quantile 3')
+# print('table: netPrice')
+# save(NPTable_Q3, file = 'data/rData/table-netPrice_quintile3.RData')
 
-NPPub_Q4 = getSummary(college$NPT44_PUB[college$NPT44_PUB>0])
-NPPriv_Q4 = getSummary(college$NPT44_PRIV[college$NPT4$_PRIV>0])
-NPTable_Q4 = rbind(NPPub_Q4, NPPriv_Q4)
-rownames(NPTable_Q4) = c('Public quantile $', 'Private quantile 4')
-print('table: netPrice')
-save(NPTable_Q4, file = 'data/rData/table-netPrice_quintile4.RData')
+
+# #  (4) $75,001-$110,000;
+
+# NPPub_Q4 = getSummary(college$NPT44_PUB[college$NPT44_PUB>0])
+# NPPriv_Q4 = getSummary(college$NPT44_PRIV[college$NPT4$_PRIV>0])
+# NPTable_Q4 = rbind(NPPub_Q4, NPPriv_Q4)
+# rownames(NPTable_Q4) = c('Public quantile $', 'Private quantile 4')
+# print('table: netPrice')
+# save(NPTable_Q4, file = 'data/rData/table-netPrice_quintile4.RData')
 
 
-  #(5) $110,000+.
-NPPub_Q5 = getSummary(college$NPT45_PUB[college$NPT45_PUB>0])
-NPPriv_Q5 = getSummary(college$NPT45_PRIV[college$NPT45$_PRIV>0])
-NPTable_Q5 = rbind(NPPub_Q5, NPPriv_Q5)
-rownames(NPTable_Q5) = c('Public quantile 5', 'Private quantile 5')
-print('table: netPrice')
-save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
+#   #(5) $110,000+.
+# NPPub_Q5 = getSummary(college$NPT45_PUB[college$NPT45_PUB>0])
+# NPPriv_Q5 = getSummary(college$NPT45_PRIV[college$NPT45$_PRIV>0])
+# NPTable_Q5 = rbind(NPPub_Q5, NPPriv_Q5)
+# rownames(NPTable_Q5) = c('Public quantile 5', 'Private quantile 5')
+# print('table: netPrice')
+# save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 
 
 
@@ -313,77 +313,77 @@ save(ACTMTTable, file = 'data/rData/table-ACTMT.RData')
 # Need criteria for good school
 
 # Salary, earnings, income ?
-### Run analysis on variable `AVGFACSAL`, the average salary for faculty 
+## Run analysis on variable `AVGFACSAL`, the average salary for faculty 
 
-#Variables to observe: AVGFACSAL, MN_EARN_WNE_P*,
+# Variables to observe: AVGFACSAL, MN_EARN_WNE_P*,
 #                     MD_EARN_WNE_P*
 
 
-#income_vars <- c('AVG_Faculty_salary', 'MN_EARN_WNE_P_6789_10',
-'MN_EARN'
-#Summary Stats and histograms for Average Faculty Salary        
+# income_vars <- c('AVG_Faculty_salary', 'MN_EARN_WNE_P_6789_10',
 
-Average_Faculty_sal <- college$AVGFACSAL
+# Summary Stats and histograms for Average Faculty Salary        
 
-
-getSummary(Average_Faculty_sal)
-hist(Average_Faculty_sal, main = "Histogram of Average Faculty Salary")
-
-#Summarry statistics for Monthly earnings P6
-temp_P6 = college$MN_EARN_WNE_P6
-temp_P6[temp_P6=='PrivacySuppressed'] = NA
-college$MN_EARN_WNE_P6 = as.numeric(temp_P6)
-MN_EARN_6 <- college$MN_EARN_WNE_P6
-
-getSummary(MN_EARN_6)
+# Average_Faculty_sal <- college$AVGFACSAL
 
 
-hist(MN_EARN_P6)
+# getSummary(Average_Faculty_sal)
+# hist(Average_Faculty_sal, main = "Histogram of Average Faculty Salary")
+
+# #Summarry statistics for Monthly earnings P6
+# temp_P6 = college$MN_EARN_WNE_P6
+# temp_P6[temp_P6=='PrivacySuppressed'] = NA
+# college$MN_EARN_WNE_P6 = as.numeric(temp_P6)
+# MN_EARN_6 <- college$MN_EARN_WNE_P6
+
+# getSummary(MN_EARN_6)
 
 
-#Summarry statistics for Monthly earnings P7
-temp_P7 = college$MN_EARN_WNE_P7
-temp_P7[temp_P7=='PrivacySuppressed'] = NA
-MN_EARN_P7 = as.numeric(temp_P7)
-getSummary(MN_EARN_P7)
+# hist(MN_EARN_P6)
 
 
-hist(MN_EARN_P7)
-
-#Summarry statistics for Monthly earnings
-temp_P8 = college$MN_EARN_WNE_P8
-
-temp_P8[temp_P8=='PrivacySuppressed'] = NA
-
-MN_EARN_P8 = as.numeric(temp_P8)
-getSummary(MN_EARN_P8)
-
-hist(MN_EARN_P8)
-
-#
-temp_P9 = college$MN_EARN_WNE_P9
-
-temp_P9[temp_P9=='PrivacySuppressed'] = NA
-
-MN_EARN_P9 = as.numeric(temp_P9)
-getSummary(MN_EARN_P9)
-
-hist(MN_EARN_P9)
-
-# Monthly saving 10 years after 
-temp_P10 = college$MN_EARN_WNE_P10
-
-temp_P10[temp_P10=='PrivacySuppressed'] = NA
-
-MN_EARN_P10 = as.numeric(temp_P10)
-getSummary(MN_EARN_P10)
-hist(MN_EARN_P10) 
-#
+# #Summarry statistics for Monthly earnings P7
+# temp_P7 = college$MN_EARN_WNE_P7
+# temp_P7[temp_P7=='PrivacySuppressed'] = NA
+# MN_EARN_P7 = as.numeric(temp_P7)
+# getSummary(MN_EARN_P7)
 
 
-#Save updated file
+# hist(MN_EARN_P7)
 
-write.csv(college, file="CombinedYear_NAremove.csv", row.names=TRUE)
+# #Summarry statistics for Monthly earnings
+# temp_P8 = college$MN_EARN_WNE_P8
+
+# temp_P8[temp_P8=='PrivacySuppressed'] = NA
+
+# MN_EARN_P8 = as.numeric(temp_P8)
+# getSummary(MN_EARN_P8)
+
+# hist(MN_EARN_P8)
+
+# #
+# temp_P9 = college$MN_EARN_WNE_P9
+
+# temp_P9[temp_P9=='PrivacySuppressed'] = NA
+
+# MN_EARN_P9 = as.numeric(temp_P9)
+# getSummary(MN_EARN_P9)
+
+# hist(MN_EARN_P9)
+
+# # Monthly saving 10 years after 
+# temp_P10 = college$MN_EARN_WNE_P10
+
+# temp_P10[temp_P10=='PrivacySuppressed'] = NA
+
+# MN_EARN_P10 = as.numeric(temp_P10)
+# getSummary(MN_EARN_P10)
+# hist(MN_EARN_P10) 
+# #
+
+
+# #Save updated file
+
+# write.csv(college, file="CombinedYear_NAremove.csv", row.names=TRUE)
 
 
 

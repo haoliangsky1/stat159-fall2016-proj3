@@ -1,14 +1,15 @@
 # Declare phony targets
-.PHONY: all data clean tests eda report slides session
+.PHONY: all data clean tests eda report slides session shinyApp 
 
 # Output
 csv = data/*.csv
-RData = data/*.RData
+RData = data/rData/*.RData
 png = images/*.png
 rnw = report/sections/*.Rnw
 log = report/*.log
+shiny = code/shinyApp/*
 
-
+output = $(csv) $(RData) $(png) $(log) session-info.txt report/report.pdf $(shiny)
 # PHONY targets
 all: $(output)
 
@@ -86,9 +87,10 @@ report:
 	rm $(log)
 
 shinyApp:
-	Rscript code/script/makeDummyDataFrame-script.R data/combinedData.csv
+	Rscript code/scripts/makeDummyDataFrame-script.R data/combinedData.csv
 	# generate the shinyApp for the project
 	Rscript -e "shiny::runApp('code/shinyApp')"
+	# Rscript -e "shiny::deployApp('code/shinyApp')"
 
 
 
@@ -105,9 +107,9 @@ session:
 
 clean:
 	# Clean up files
-	# rm -f session-info.txt
 	# rm -f data/*.csv
-	# rm -f data/rData/*.*
-	# rm -f images/*.*
+	rm -f data/rData/*.*
+	rm -f images/*.*
+	rm -f session-info.txt
 	rm -f report/*.pdf
 	
