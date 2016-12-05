@@ -80,13 +80,13 @@ ui = fluidPage(
              # Sex
              radioButtons(inputId = 'sex', label = 'Select Sex', choices = c('Male', 'Female'))
       )
-    ),
-    sliderInput('range',
-                label = 'I dont know yet: ',
-                min = 0, max =100, value = c(0, 100)),
-    
-    actionButton("action", label= 'Go'),
-    br()
+    )
+    # sliderInput('range',
+    #             label = 'I dont know yet: ',
+    #             min = 0, max =100, value = c(0, 100)),
+    # 
+    # actionButton("action", label= 'Go'),
+    # br()
     )
   ),
   # Main Panel

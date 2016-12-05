@@ -3,8 +3,8 @@
 
 makeSchoolTable = function(df, rawDF, schoolID, stateName, ethnicity='None', income='$0-$30,000', major='None', SATMath=0, SATCR=0, ACTEng=0, ACTMath=0) {
 	# We want to deliver a table with essential information for the top 10 choices in state or even nationally
-	result = data.frame(0,0,0,0)
-	colnames(result) = c('Name', 'NetPrice', 'PercentageEthnicity', 'PercentageMajor')
+	result = data.frame(0,0,0,0,0,0,0,0)
+	colnames(result) = c('Name', 'NetPrice', 'PercentEthnicity', 'PercentMajor', 'medianSATCR', 'medianSATMath', 'medianACTEng', 'medianACTMath')
 	if (is.na(schoolID)) {
 		return(result)
 	} else {
@@ -15,9 +15,15 @@ makeSchoolTable = function(df, rawDF, schoolID, stateName, ethnicity='None', inc
 	  # Net Price
 	  result$NetPrice = getNetPrice(df, schoolID, income)
 	  # Ethnicity
-	  result$PercentageEthnicity = getPercentageOfEthnicity(rawDF, schoolID, ethnicity)
+	  result$PercentEthnicity = getPercentageOfEthnicity(rawDF, schoolID, ethnicity)
 	  # Major
-	  result$PercentageMajor = getPercentageOfMajor(df, schoolID, major)
+	  result$PercentMajor = getPercentageOfMajor(df, schoolID, major)
+	  # Standardized Test
+	  temp = df[df$UNITID == schoolID,]
+	  result$medianSATCR = temp$SATCR
+	  result$medianSATMath = temp$SATMT
+	  result$medianACTEng = temp$ACTEng
+	  result$medianACTMath = temp$ACTMath
 	  return(result)
 	}
 }
@@ -86,6 +92,7 @@ getPercentageOfMajor = function(df, schoolID, major) {
     }
 	return(PercentageOfMajor)
 }
+
 
 
 
