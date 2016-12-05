@@ -143,11 +143,12 @@ server = function(input, output) {
     income = input$familyIncome
     firstGen = input$firstGeneration
     major = input$intendedMajor
+    ethnicity = input$ethnicity
     satCR = input$SATCriticalReading
     satMath = input$SATMath
     actEng = input$ACTEnglish
     actMath = input$ACTMath
-    dummyNewScore = calculateScores(dummy, income, firstGen, major, satCR, satMath, actEng, actMath, useDefaultWeights = FALSE)
+    dummyNewScore = calculateScores(dummy, income, firstGen, major, ethnicity, satCR, satMath, actEng, actMath, useDefaultWeights = FALSE)
     schoolRanking = makeRankingTable(dummyNewScore, stateName, income, firstGen)
   }))
   

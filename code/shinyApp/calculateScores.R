@@ -1,13 +1,13 @@
 # This function calculates the Scores given the input of the user
 library(microbenchmark)
 
-calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, major='None', SATCR=0, SATMT=0, ACTEN=0, ACTMT= 0, useDefaultWeights=FALSE) {
+calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, major='None', ethnicity = 'None', SATCR=0, SATMT=0, ACTEN=0, ACTMT= 0, useDefaultWeights=FALSE) {
 	if (useDefaultWeights == TRUE) {
 		# weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2)
 		# weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)
-		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0, 0, 0, 0)
+		weight = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.5, 0.5, 0.5, 0.1, -0.1, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0,0)
 		} else {
-			weight = rep(0, 26)
+			weight = rep(0, 32)
 	  if (income == '$0-$30,000') {
 	    weight[1] = -0.3
 	    } else if (income == '$30,001-$48,000') {
@@ -61,6 +61,22 @@ calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, major='Non
 	      } else if (major == 'Life Science/Health') {
 	        weight[22] = 0.3
 	      }
+	    # Ethnicity
+	    if (ethnicity == 'None') {
+	      weight[23:28] = 0
+	    } else if (ethnicity == 'White') {
+	      weight[23] = 0.1
+	    } else if (ethnicity == 'Black') {
+	      weight[24] = 0.1
+	    } else if (ethnicity == 'Hispanic') {
+	      weight[25] = 0.1
+	    } else if (ethnicity == 'Asian') {
+	      weight[26] = 0.1
+	    } else if (ethnicity == 'Native') {
+	      weight[27] = 0.1
+	    } else if (ethnicity == 'Islander') {
+	      weight[28] = 0.1
+	      }
 	    }
 	# Centralization
 	df = centralization(dummy)
@@ -72,7 +88,7 @@ calculateScores = function(dummy, income='$0-$30,000', firstGen=TRUE, major='Non
 	df$ACTEN = handleScore(dummy, ACTEN, 'ACTEN')
 	df$ACTMT = handleScore(dummy, ACTMT, 'ACTMT')
 
-	weight[23:26] = 0.1
+	weight[29:32] = 0.1
 	
 	m = as.matrix(df[,9:ncol(df)])
 	Score = rowSums(m %*% diag(weight), na.rm=T)
@@ -101,7 +117,7 @@ handleScore = function(df, studentScore, subject) {
 
 centralization = function(df) {
 	scaled = df[,]
-	index = c(8:29)
+	index = c(8:35)
 	scaled[, index] = scale(df[, index], center = TRUE, scale = TRUE)
 	return(scaled)
 }
