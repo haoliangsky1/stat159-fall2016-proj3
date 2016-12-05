@@ -1,13 +1,14 @@
 \documentclass{article}
-\title{Stat159 Project 3: Add a title}
+\title{College. Where should I apply? \\ An interactive app to help at-risk students decide} 
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{Abstract}
 
-This project aims to design and build a website for an NGO in order to provide minority studetns a portfolio of colleges which would best serve their needs: a high-quality, low-cost education.
+This project carries out extensive analysis on the publicly available College Scorecard dataset, a huge database of detailed information on almost every single college in the United States, spanning back decades. The main output of this analysis is a working, interactive, dynamically responsive Shiny App that can be used by students to suggest schools appropriate to their needs. Of particular moral interest to our mission is serving minority, first-generation, at-risk students - thus, the responses are modeled around one basic tenet: a high-quality, low-cost education that will best uniquely serve the student that truly needs it.
 
 \end{document}
