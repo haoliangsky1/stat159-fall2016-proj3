@@ -21,6 +21,7 @@
 \newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
 \newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
 
 \usepackage{framed}
 \makeatletter
@@ -48,14 +49,13 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
-\title{Stat159 Project 3: Add a title}
+\title{Stat159 Project 3: College Recommendation}
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
 
 \usepackage{hyperref}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{Data}
@@ -64,12 +64,12 @@
 
 \subsection{Description}
 
-The data used in the construction of this app originates from the *College Scorecard* database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed \href{here}(https://collegescorecard.ed.gov/data/).
+The data used in the construction of this app originates from the \emph{College Scorecard} database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed here: \href{website address}(https://collegescorecard.ed.gov/data/).
 
 \subsection{Cleaning}
 For our purpose, we interpret and intercalate the data from the past five years, cleaning and merging the sets by implementing the following algorithm:
 
-1: For each dataset, we extract the columns and rows with less than 10\% *PrivacySuppressed* or *NaN* to obtain usable datasets with each column posessing enough information to be meaningful. We then take the unions and overlaps of the columns and rows across the years. This leaves us with around 600 columns and 6700 colleges.
+1: For each dataset, we extract the columns and rows with less than 10\% \emph{PrivacySuppressed} or \emph{NaN} to obtain usable datasets with each column posessing enough information to be meaningful. We then take the unions and overlaps of the columns and rows across the years. This leaves us with around 600 columns and 6700 colleges.
 
 2: We examine the data dictionary and relevant literature, noting useful columns that may be relevant to our response variable. This arbitrarion process decreases the number of columns to under 300. We then parse the five datasets with the logically collected columns and rows.
 
@@ -79,7 +79,7 @@ For our purpose, we interpret and intercalate the data from the past five years,
 \centering
 \begin{tabular}{rrrrrr}
   \hline
- & Year 2014-2015 & Year 2013-2014 & Year 2012-2013 & Year 2011-2012 & Year 2010-2011 \\ 
+ & Year 14-15 & Year 13-14 & Year 12-13 & Year 11-12 & Year 10-11 \\ 
   \hline
 Weight & 0.40 & 0.30 & 0.10 & 0.05 & 0.05 \\ 
    \hline
@@ -87,7 +87,7 @@ Weight & 0.40 & 0.30 & 0.10 & 0.05 & 0.05 \\
 \end{table}
 
 
-5: Lastly, we merge the combined dataset with the *Post-Graduation Salary* dataset, which contains various variables not included in the original database (despite its insane size) to form the data frame used in this project. 
+5: Lastly, we merge the combined dataset with the \emph{Post-Graduation Salary} dataset, which contains various variables not included in the original database (despite its insane size) to form the data frame used in this project. 
 
 \subsection{Exploratory Data Analysis}
 
@@ -97,22 +97,29 @@ To gain a better sense of what we want students to input or what we should inclu
 First, let's look at the geographical distribution of colleges in the dataset. (For the purpose of efficient  and realistic graphing, the plot unfortunately only shows colleges present in the mainland United States.
 
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=300px]{../images/ggmap-schoolDistribution} 
+
+}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
+
 \end{knitrout}
 
-We see that there are a good number of schools of substantial size in most states, with the mid-western, mountain hemisphere perhaps a little low on educational institutions.
-
+We see that there are a good number of schools of substantial size in most states, with the mid-western, mountain hemisphere perhaps a little low on number of educational institutions.
 
 Then, we may look at the "difficulty" of schools around the country, that is, the rejection rates, from 0\% to 100\%. 
 
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=300px]{../images/ggmap-admissionRateDistribution} 
+
+}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
+
 \end{knitrout}
 
 It's hard to tell as the points are smaller for lower acceptance rates, but there honestly doesn't seem to be a deficiency anywhere in schools that are, perhaps, easier to get in to, but which will undoubtedly provide a good education - this is exactly what we wanted to know. Is it even worth it to work on this recommendation platform at all? Yes, because students may have schools in their own backyards that they just need to be told about to explore and succeed. 
@@ -132,7 +139,7 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes & 102 & 0.02 \\ 
    \hline
 \end{tabular}
-\caption{Historically Black College and University} 
+\caption{Percentages of Historically Black Colleges and Universities} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -144,7 +151,7 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes &  93 & 0.01 \\ 
    \hline
 \end{tabular}
-\caption{Flag for predominantly Black Institution} 
+\caption{Percentages of predominantly Black Institutions} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -156,7 +163,7 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes &  35 & 0.01 \\ 
    \hline
 \end{tabular}
-\caption{Flag for Alaska Native, Native Hawaiian Serving Institution} 
+\caption{Percentages of predominantly Pacific Islander Institutions} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -168,7 +175,7 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes & 347 & 0.05 \\ 
    \hline
 \end{tabular}
-\caption{Flag for Hispanic-Serving Institution} 
+\caption{Percentages of predominantly Hispanic Institutions} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -180,7 +187,7 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes &  31 & 0.00 \\ 
    \hline
 \end{tabular}
-\caption{Flag for Tribal College and University} 
+\caption{Percentages of predominantly Native American Institutions} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -192,32 +199,32 @@ It is no secret that those of minority racial/ethnic status in the United States
   2 & Yes & 129 & 0.02 \\ 
    \hline
 \end{tabular}
-\caption{Flag for Asian American, Native American, Pacific Islander-serving Institution} 
+\caption{Percentage of predominantly Asian American, Native American, Pacific Islander-serving Institutions} 
 \end{table}
 
 
-From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
+From these tables, we gathered that minority groups are underrepresented in the vast majority of institutions, and thus, these students may feel out of place in an environment that is mostly made up of people different than them. As a contrast to these damning tables, we offer a simple pie chart which shows racial/ethnic demographics across the schools.
 
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=250px]{../images/piechart-enrollmentEthnicity} 
+
+}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
+
 \end{knitrout}
 
-From the pie chart above, we may see that ..............................
+From the pie chart above, we may see that, while it is of course a problematic and contentious postulation, that white students make up the largest majority of the student body - thus, our metric of predominance in an institution may be unrealistic or not the greatest actual marker of diversity. 
 
 \subsubsection{Net Price}
-Net price is the cost of attending an institution(public or private), which includes tuition and fees, books and supplies, and living expenses).
+Net price is the final cost of attending an institution, which includes the amount required for tuition and fees, books and supplies, and living expenses after financial aid which would be on-default given to certain income levels. Thus, the Net Price is different for each income bracket - and our model reflects this, by pulling from different columns for net price in response to the student's input. For this project, we are obviously interested in the Average Net Price for full-time, first-time undergraduate Title IV-receiving students. 
 
-For this project, we are interested in the Average Net Price,  which is derived from the full cost of attendance (including tuition and fees, books and supplies, and living expenses) minus federal, state, and institutional aid, for full-time, first-time undergraduate Title IV-receiving students. 
+Average net price $(NPT4 *$ for $PUB$ [public colleges; for public institutions, this metric is limited to those undergraduates who pay in-state tuition] and $PRIV$ [private colleges]) contains a weighted average of the net cost of attendance for all full-time, first-time undergraduate Title IV-receiving students. 
 
-Average net price (NPT4_* for _PUB [public colleges; for
-public institutions, this metric is limited to those undergraduates who pay in-state tuition] and _PRIV [private colleges]) includes a weighted
-average of all full-time, first-time undergraduate Title IV-receiving. 
+Here, sumammary statistics are provided for both Private and Public Institutions.
 
-
-Here, sumammary statistics is provided for both Private and Public Institutions
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
@@ -232,110 +239,23 @@ Public & 126.32 & 27055.80 & 26929.48 & 8604.50 & 6217.02 & 12397.31 & 6180.28 &
 \end{table}
 
 
-From the table above, we can see that the Net Price of Private Colleges are much higher than those of Public Colleges. All summary statistics of Private Colleges are much higher numbers and they are higher than Public Colleges by a factor of 3 or 4.
+From the table above, we (logically) see that the Net Price of Private Colleges is much higher than that of Public Colleges. As you can see, every summary statistic for Private Colleges is larger than the equivalent value for Public Colleges by a factor of 3 or 4.
 
-The following are the histograms for Net Price of both Public and Private colleges
-
-\begin{kframe}
+The following are the histograms for Net Price of both Public and Private colleges by income bracket.
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
+{\centering \includegraphics[width=150px]{../images/histogram-meanNetPrice} 
 
-From 2 histograms, we can see that the net price for public institution is skewed-left, while net price of private colleges tends to follow a normal distribution. 
-
-In addition, average net price is then categorized into different income quintiles for students. 
-
-_ (1) $0-$30,000; 
-
-_ (2) $30,001-$48,000; 
-
-_ (3) $48,001-$75,000; 
-
-_ (4) $75,001-$110,000
-
-_ (5) $110,000+.
- 
-FOr each quintile, average net price is divided into 'Public' or 'Private'. 
-
-\subsubsection{Standardized Test Scores}
-
-The Standardized Test Scores could be important indications for the quality of school and how likely a student may get admission. So we may look at the general distribution of SAT and ACT scores.
-
-\begin{kframe}
+}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
-\centering
-\begin{tabular}{rrrrrrrrrr}
-  \hline
- & Min. & Max. & Range & Median & 25th & 75th & IQR & Mean & SD \\ 
-  \hline
-1 & 298.00 & 757.25 & 459.25 & 511.50 & 475.50 & 556.25 & 80.75 & 520.90 & 66.81 \\ 
-   \hline
-\end{tabular}
-\caption{Summary Statistics for SAT Critical Writing} 
-\end{table}
 
 
-From the histogram and the table above, we can see that the median of SAT Critical Reading scores basically follows a normal distribution, with most of the scores clustering between 450 and 550. We may consider colleges with such score higher than 556 to be outstanding as a college institution.
+By comparing the 2 histograms, we can see that the simplified distribution of net price for public institutions is skewed-left, while net price of private colleges tends to follow a more normal-appearing distribution. 
 
-\begin{kframe}
+The data reflects these differences by having stored many different net prices - average net price is categorized into different income quintiles for students. 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
-\centering
-\begin{tabular}{rrrrrrrrrr}
-  \hline
- & Min. & Max. & Range & Median & 25th & 75th & IQR & Mean & SD \\ 
-  \hline
-1 & 305.00 & 783.75 & 478.75 & 516.00 & 482.31 & 563.17 & 80.86 & 528.66 & 70.38 \\ 
-   \hline
-\end{tabular}
-\caption{Summary Statistics for SAT Math} 
-\end{table}
-
-
-From the histogram and the table above, we can see that the median of SAT Mathematics scores basically follows a normal distribution, with most of the scores clustering between 450 and 550. We may consider colleges with such score higher than 563 to be outstanding as a college institution.
-
-Because not all colleges recorded or submitted their SAT Writing scores to the original dataset, we may remove in the consideration. Also, we may conduct similar analysis on reported ACT scores:
-
-\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
-\centering
-\begin{tabular}{rrrrrrrrrr}
-  \hline
- & Min. & Max. & Range & Median & 25th & 75th & IQR & Mean & SD \\ 
-  \hline
-1 & 2.00 & 34.40 & 32.40 & 22.17 & 20.16 & 24.60 & 4.44 & 22.69 & 3.78 \\ 
-   \hline
-\end{tabular}
-\caption{Summary Statistics for ACT English} 
-\end{table}
-
-
-From the histogram and the table above, we can see that the median of ACT English scores basically follows a normal distribution, with most of the scores clustering between 20 and 24. We may consider colleges with such score higher than 24.6 to be outstanding as a college institution.
-
-\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
-\centering
-\begin{tabular}{rrrrrrrrrr}
-  \hline
- & Min. & Max. & Range & Median & 25th & 75th & IQR & Mean & SD \\ 
-  \hline
-1 & 2.00 & 35.40 & 33.40 & 21.95 & 20.40 & 24.00 & 3.60 & 22.47 & 3.41 \\ 
-   \hline
-\end{tabular}
-\caption{Summary Statistics for ACT Math} 
-\end{table}
-
-
-From the histogram and the table above, we can see that the median of ACT Math scores basically follows a normal distribution, with most of the scores clustering between 20 and 24. We may consider colleges with such score higher than 24 to be outstanding as a college institution.
 
 
 \end{document}
