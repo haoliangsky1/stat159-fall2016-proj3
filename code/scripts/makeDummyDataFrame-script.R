@@ -65,6 +65,13 @@ dummy['DegreesHistory'] = as.numeric(college$PCIP54)
 # Life Science/Health
 dummy['DegreesLifeScienceHealth'] = as.numeric(college$PCIP26) + as.numeric(college$PCIP51) 
 
+# Ethnicity
+dummy['White'] = as.numeric(college$UGDS_WHITE)
+dummy['Black'] = as.numeric(college$UGDS_BLACK)
+dummy['Hispanic'] = as.numeric(college$UGDS_HISP)
+dummy['Asian'] = as.numeric(college$UGDS_ASIAN)
+dummy['Native'] = as.numeric(college$UGDS_AIAN)
+dummy['Islander'] = as.numeric(college$UGDS_NHPI)
 
 # Entrance standardized test scores
 dummy['SATCR'] = as.numeric(college$SATVRMID)
