@@ -203,9 +203,16 @@ save(NPTable_Q2, file = 'data/rData/table-netPrice_quintile2.RData')
 
 
 #save
-#hist(college$NPT42_PUB[college$NPT42_PUB>0], main = "Historgram of  average net price by income quintile 1(Public colleges)" )
-#hist(college$NPT42_PRIV[college$NPT42_PRIV>0])
+png('images/histogram-meanNetPrice.png')
+par(mfrow=c(1,2), oma = c(0,0,2,0))
+hist(college$NPT42_PUB[college$NPT42_PUB>0], main = "Public Institute" , xlim = c(0, 60000), xlab = 'US Dollar')
+abline(v = median(college$NPT42_PUB[college$NPT42_PUB>0]), col ='red')
+hist(college$NPT42_PRIV[college$NPT42_PRIV>0], main  = 'Private Institute', xlim = c(0,60000), xlab = 'US Dollar')
+abline(v = median(college$NPT42_PRIV[college$NPT42_PRIV>0]), col = 'red')
+mtext('Histogram of Average Net Price', outer = T)
+dev.off()
 
+par(mfrow = c(1,1))
 
 # (3) $48,001-$75,000; 
 NPPub_Q3 = getSummary(college$NPT43_PUB[college$NPT43_PUB>0])
