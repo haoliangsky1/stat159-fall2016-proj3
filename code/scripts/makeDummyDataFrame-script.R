@@ -66,6 +66,14 @@ dummy['DegreesHistory'] = as.numeric(college$PCIP54)
 dummy['DegreesLifeScienceHealth'] = as.numeric(college$PCIP26) + as.numeric(college$PCIP51) 
 
 
+# Entrance standardized test scores
+dummy['SATCRMID'] = as.numeric(college$SATVRMID)
+dummy['SATMTMID'] = as.numeric(college$SATMTMID)
+dummy['ACTENMID'] = as.numeric(college$ACTENMID)
+dummy['ACTMTMID'] = as.numeric(college$ACTMTMID)
+
+
+
 # We only take 4-year institute
 dummy = dummy[dummy$HIGHDEG %in% c(4,5),]
 
