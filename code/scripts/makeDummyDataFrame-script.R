@@ -95,6 +95,35 @@ dummy[dummy == 'PrivacySuppressed'] = NA
 write.csv(dummy, file = 'data/schoolRanking.csv')
 write.csv(dummy, file = 'code/shinyApp/schoolRanking.csv')
 
+# Output the columns and weights
+vectorNames = colnames(dummy)[8:ncol(dummy)]
+save(vectorNames, file='data/rData/columnNames.RData')
+weightDefault = c(-0.05, -0.05, -0.05, 0.1, 0.2, 0.1, 0.1, 0.7, 0.7, 0.7, 0.1, -0.1, 0.0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0,0)
+save(weightDefault, file = 'data/rData/weightDefault.RData')
+
+weightTable = matrix(ncol = 3, nrow = 19)
+colnames(weightTable) = c('Variable', 'Weight', 'Condition')
+weightTable[1,] = c('NetPrice', -0.05, 'Default')
+weightTable[2,] = c('NetPrice', -0.3, 'Income in $0-$75,000')
+weightTable[3,] = c('NetPrice', 0.4, 'Income in $75,000+')
+weightTable[4,] = c('3 Year Repayment Rate', 0.1, 'Default')
+weightTable[5,] = c('5 Year Repayment Rate', 0.1, 'Default')
+weightTable[6,] = c('4 Year Completion Rate', 0.7, 'Default')
+weightTable[7,] = c('10 Year Mean Earnings', 0.7, 'Default')
+weightTable[8,] = c('10 Year Median Earnings', 0.7, 'Default')
+weightTable[9,] = c('Pell Grant', 0.1, 'Default')
+weightTable[10,] = c('Pell Grant', 0.5, 'Income in $0-$30,000')
+weightTable[11,] = c('Median Debt', -0.1, 'Default')
+weightTable[12,] = c('First Generation', 0.0, 'Default')
+weightTable[13,] = c('First Generation', 0.2, 'First Generation')
+weightTable[14,] = c('Major', 0.1, 'Default')
+weightTable[15,] = c('Major', 0.3, 'Selected major')
+weightTable[16,] = c('Ethnicity', 0.0, 'Selected major')
+weightTable[17,] = c('Ethnicity', 0.1, 'Selected ethnicity')
+weightTable[18,] = c('Test Score', 0.0, 'Default')
+weightTable[19,] = c('Test Score', 0.1, 'Input test score')
+save(weightTable, file = 'data/rData/weightTable.RData')
+
 # n = nrow(dummy)
 # for (i in 1:20) {
 #   print(as.vector(dummy$INSTNM[which(Score == sort(Score,partial=n-i)[n-i])]))
