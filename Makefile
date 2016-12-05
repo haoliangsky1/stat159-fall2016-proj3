@@ -6,26 +6,68 @@ csv = data/*.csv
 RData = data/*.RData
 png = images/*.png
 rnw = report/sections/*.Rnw
+log = report/*.log
+
 
 # PHONY targets
 all: $(output)
 
+report/report.pdf:
+	Rscript -e "library(knitr); knit2pdf('report/report.Rnw', output = 'report/report.tex')"
+
+session-info.txt: session.sh
+	bash session.sh
+	Rscript code/scripts/session-info-script.R
+
+data/rData/*.RData:
+	Rscript code/scripts/eda-script.R data/combinedData.csv
+
+images/*.png:
+	Rscript code/scripts/eda-script.R data/combinedData.csv
+
+data/rawData/*.csv:
+	# Commented out for reproducibility
+	# curl -O https://ed-public-download.apps.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip
+	# mv CollegeScorecard_Raw_Data.zip data/CollegeScorecard_Raw_Data.zip
+	# unzip data/CollegeScorecard_Raw_Data.zip -d data/rawData/
+
+data/reducedData/*.csv:
+	# curl -O https://ed-public-download.apps.cloud.gov/downloads/Most-Recent-Cohorts-Treasury-Elements.csv
+	# mv Most-Recent-Cohorts-Treasury-Elements.csv data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv
+
+$(csv):
+	# python code/function/cleanUp.py
+	# Rscript code/scripts/mergeData-script.R
+	# cp -b data/combinedData.csv code/shinyApp/combinedData.csv
+
+	# Rscript code/script/makeDummyDataFrame-script.R data/combinedData.csv
 
 
+
+# Phony targets:
 data:
-	# The All Data dataset
-	curl -O https://ed-public-download.apps.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip
-	mv CollegeScorecard_Raw_Data.zip data/CollegeScorecard_Raw_Data.zip
-	unzip data/CollegeScorecard_Raw_Data.zip -d data/rawData/
 
-	# The Post-school earnings data set
-	curl -O https://ed-public-download.apps.cloud.gov/downloads/Most-Recent-Cohorts-Treasury-Elements.csv
-	mv Most-Recent-Cohorts-Treasury-Elements.csv data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv
+	# The codes for this session are commented out because the original data files are too large
+	# Anyone pulling the the repo would find all data files necessary for this project already in data/ folder
 
-	# Merge the data
-	python code/function/cleanUp.py
-	Rscript code/scripts/mergeData-script.R
-	cp -b data/combinedData.csv code/shinyApp/combinedData.csv
+
+
+	# The All Data dataset:
+
+	# curl -O https://ed-public-download.apps.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip
+	# mv CollegeScorecard_Raw_Data.zip data/CollegeScorecard_Raw_Data.zip
+	# unzip data/CollegeScorecard_Raw_Data.zip -d data/rawData/
+
+	# The Post-school earnings data set:
+
+	# curl -O https://ed-public-download.apps.cloud.gov/downloads/Most-Recent-Cohorts-Treasury-Elements.csv
+	# mv Most-Recent-Cohorts-Treasury-Elements.csv data/reducedData/Most-Recent-Cohorts-Treasury-Elements.csv
+
+	# Merge the data:
+
+	# python code/function/cleanUp.py
+	# Rscript code/scripts/mergeData-script.R
+	# cp -b data/combinedData.csv code/shinyApp/combinedData.csv
 
 tests:
 	# run the unit tests of the self-defiend functions
@@ -36,11 +78,12 @@ eda:
 	Rscript code/scripts/eda-script.R data/combinedData.csv
 
 
-report: $(rnw)
+report: 
 	# concatinate the files into one
 	#cat $(rnw) > report/report.Rnw
 	# generate report.pdf
 	Rscript -e "library(knitr); knit2pdf('report/report.Rnw', output = 'report/report.tex')"
+	rm $(log)
 
 shinyApp:
 	Rscript code/script/makeDummyDataFrame-script.R data/combinedData.csv
@@ -61,10 +104,10 @@ session:
 	Rscript code/scripts/session-info-script.R
 
 clean:
-	# Clean 
+	# Clean up files
 	# rm -f session-info.txt
 	# rm -f data/*.csv
 	# rm -f data/rData/*.*
 	# rm -f images/*.*
-	# rm -f report/*.pdf
+	rm -f report/*.pdf
 	
