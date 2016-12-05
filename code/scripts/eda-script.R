@@ -175,8 +175,8 @@ temp = college$COSTT4_A
 
 
 # #Analyze collumns :
-NPT college$NPT41_PUB + college$NPT41_PRIV
-average net price by income quintile
+#NPT college$NPT41_PUB + college$NPT41_PRIV
+#average net price by income quintile
 # # NPPub_Q1:
 #   #(1) $0-$30,000;
  NPPub_Q1 = getSummary(college$NPT41_PUB[college$NPT41_PUB>0])
@@ -281,7 +281,7 @@ dev.off()
 SATMTTable = getSummary(SATMT)
 save(SATMTTable, file = 'data/rData/table-SATMT.RData')
 
-# ACT
+# ACT 
 ACTEN = college$ACTENMID
 ACTEN = ACTEN[ACTEN != 0]
 print('plotting: histogram-ACTENMedian.png')
