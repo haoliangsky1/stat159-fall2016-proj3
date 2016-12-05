@@ -3,6 +3,9 @@
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
 
+\usepackage{hyperref}
+
+
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 

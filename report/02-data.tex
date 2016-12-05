@@ -21,7 +21,6 @@
 \newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
 \newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
 
 \usepackage{framed}
 \makeatletter
@@ -52,8 +51,11 @@
 \title{Stat159 Project 3: Add a title}
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
+
+\usepackage{hyperref}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{Data}
@@ -62,18 +64,16 @@
 
 \subsection{Description}
 
-The data we used for this project come from the *College Scorecard* , which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals". The link to the data can be found [here](https://collegescorecard.ed.gov/data/). For now, the (website)[https://collegescorecard.ed.gov/] provides basic information about facts about educational institutions upon search. 
+The data used in the construction of this app originates from the *College Scorecard* database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed \href{here}(https://collegescorecard.ed.gov/data/).
 
 \subsection{Cleaning}
-For our purpose, we collect the raw data for the past five years, and clean up in the following way:
+For our purpose, we interpret and intercalate the data from the past five years, cleaning and merging the sets by implementing the following algorithm:
 
-1: For dataset of each of the five years, we get the columns and rows with less than 10% *PrivacySuppressed* or *NaN*, in order to obtain a data set with sufficient information. And we take the intersection of the columns and rows as our first step. Such process leaves us with around around 600 columns and around 6700 colleges.
+1: For each dataset, we extract the columns and rows with less than 10\% *PrivacySuppressed* or *NaN* to obtain usable datasets with each column posessing enough information to be meaningful. We then take the unions and overlaps of the columns and rows across the years. This leaves us with around 600 columns and 6700 colleges.
 
-2: Then we run through the data dictionary to extract useful columns that may help in building model and the shiny App for this project. The process decreases the number of columns to under 300.
+2: We examine the data dictionary and relevant literature, noting useful columns that may be relevant to our response variable. This arbitrarion process decreases the number of columns to under 300. We then parse the five datasets with the logically collected columns and rows.
 
-3: We parse the five dataset with the selected columns and rows.
-
-4: Believing that closer years have more value as information, we combine the five dataset with the following weight:
+4: While we include five years of data to ease out short-term variances, we still believe more recent data has value in this circumstance, so we combine the five datasets with the following weights:
 
 \begin{table}[ht]
 \centering
@@ -87,42 +87,40 @@ Weight & 0.40 & 0.30 & 0.10 & 0.05 & 0.05 \\
 \end{table}
 
 
-5: Lastly, we merge the combined dataset with the *Post-Graduation Salary* dataset to form the data frame to be used in this project. 
+5: Lastly, we merge the combined dataset with the *Post-Graduation Salary* dataset, which contains various variables not included in the original database (despite its insane size) to form the data frame used in this project. 
 
 \subsection{Exploratory Data Analysis}
 
 \subsubsection{Geographical Distribution}
-We may first have a look at the geographical distribution of colleges in the dataset. For the purpose of graphing, the plot only shows colleges in mainland United States.
+To gain a better sense of what we want students to input or what we should include as an important piece in the response metric, We carry out substantial exploratory data analysis. We begin by looking at colleges around the country as a whole.
+
+First, let's look at the geographical distribution of colleges in the dataset. (For the purpose of efficient  and realistic graphing, the plot unfortunately only shows colleges present in the mainland United States.
 
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=300px]{../images/ggplot-schoolDistribution} 
-
-}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
 \end{knitrout}
 
-We may see that blablablablabla
+We see that there are a good number of schools of substantial size in most states, with the mid-western, mountain hemisphere perhaps a little low on educational institutions.
 
 
-Then, we may look at the 
+Then, we may look at the "difficulty" of schools around the country, that is, the rejection rates, from 0\% to 100\%. 
+
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=300px]{../images/ggplot-admissionRateDistribution} 
-
-}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
 \end{knitrout}
+
+It's hard to tell as the points are smaller for lower acceptance rates, but there honestly doesn't seem to be a deficiency anywhere in schools that are, perhaps, easier to get in to, but which will undoubtedly provide a good education - this is exactly what we wanted to know. Is it even worth it to work on this recommendation platform at all? Yes, because students may have schools in their own backyards that they just need to be told about to explore and succeed. 
 
 \subsubsection{Ethnicity}
 
-We can also look at the historical statistics for educational conditions for minority groups. For such causes have long been drawing attention from the society and the public still complain about it.
+It is no secret that those of minority racial/ethnic status in the United States may not be given the same institutional affordances in the college process, from admissions to graduation to post-graduation achievement. Even beyond negative and arbitrary admissions processes, it has been theorized that the existence of a community which is composed of students of your background, etc. can have a profound effect on success. Thus, we can examine the various ways race has been historicized in the college process, as it is and always will be of great public concern. Additionally, due to our NGO affiliation, we want to approach these institutional inequalities with a constructive open mind and a tool which suggests schools of better, or at least matching, diversity. 
+
 
 \begin{table}[ht]
 \centering
@@ -134,7 +132,7 @@ We can also look at the historical statistics for educational conditions for min
   2 & Yes & 102 & 0.02 \\ 
    \hline
 \end{tabular}
-\caption{Flag for Historically Black College and University} 
+\caption{Historically Black College and University} 
 \end{table}
 \begin{table}[ht]
 \centering
@@ -201,14 +199,10 @@ We can also look at the historical statistics for educational conditions for min
 From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
 
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=250px]{../images/piechart-enrollmentEthnicity} 
-
-}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
 \end{knitrout}
 
 From the pie chart above, we may see that ..............................
@@ -242,21 +236,12 @@ From the table above, we can see that the Net Price of Private Colleges are much
 
 The following are the histograms for Net Price of both Public and Private colleges
 
+\begin{kframe}
 
 
-{\centering \includegraphics[width=150px]{../images/histogram-NPPub} 
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}
 
-}
-
-
-
-
-{\centering \includegraphics[width=150px]{../images/histogram-NPriv} 
-
-}
-
-
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}
 
 From 2 histograms, we can see that the net price for public institution is skewed-left, while net price of private colleges tends to follow a normal distribution. 
 
@@ -278,14 +263,10 @@ FOr each quintile, average net price is divided into 'Public' or 'Private'.
 
 The Standardized Test Scores could be important indications for the quality of school and how likely a student may get admission. So we may look at the general distribution of SAT and ACT scores.
 
+\begin{kframe}
 
 
-{\centering \includegraphics[width=150px]{../images/histogram-SATCRMedian} 
-
-}
-
-
-\begin{table}[ht]
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
   \hline
@@ -300,14 +281,10 @@ The Standardized Test Scores could be important indications for the quality of s
 
 From the histogram and the table above, we can see that the median of SAT Critical Reading scores basically follows a normal distribution, with most of the scores clustering between 450 and 550. We may consider colleges with such score higher than 556 to be outstanding as a college institution.
 
+\begin{kframe}
 
 
-{\centering \includegraphics[width=150px]{../images/histogram-SATMTMedian} 
-
-}
-
-
-\begin{table}[ht]
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
   \hline
@@ -324,14 +301,10 @@ From the histogram and the table above, we can see that the median of SAT Mathem
 
 Because not all colleges recorded or submitted their SAT Writing scores to the original dataset, we may remove in the consideration. Also, we may conduct similar analysis on reported ACT scores:
 
+\begin{kframe}
 
 
-{\centering \includegraphics[width=150px]{../images/histogram-ACTENMedian} 
-
-}
-
-
-\begin{table}[ht]
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
   \hline
@@ -346,14 +319,10 @@ Because not all colleges recorded or submitted their SAT Writing scores to the o
 
 From the histogram and the table above, we can see that the median of ACT English scores basically follows a normal distribution, with most of the scores clustering between 20 and 24. We may consider colleges with such score higher than 24.6 to be outstanding as a college institution.
 
+\begin{kframe}
 
 
-{\centering \includegraphics[width=150px]{../images/histogram-ACTMTMedian} 
-
-}
-
-
-\begin{table}[ht]
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 'include\_graphics' is not an exported object from 'namespace:knitr'}}\end{kframe}\begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrr}
   \hline

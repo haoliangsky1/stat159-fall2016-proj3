@@ -3,12 +3,15 @@
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
 
+\usepackage{hyperref}
+
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{Data}
 
-<<eval = TRUE, echo=FALSE, message=FALSE>>=
+<<hmmm, eval = TRUE, echo=FALSE, message=FALSE>>=
 # Settings
 #library(Hmisc)
 library(xtable)
@@ -19,18 +22,16 @@ options(Sweave.comment = FALSE)
 
 \subsection{Description}
 
-The data we used for this project come from the *College Scorecard* , which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals". The link to the data can be found [here](https://collegescorecard.ed.gov/data/). For now, the (website)[https://collegescorecard.ed.gov/] provides basic information about facts about educational institutions upon search. 
+The data used in the construction of this app originates from the *College Scorecard* database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed \href{here}(https://collegescorecard.ed.gov/data/).
 
 \subsection{Cleaning}
-For our purpose, we collect the raw data for the past five years, and clean up in the following way:
+For our purpose, we interpret and intercalate the data from the past five years, cleaning and merging the sets by implementing the following algorithm:
 
-1: For dataset of each of the five years, we get the columns and rows with less than 10% *PrivacySuppressed* or *NaN*, in order to obtain a data set with sufficient information. And we take the intersection of the columns and rows as our first step. Such process leaves us with around around 600 columns and around 6700 colleges.
+1: For each dataset, we extract the columns and rows with less than 10\% *PrivacySuppressed* or *NaN* to obtain usable datasets with each column posessing enough information to be meaningful. We then take the unions and overlaps of the columns and rows across the years. This leaves us with around 600 columns and 6700 colleges.
 
-2: Then we run through the data dictionary to extract useful columns that may help in building model and the shiny App for this project. The process decreases the number of columns to under 300.
+2: We examine the data dictionary and relevant literature, noting useful columns that may be relevant to our response variable. This arbitrarion process decreases the number of columns to under 300. We then parse the five datasets with the logically collected columns and rows.
 
-3: We parse the five dataset with the selected columns and rows.
-
-4: Believing that closer years have more value as information, we combine the five dataset with the following weight:
+4: While we include five years of data to ease out short-term variances, we still believe more recent data has value in this circumstance, so we combine the five datasets with the following weights:
 
 <<eval = TRUE, echo=FALSE, message=FALSE, results='asis'>>=
 library(xtable)
@@ -38,59 +39,65 @@ weightTable = matrix(nrow = 1, ncol = 5)
 colnames(weightTable) = c('Year 2014-2015', 'Year 2013-2014', 'Year 2012-2013', 'Year 2011-2012', 'Year 2010-2011')
 rownames(weightTable) = 'Weight'
 weightTable[1,] = c(0.4, 0.3, 0.1, 0.05, 0.05)
-xtable(weightTable)
+xtable(weightTable, table.placement = '!h')
 @
 
-5: Lastly, we merge the combined dataset with the *Post-Graduation Salary* dataset to form the data frame to be used in this project. 
+5: Lastly, we merge the combined dataset with the *Post-Graduation Salary* dataset, which contains various variables not included in the original database (despite its insane size) to form the data frame used in this project. 
 
 \subsection{Exploratory Data Analysis}
 
 \subsubsection{Geographical Distribution}
-We may first have a look at the geographical distribution of colleges in the dataset. For the purpose of graphing, the plot only shows colleges in mainland United States.
+To gain a better sense of what we want students to input or what we should include as an important piece in the response metric, We carry out substantial exploratory data analysis. We begin by looking at colleges around the country as a whole.
+
+First, let's look at the geographical distribution of colleges in the dataset. (For the purpose of efficient  and realistic graphing, the plot unfortunately only shows colleges present in the mainland United States.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
 knitr::include_graphics("../images/ggplot-schoolDistribution.png")
 @
 
-We may see that blablablablabla
+We see that there are a good number of schools of substantial size in most states, with the mid-western, mountain hemisphere perhaps a little low on number of educational institutions.
 
 
-Then, we may look at the 
+Then, we may look at the "difficulty" of schools around the country, that is, the rejection rates, from 0\% to 100\%. 
+
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
 knitr::include_graphics("../images/ggplot-admissionRateDistribution.png")
 @
 
+It's hard to tell as the points are smaller for lower acceptance rates, but there honestly doesn't seem to be a deficiency anywhere in schools that are, perhaps, easier to get in to, but which will undoubtedly provide a good education - this is exactly what we wanted to know. Is it even worth it to work on this recommendation platform at all? Yes, because students may have schools in their own backyards that they just need to be told about to explore and succeed. 
+
 \subsubsection{Ethnicity}
 
-We can also look at the historical statistics for educational conditions for minority groups. For such causes have long been drawing attention from the society and the public still complain about it.
+It is no secret that those of minority racial/ethnic status in the United States may not be given the same institutional affordances in the college process, from admissions to graduation to post-graduation achievement. Even beyond negative and arbitrary admissions processes, it has been theorized that the existence of a community which is composed of students of your background, etc. can have a profound effect on success. Thus, we can examine the various ways race has been historicized in the college process, as it is and always will be of great public concern. Additionally, due to our NGO affiliation, we want to approach these institutional inequalities with a constructive open mind and a tool which suggests schools of better, or at least matching, diversity. 
+
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', results='asis'>>=
 load('../data/rData/table-HBCU.RData')
-xtable(HBCUTable, caption = 'Flag for Historically Black College and University')
+xtable(HBCUTable, caption = 'Percentages of Historically Black Colleges and Universities')
 
 load('../data/rData/table-PBI.RData')
-xtable(PBITable, caption = 'Flag for predominantly Black Institution')
+xtable(PBITable, caption = 'Percentages of predominantly Black Institutions')
 
 load('../data/rData/table-ANNHI.RData')
-xtable(ANNHITable, caption = 'Flag for Alaska Native, Native Hawaiian Serving Institution')
+xtable(ANNHITable, caption = 'Percentages of predominantly Pacific Islander Institutions')
 
 load('../data/rData/table-HSI.RData')
-xtable(HSITable, caption = 'Flag for Hispanic-Serving Institution')
+xtable(HSITable, caption = 'Percentages of predominantly Hispanic Institutions')
 
 load('../data/rData/table-TRIBAL.RData')
-xtable(TRIBALTable, caption = 'Flag for Tribal College and University')
+xtable(TRIBALTable, caption = 'Percentages of predominantly Native American Institutions')
 
 load('../data/rData/table-AANAPII.RData')
-xtable(AANAPIITable, caption = 'Flag for Asian American, Native American, Pacific Islander-serving Institution')
+xtable(AANAPIITable, caption = 'Percentage of predominantly Asian American, Native American, Pacific Islander-serving Institutions')
 @
 
-From the tables above, we can see that the minority groups are under-represented in most of the educational institutions in the U.S. We may also look at the tthniticy of total share of enrollment of undergraduate degree-seeking students in the dataset.
+From these tables, we gathered that minority groups are underrepresented in the vast majority of institutions, and thus, these students may feel out of place in an environment that is made up of radically different people than they have experienced. As a contrast to these damning tables, we offer a simple pie chart which shows racial/ethnic demographics across the schools.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="250px">>=
 knitr::include_graphics("../images/piechart-enrollmentEthnicity.png")
 @
 
-From the pie chart above, we may see that ..............................
+From the pie chart above, we may see that, while it is of course a problematic and contentious postulation, that white students make up the largest majority of the student body - thus, our metric of predominance in an institution may be unrealistic or not the greatest actual marker of diversity. 
 
 \subsubsection{Net Price}
 Net price is the cost of attending an institution(public or private), which includes tuition and fees, books and supplies, and living expenses).
