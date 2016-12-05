@@ -52,7 +52,7 @@ To gain a better sense of what we want students to input or what we should inclu
 First, let's look at the geographical distribution of colleges in the dataset. (For the purpose of efficient  and realistic graphing, the plot unfortunately only shows colleges present in the mainland United States.
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggplot-schoolDistribution.png")
+knitr::include_graphics("../images/ggmap-schoolDistribution.png")
 @
 
 We see that there are a good number of schools of substantial size in most states, with the mid-western, mountain hemisphere perhaps a little low on number of educational institutions.
@@ -61,7 +61,7 @@ We see that there are a good number of schools of substantial size in most state
 Then, we may look at the "difficulty" of schools around the country, that is, the rejection rates, from 0\% to 100\%. 
 
 <<eval = TRUE, message=FALSE, echo=FALSE, dev='png', fig.align='center', out.width="300px">>=
-knitr::include_graphics("../images/ggplot-admissionRateDistribution.png")
+knitr::include_graphics("../images/ggmap-admissionRateDistribution.png")
 @
 
 It's hard to tell as the points are smaller for lower acceptance rates, but there honestly doesn't seem to be a deficiency anywhere in schools that are, perhaps, easier to get in to, but which will undoubtedly provide a good education - this is exactly what we wanted to know. Is it even worth it to work on this recommendation platform at all? Yes, because students may have schools in their own backyards that they just need to be told about to explore and succeed. 
