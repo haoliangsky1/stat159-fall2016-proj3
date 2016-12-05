@@ -65,12 +65,12 @@ ui = fluidPage(
     fluidRow(
       column(5, h4('Standardized Test'),
              # Input SAT Scores - Data has percentiles of SAT/ACT scores for students
-             numericInput(inputId = 'SATMath', label = 'Input SAT Math Score', value=NA),
-             numericInput(inputId = 'SATCriticalReading', label = 'Input SAT Critical Reading Score', value = NA),
+             numericInput(inputId = 'SATMath', label = 'Input SAT Math Score', value=700),
+             numericInput(inputId = 'SATCriticalReading', label = 'Input SAT Critical Reading Score', value = 700),
              #numericInput(inputId = 'SATWriting', label = 'Input SAT Writing Score', value=NA),
              # Input ACT Scores
-             numericInput(inputId = 'ACTEnglish', label = 'Input ACT English Score', value=NA),
-             numericInput(inputId = 'ACTMath', label = 'Input ACT Math Score', value=NA)
+             numericInput(inputId = 'ACTEnglish', label = 'Input ACT English Score', value=25),
+             numericInput(inputId = 'ACTMath', label = 'Input ACT Math Score', value=25)
              #numericInput(inputId = 'ACTWriting', label = 'Input ACT Writing Score', value=NA)
       ),
       column(5,  # First Generation
@@ -143,7 +143,11 @@ server = function(input, output) {
     income = input$familyIncome
     firstGen = input$firstGeneration
     major = input$intendedMajor
-    dummyNewScore = calculateScores(dummy, income, firstGen, major, useDefaultWeights = FALSE)
+    satCR = input$SATCriticalReading
+    satMath = input$SATMath
+    actEng = input$ACTEnglish
+    actMath = input$ACTMath
+    dummyNewScore = calculateScores(dummy, income, firstGen, major, satCR, satMath, actEng, actMath, useDefaultWeights = FALSE)
     schoolRanking = makeRankingTable(dummyNewScore, stateName, income, firstGen)
   }))
   
