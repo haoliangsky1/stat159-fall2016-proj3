@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 DEC 2016 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 DEC 2016 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,72 +263,198 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 61.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 80.
+(Font)              <7> on input line 81.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 80.
- [1
+(Font)              <5> on input line 81.
+[1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package color Info: Redefining color shadecolor on input line 100.
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
-<../images/ggmap-schoolDistribution.png, id=43, 481.8pt x 481.8pt>
+ []
+
+Package color Info: Redefining color shadecolor on input line 101.
+<../images/ggmap-schoolDistribution.png, id=47, 481.8pt x 481.8pt>
 File: ../images/ggmap-schoolDistribution.png Graphic file (type png)
 
 <use ../images/ggmap-schoolDistribution.png>
 Package pdftex.def Info: ../images/ggmap-schoolDistribution.png used on input l
-ine 102.
+ine 103.
 (pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
-Package color Info: Redefining color shadecolor on input line 115.
 
-<../images/ggmap-admissionRateDistribution.png, id=45, 481.8pt x 481.8pt>
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+Package color Info: Redefining color shadecolor on input line 116.
+<../images/ggmap-admissionRateDistribution.png, id=49, 481.8pt x 481.8pt>
+[2 <../images/ggmap-schoolDistribution.png>]
 File: ../images/ggmap-admissionRateDistribution.png Graphic file (type png)
 
 <use ../images/ggmap-admissionRateDistribution.png>
 Package pdftex.def Info: ../images/ggmap-admissionRateDistribution.png used on 
-input line 117.
+input line 118.
 (pdftex.def)             Requested size: 301.1261pt x 301.1316pt.
- [2 <../images/ggmap-schoolDistribution.png>] [3 <../images/ggmap-admissionRate
-Distribution.png>]
-Package color Info: Redefining color shadecolor on input line 209.
+ [3 <../images/ggmap-admissionRateDistribution.png>]
+Package color Info: Redefining color shadecolor on input line 210.
 
-<../images/piechart-enrollmentEthnicity.png, id=57, 481.8pt x 481.8pt>
+<../images/piechart-enrollmentEthnicity.png, id=61, 481.8pt x 481.8pt>
 File: ../images/piechart-enrollmentEthnicity.png Graphic file (type png)
 
 <use ../images/piechart-enrollmentEthnicity.png>
 Package pdftex.def Info: ../images/piechart-enrollmentEthnicity.png used on inp
-ut line 211.
+ut line 212.
 (pdftex.def)             Requested size: 250.93842pt x 250.93442pt.
- [4 <../images/piechart-enrollmentEthnicity.png>]
-Overfull \hbox (126.55676pt too wide) in paragraph at lines 230--238
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[4 <../images/piechart-enrollmentEthnicity.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Overfull \hbox (126.55676pt too wide) in paragraph at lines 231--239
  [][] 
  []
 
-<../images/histogram-meanNetPrice.png, id=65, 481.8pt x 481.8pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+<../images/histogram-meanNetPrice.png, id=69, 481.8pt x 481.8pt>
 File: ../images/histogram-meanNetPrice.png Graphic file (type png)
 
 <use ../images/histogram-meanNetPrice.png>
 Package pdftex.def Info: ../images/histogram-meanNetPrice.png used on input lin
-e 248.
+e 249.
 (pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
- [5 <../images/histogram-meanNetPrice.png>] [6] [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 261.
+ [6 <../images/histogram-meanNetPrice.png>]
+<../images/histogram-SATCRMedian.png, id=85, 481.8pt x 481.8pt>
+File: ../images/histogram-SATCRMedian.png Graphic file (type png)
+
+<use ../images/histogram-SATCRMedian.png>
+Package pdftex.def Info: ../images/histogram-SATCRMedian.png used on input line
+ 276.
+(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
+
+Overfull \hbox (24.72311pt too wide) in paragraph at lines 283--290
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+<../images/histogram-SATMTMedian.png, id=86, 481.8pt x 481.8pt>
+File: ../images/histogram-SATMTMedian.png Graphic file (type png)
+
+<use ../images/histogram-SATMTMedian.png>
+Package pdftex.def Info: ../images/histogram-SATMTMedian.png used on input line
+ 300.
+(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
+
+Overfull \hbox (24.72311pt too wide) in paragraph at lines 307--314
+ [][] 
+ []
+
+[7 <../images/histogram-SATCRMedian.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+<../images/histogram-ACTENMedian.png, id=95, 481.8pt x 481.8pt>
+File: ../images/histogram-ACTENMedian.png Graphic file (type png)
+
+<use ../images/histogram-ACTENMedian.png>
+Package pdftex.def Info: ../images/histogram-ACTENMedian.png used on input line
+ 326.
+(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
+ [8 <../images/histogram-SATMTMedian.png> <../images/histogram-ACTENMedian.png>
+]
+<../images/histogram-ACTMTMedian.png, id=104, 481.8pt x 481.8pt>
+File: ../images/histogram-ACTMTMedian.png Graphic file (type png)
+
+<use ../images/histogram-ACTMTMedian.png>
+Package pdftex.def Info: ../images/histogram-ACTMTMedian.png used on input line
+ 348.
+(pdftex.def)             Requested size: 150.56305pt x 150.56212pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+[9 <../images/histogram-ACTMTMedian.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (./02-data.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `02-data.out' has not changed.
-(rerunfilecheck)             Checksum: DC5411036033FEADFA23F10BD619EC31;450.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+(rerunfilecheck)             Checksum: 83073B1ADA4B4368367D77CB3C9A18EB;533.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
- 5244 strings out of 493014
- 78869 string characters out of 6133351
- 166410 words of memory out of 5000000
- 8728 multiletter control sequences out of 15000+600000
+ 5290 strings out of 493014
+ 79996 string characters out of 6133351
+ 167410 words of memory out of 5000000
+ 8759 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,28p,785b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,28p,1656b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -337,10 +463,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on 02-data.pdf (7 pages, 428375 bytes).
+Output written on 02-data.pdf (10 pages, 483460 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
