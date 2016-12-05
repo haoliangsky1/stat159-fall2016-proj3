@@ -67,10 +67,10 @@ dummy['DegreesLifeScienceHealth'] = as.numeric(college$PCIP26) + as.numeric(coll
 
 
 # Entrance standardized test scores
-dummy['SATCRMID'] = as.numeric(college$SATVRMID)
-dummy['SATMTMID'] = as.numeric(college$SATMTMID)
-dummy['ACTENMID'] = as.numeric(college$ACTENMID)
-dummy['ACTMTMID'] = as.numeric(college$ACTMTMID)
+dummy['SATCR'] = as.numeric(college$SATVRMID)
+dummy['SATMT'] = as.numeric(college$SATMTMID)
+dummy['ACTEN'] = as.numeric(college$ACTENMID)
+dummy['ACTMT'] = as.numeric(college$ACTMTMID)
 
 
 
