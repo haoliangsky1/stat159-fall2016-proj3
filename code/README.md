@@ -6,6 +6,8 @@ The *scripts*/ subdirectory contains:
 
 * *eda-script.R* carries out Exploratory Data Analysis (EDA) on the data to gain a semblance of understanding - including:
 
+	- Creating geographical maps that display distribution of schools and rejection rate across the US. 
+
     - Calculating the summary statistics
 
     - Drawing histograms, piecharts, and boxplots
