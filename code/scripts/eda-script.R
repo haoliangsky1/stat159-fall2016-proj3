@@ -132,6 +132,26 @@ HSITable$RelativeFrequency = HSITable$freq / sum(HSITable$freq)
 colnames(HSITable)[2] = 'Frequency'
 save(HSITable, file = 'data/rData/table-HSI.RData')
 
+# Combined table:
+flagTable = matrix(ncol=3, nrow = 12)
+flagTable[1:2,1:2] = as.matrix(count(college, 'HBCU'))
+flagTable[1:2, 3] = HBCUTable$RelativeFrequency
+flagTable[3:4,1:2] = as.matrix(count(college, 'PBI'))
+flagTable[3:4, 3] = PBITable$RelativeFrequency
+flagTable[5:6,1:2] = as.matrix(count(college, 'ANNHI'))
+flagTable[5:6, 3] = ANNHITable$RelativeFrequency
+flagTable[7:8,1:2] = as.matrix(count(college, 'TRIBAL'))
+flagTable[7:8,3] = TRIBALTable$RelativeFrequency
+flagTable[9:10,1:2] = as.matrix(count(college, 'AANAPII'))
+flagTable[9:10,3] =  AANAPIITable$RelativeFrequency
+flagTable[11:12,1:2] = as.matrix(count(college, 'HSI'))
+flagTable[11:12,3] =  HSITable$RelativeFrequency
+colnames(flagTable) = c('Flag', 'Count', 'RelativeFrequency')
+flagTable[,1] = c('Non Historically Black','Historically Black', 'Non Predominantly Black','Predominantly Black', 'Non Alaska Native Hawaiian serving','Alaska Native Hawaiian serving', 'Non Tribal','Tribal', 'Non Asian American Native American Pacific Islander','Asian American Native American Pacific Islander', 'Non Hispanic', 'Hispanic')
+flagTable[,3] = round(as.numeric(flagTable[,3]), digit =3)
+save(flagTable, file = 'data/rData/table-flag.RData')
+
+
 # Total Share of enrollment of undergraduate degree-seeking students who are White
 ugdsWhite = college$UGDS_WHITE
 # Total Share of enrollment of undergraduate degree-seeking students who are Black
