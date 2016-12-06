@@ -4,6 +4,7 @@
 \date{\today}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{Method}
@@ -15,6 +16,14 @@ One of the most common reasons students cite in choosing to go to college is the
 So - we choose a set of columns that we feel, in aggregate, can represent in some small, objective measure, a school's quality - now, how do we actually create this score in practice? First, we standardize all of the included variables within their respective columns, then take z-scores, and use these z-scores in place of the actual values within each column. Thus, the average of any statistic will be given a score close to 0, with scores above given a more positive score, and scores below a more negative score. Then, we weight each metric with deliberation, experimentation, and consultation of literature. Importantly, some data points are actually desirable when substantially *below* the average, such as net price or median debt, while others are obviously better if higher, such as median earnings or completion rate. Thus, we actually weight some pieces positively and other negatively in regards to the sign of their z-scores. Finally, these scores will alter and adjust both weighting and actual information as students enter and change their inputted answers. 
 
 Eventually, we decided upon the following for our data included in the response and their weights:
+
+<<hmmm2, eval = TRUE, echo=FALSE, message=FALSE>>=
+require(xtable)
+options(xtable.comment = FALSE)
+options(Sweave.comment = FALSE)
+load("../data/rData/weightDefault.RData")
+load("../data/rData/weightTable.Rdata")
+@
 
 1 - Net Price, stratified by income. There are 5 income brackets within the dataset, so dependent upon which income bracket a student inputs, the score is recalculated to consider the relative z-score of their projected respective net cost of attendance. For students below a certain income level, we actually want to more heavily reward schools with very negative z-scores, as these schools, in totality, are anomalously cheap when compared to their counterparts. We decide that for lower income students, this is of more significant importance, as this is the net price of attending AFTER financial aid - and these are students who need to know exactly how much attending could cost. Thus, the columns the information is drawn from and the weights themselves are dynamically adjusted based on user input.
 
@@ -35,6 +44,13 @@ Additionally, the existence of a community of people similar to you at a school 
 8 - Intended field of study. During the iterative process of creating this app, we ran into issues with weighting and variable inclusion. At one point, our app only recommended art schools, partially due to errors in weighting and partialy due to a lack of narrowing the application field by limiting the search to schools which actually had some semblance of a program you were interested in. 
 
 
- 
+
+
+<<eval = TRUE, echo=FALSE, message=FALSE, results='asis'>>=
+
+
+@
+
+
 
 \end{document}
