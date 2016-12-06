@@ -66,9 +66,9 @@ This project carries out extensive analysis on the publicly available College Sc
 \maketitle
 \section{Introduction}
 
-We are assuming the role of consultants to an NGO which primarily desires to provide at-risk, low-income, minority students a portfolio of colleges which best serve their needs: a high-quality, low-cost education. The interactive final product which allows student input is the shiny tool. Students enter in various criteria (their GPA, location, desired field of study, income bracket, first-generation status, etc) and it outputs a list of colleges ranked according to a score which we arbitrarily, but intelligently create as an ad-hoc indicator of "quality" of school for varying types of students. The responses are sorted upon this composite metric of "quality," and are readjusted in real time if the student changes their inputs. This "college quality score" is our response variable that students see and interact with, and the method the output list of schools are sorted upon. 
+We are assuming the role of consultants to an NGO which primarily desires to provide at-risk, low-income, minority students a portfolio of colleges which best serve their needs: a high-quality, low-cost education. The interactive final product which allows student input is the shiny tool. Students enter in various criteria (their GPA, location, desired field of study, income bracket, first-generation status, etc) and it outputs a list of colleges ranked according to a score which we arbitrarily, but intelligently create as an ad-hoc indicator of "quality" of school for varying types of students. The responses are sorted upon this composite metric of "quality," and are readjusted in real time if the student changes their inputs. This "college quality score" is our response variable that students see and interact with, and the method the output list of schools are sorted upon.\newline
 
-The actual disparate pieces of the response score are included as a result of a variety of exploratory analyses. At first, we underwent the daunting task of reading through the Data Dictionary given with the College Scorecard data - a detailed account of the content of around 2000 columns. After we became familiar with the general structure and material within the dataset, we moved on to research and exploratory data analysis. While there is some interesting philosophical merit to deliberating upon what makes a school "good," the definition of "good" we adopted allowed for a much more supervised process of creating a response variable - the majority of emphasis was placed on cost, community, and projections of success after college. Thus, we carried out research on relevant statistical literature. By looking through the data dictionary and reading some analytical publications that used the College Scorecard dataset, we began to put together a set of salient quality indicators, such as average salary after college, completion rate, median debt, or net price relative to a student's income bracket. \href{http://bit.ly/2gGW2fG}{This piece, especially from page 7 on, was of huge help to finalizing and legitimating this performance metric.}   
+The actual disparate pieces of the response score are included as a result of a variety of exploratory analyses. At first, we underwent the daunting task of reading through the Data Dictionary given with the College Scorecard data - a detailed account of the content of around 2000 columns. After we became familiar with the general structure and material within the dataset, we moved on to research and exploratory data analysis. While there is some interesting philosophical merit to deliberating upon what makes a school "good," the definition of "good" we adopted allowed for a much more supervised process of creating a response variable - the majority of emphasis was placed on cost, community, and projections of success after college. Thus, we carried out research on relevant statistical literature. By looking through the data dictionary and reading some analytical publications that used the College Scorecard dataset, we began to put together a set of salient quality indicators, such as average salary after college, completion rate, median debt, or net price relative to a student's income bracket. \href{http://bit.ly/2gGW2fG}{This piece, especially from page 7 on, was of huge help to finalizing and legitimating this performance metric.}\newline
 
 We then combine these responses into one "college quality score" for the school, with weights for different variables in the composite metric based upon experimentation and what the literature suggests. Additionally, We use combined data from the last 5 years for our score to reduce variance, with each year prior given less weight. The interesting specificity of our model is that it is geared not toward creating a score for general school quality and a prediction for the average student, but specifically for helping at-risk students who need assistance in deciding which schools are worth the application in their specific circumstances. These students truthfully and historically have not gotten the help that they deserve and we want to accommodate them.
 
@@ -79,7 +79,7 @@ We then combine these responses into one "college quality score" for the school,
 
 \subsection{Description}
 
-The data used in the construction of this app originates from the \emph{College Scorecard} database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed here: \href{https://collegescorecard.ed.gov/data/}(https://collegescorecard.ed.gov/data/).
+The data used in the construction of this app originates from the \emph{College Scorecard} database, which is developed by the U.S. Department of Education (under Obama's Administration) to provide "key indicators about the cost and value of institutions across the country to help students choose a school that is well-suited to meet their needs, priced affordably, and is consistent with their educational and career goals." The dataset can be accessed  \href{https://collegescorecard.ed.gov/data/}{here}.
 
 \subsection{Cleaning}
 For our purpose, we interpret and intercalate the data from the past five years, cleaning and merging the sets by implementing the following algorithm:\newline
@@ -147,75 +147,25 @@ It is no secret that those of minority racial/ethnic status in the United States
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rlrr}
+\begin{tabular}{rlll}
   \hline
- & HBCU & Frequency & RelativeFrequency \\ 
+ & Flag & Count & RelativeFrequency \\ 
   \hline
-1 & No & 6613 & 0.98 \\ 
-  2 & Yes & 102 & 0.02 \\ 
+1 & Non Historically Black & 6613 & 0.985 \\ 
+  2 & Historically Black & 102 & 0.015 \\ 
+  3 & Non Predominantly Black & 6622 & 0.986 \\ 
+  4 & Predominantly Black & 93 & 0.014 \\ 
+  5 & Non Alaska Native Hawaiian serving & 6680 & 0.995 \\ 
+  6 & Alaska Native Hawaiian serving & 35 & 0.005 \\ 
+  7 & Non Tribal & 6684 & 0.995 \\ 
+  8 & Tribal & 31 & 0.005 \\ 
+  9 & Non Asian American Native American Pacific Islander & 6586 & 0.981 \\ 
+  10 & Asian American Native American Pacific Islander & 129 & 0.019 \\ 
+  11 & Non Hispanic & 6368 & 0.948 \\ 
+  12 & Hispanic & 347 & 0.052 \\ 
    \hline
 \end{tabular}
-\caption{Percentages of Historically Black Colleges and Universities} 
-\end{table}
-\begin{table}[ht]
-\centering
-\begin{tabular}{rlrr}
-  \hline
- & PBI & Frequency & RelativeFrequency \\ 
-  \hline
-1 & No & 6622 & 0.99 \\ 
-  2 & Yes &  93 & 0.01 \\ 
-   \hline
-\end{tabular}
-\caption{Percentages of predominantly Black Institutions} 
-\end{table}
-\begin{table}[ht]
-\centering
-\begin{tabular}{rlrr}
-  \hline
- & ANNHI & Frequency & RelativeFrequency \\ 
-  \hline
-1 & No & 6680 & 0.99 \\ 
-  2 & Yes &  35 & 0.01 \\ 
-   \hline
-\end{tabular}
-\caption{Percentages of predominantly Pacific Islander Institutions} 
-\end{table}
-\begin{table}[ht]
-\centering
-\begin{tabular}{rlrr}
-  \hline
- & HSI & Frequency & RelativeFrequency \\ 
-  \hline
-1 & No & 6368 & 0.95 \\ 
-  2 & Yes & 347 & 0.05 \\ 
-   \hline
-\end{tabular}
-\caption{Percentages of predominantly Hispanic Institutions} 
-\end{table}
-\begin{table}[ht]
-\centering
-\begin{tabular}{rlrr}
-  \hline
- & TRIBAL & Frequency & RelativeFrequency \\ 
-  \hline
-1 & No & 6684 & 1.00 \\ 
-  2 & Yes &  31 & 0.00 \\ 
-   \hline
-\end{tabular}
-\caption{Percentages of predominantly Native American Institutions} 
-\end{table}
-\begin{table}[ht]
-\centering
-\begin{tabular}{rlrr}
-  \hline
- & AANAPII & Frequency & RelativeFrequency \\ 
-  \hline
-1 & No & 6586 & 0.98 \\ 
-  2 & Yes & 129 & 0.02 \\ 
-   \hline
-\end{tabular}
-\caption{Percentage of predominantly Asian American, Native American, Pacific Islander-serving Institutions} 
+\caption{Flag for Historically Minority Serving Institute} 
 \end{table}
 
 
