@@ -31,15 +31,15 @@ ui = fluidPage(
   # Sidebar
   sidebarLayout(
     sidebarPanel(
-      h4('Map for all educational institutions in the recommendation system'),
+      h4('Map of all educational institutions in the recommendation system'),
       plotOutput('mapNational')
       
     ),
     
     mainPanel(
       h1('Introduction'),
-      helpText('Custom Colllege Match finds the best schools for you to find the strongest schools for the best value.
-               Based on your information we will show you the top 10 schools for you based on factors such as net price, completion rate, and average earnings after graduation.'),
+      helpText('Custom Colllege Match finds the schools which are best for you. Our model is founded on once principle: schools which provide an inclusive, high-quality, low-cost education. 
+               Based on your input, we will return the top 10 schools best for you from our database. The score is a combination of many hand-picked factors, such as net price of attendance, completion rate, and average earnings after graduation.'),
       fluidRow(
         column(5, h4('Basic Informaiton'), 
                # take out states like AS
@@ -96,10 +96,10 @@ ui = fluidPage(
                  h4('Please enter an ID you would like more information:'),
                  numericInput(inputId = 'schoolID', label = 'ID', value = NA)
     ),
-    mainPanel(h1('Here are the schools we recommend. Choose one to proceed:'),
+    mainPanel(h1('Here are the schools we recommend. Highlight one to proceed:'),
               textOutput('text1'),
               textOutput('text2'),
-              p('We take into consideration of'),
+              p('We take into consideration many factors in calculating the best school for you. Copy and paste the school ID into the box on the left to see a more detailed breakdown of information, relevant to you, about that school.'),
               DT::dataTableOutput('table')
     )
   ),
@@ -111,12 +111,12 @@ ui = fluidPage(
 # Define server logic required to draw a histogram
 server = function(input, output) {
   output$text1 = renderText({
-    paste('Welcome, student from', input$state)
+    paste('Welcome, student from', input$state, '!')
   })
-  output$text2 = renderText({
-    paste('So we see that you selected a range from,',
-          input$range[1], ' to ', input$range[2])
-  })
+#  output$text2 = renderText({
+#    paste('We see that you selected a range from,',
+#          input$range[1], ' to ', input$range[2])
+#  })
   output$text3 = renderText({
     id = input$schoolID
     name = dummyScore$INSTNM[dummyScore$UNITID == id]
