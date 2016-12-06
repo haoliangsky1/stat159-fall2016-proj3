@@ -3,8 +3,8 @@ title: shinyApp
 account: haoliang
 server: shinyapps.io
 appId: 141811
-bundleId: 635738
+bundleId: 637255
 url: https://haoliang.shinyapps.io/shinyApp/
-when: 1480900946.54133
+when: 1480993866.45553
 asMultiple: FALSE
 asStatic: FALSE

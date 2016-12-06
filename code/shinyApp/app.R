@@ -75,10 +75,10 @@ ui = fluidPage(
       ),
       column(5,  # First Generation
              br(),
-             radioButtons(inputId = 'firstGeneration', label = 'First Generation?', choices = c('Yes', 'No')),
-             br(),
+             radioButtons(inputId = 'firstGeneration', label = 'First Generation?', choices = c('Yes', 'No'))
+             # br(),
              # Sex
-             radioButtons(inputId = 'sex', label = 'Select Sex', choices = c('Male', 'Female'))
+             # radioButtons(inputId = 'sex', label = 'Select Sex', choices = c('Male', 'Female'))
       )
     )
     # sliderInput('range',
@@ -129,7 +129,7 @@ server = function(input, output) {
   })
   
   output$mapNational = renderPlot({
-    plotGeo('None', dummyScore)
+    plotGeo(input$state, dummyScore)
   })
   
   output$mapState = renderPlot({
