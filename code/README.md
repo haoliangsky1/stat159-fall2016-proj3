@@ -22,10 +22,19 @@ The *scripts*/ subdirectory contains:
 
 The *shinyApp*/ subdirectory contains:
 
-* *app* is the central script for generating the Shiny App. It defines the UI for the application and utilizes the helper functions (described below) to return a list of recommended colleges. 
+* *app.R* is the central script for generating the Shiny App. It defines the UI for the application and utilizes the helper functions (described below) to return a list of recommended colleges. 
 
-* *calculateScores* is a helper function that calculates the scores for colleges based on predictors as noted in commented code. This script determines the weights for the various predictors.
+* *calculateScores.R* is a helper function that calculates the scores for colleges based on predictors as noted in commented code. This script determines the weights for the various predictors.
 
-* *makeRankingTable* is a helper function that creates a table with relevant information to display for the recommended schools.
+* *makeRankingTable.R* is a helper function that creates a table with relevant information to display for the recommended schools.
 
-* *plotGeo* is a helper function that plots the locations of recommended universities of a given state.
+* *plotGeo.R* is a helper function that plots the locations of recommended universities of a given state.
+
+* *makeSchoolTable.R* is a helper function that returns a list of essential information that the user may be interested in.
+
+* *rsconnect* folder contains the structure necessary for shinyApp publishing.
+
+* *www* folder contains a few plots that could be used in the shinyApp. Users are welcome to add in anything interesting.
+
+The *tests*/ subdirectory contains the unit tests for the self-defined functions. 
+
