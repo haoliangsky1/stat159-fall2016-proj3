@@ -1,0 +1,22 @@
+\documentclass{article}
+\title{Stat159 Project 3: Add a title}
+\author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
+\date{\today}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+\section{Conclusions}
+
+We began with a massive primary source data set from \emph{College Scorecard}, spread over different years, with major swaths of relevant data not even included. We considered what we'd find meaningful to do, and decided an app helping at-risk, low-income, minority students under the guise of providing a consulting service to an NGO would be both interesting and gratifying. We then carried out extensive data cleaning, exploratory analysis, reading, experimentation, and research to figure out what we could actually do with this data. We decided that an app which returns schools that would serve students who need education but  may not know about was a poignant direction to go. After substantial deliberation, we decided upon creating an ad-hoc, composite "school quality metric" that would serve to sort a list of outputted colleges to students who interact with the app. This was compiled together with substantial thought and work, and the weighting and inclusion of variables is extremely fine-tuned and the result of many careful considerations. The final app, which students interact with and input values to was also the product of endless deliberation - what was relevant to include, what was unnecessary, what to show, how to sort, etc. In the end, we are happy with our final app and the composite "school quality metric" which we composed. The dynamic, interactive nature of the metric is a source of great pride for all of us in the group, and we hope that it will return schools that students would not have thought of but would truly give them what any student wants, in the end, customized to their specific situation and intentions: a high-quality, low-cost education.
+
+Thank you for reading and we hope the app serves you well.
+
+From all of us at the consultant team,
+
+\textit{Liang Hao, Bret Hart, Andrew Shibata, and Gary Nguyen}
+
+
+
+\end{document}
