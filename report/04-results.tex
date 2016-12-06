@@ -1,20 +1,79 @@
-\documentclass{article}
-\title{Stat159 Project 3: Add a title}
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\title{Stat159 Project 3: College Recommendation}
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{04-results-concordance}
 
 \maketitle
 \section{The App // Results}
 
 
+Now that we've established the composite quality score metric, we can talk in more detail about the actual app itself and what the student inputs. First, they are met with a small introduction which lays out the purpose of the app that we have reiterated over and over - providing a low-cost, high-quality education to students who need it. Then, the student enters in their:
+\begin{itemize}
+\item State of residence
+\item Ethnicity
+\item Income bracket
+\item First Generation Status
+\item Intended Field of Study
+\item SAT/ACT scores
+\end{itemize}
 
+As discussed at length in the methods section, all of these were deemed as relevant to determining the dynamic aspects of the response score - the remaining factors, of median debt, repayment rate, and completion rate, are all constant across the university and not stratified in any way, so they cannot react to user input. However, besides these 3 flat response values, the remaining 7 pieces of the composite score metric are all dynamic and change both weight and information itself based on user input.\newline
 
+They also see a complete map of all institutions in the U.S., and when they select a state, another map will zoom in on their particular state and show a resized map of regional schools.\newline
 
-
+So, we've established what the student enters and what they see. We then return a list of the top 10 matching schools, ordered on our composite quality metric, which best fit their portfolio of inputs and information. The top matching school will always have a 100 score value, and the remaining scores are computed proportionately from this arbitrary top scoring institution. To gather more information about schools a user is interested in, they can copy/paste the ID of a particular school into the box on the left, which pulls up more detailed summary statistics for the student to interpret, such as projected net price of attendance (after financial aid), percent of students of their ethnicity, percent of students within their major, and a standardized test score spread. While this is in no way exhaustive or comprehensive, we believe that the computed score will be of great value to potential applicants, as it will offer schools which empirically meet their demands but that they may not have heard of or searched for without the intervention of our analytic process. 
 
 
 \end{document}

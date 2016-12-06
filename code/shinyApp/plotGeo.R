@@ -5,7 +5,7 @@ plotGeo = function(stateName, df){
     temp = df
 		map = get_map(location = 'North America', zoom = 4)
 		mapPoints = ggmap(map) + 
-          geom_point(data=temp, aes(x = LONGITUDE - 10, y = LATITUDE + 14,  size= Score), alpha= .3, 
+          geom_point(data=temp, aes(x = LONGITUDE - 10, y = LATITUDE + 17,  size= Score), alpha= .3, 
             color = 'red') + scale_size('Score')
     # mapPoints = map
 		} else {

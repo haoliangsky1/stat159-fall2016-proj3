@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 DEC 2016 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 DEC 2016 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**03-method.tex
-(./03-method.tex
+**05-conclusions.tex
+(./05-conclusions.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -78,8 +78,8 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./03-method.aux)
-\openout1 = `03-method.aux'.
+(./05-conclusions.aux)
+\openout1 = `05-conclusions.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -170,46 +170,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-[3] [4] [5] [6] (./03-method.aux) ) 
+(./05-conclusions.aux) ) 
 Here is how much of TeX's memory you used:
- 1627 strings out of 493014
- 23602 string characters out of 6133351
- 86689 words of memory out of 5000000
- 5164 multiletter control sequences out of 15000+600000
+ 1624 strings out of 493014
+ 23613 string characters out of 6133351
+ 84689 words of memory out of 5000000
+ 5161 multiletter control sequences out of 15000+600000
  7626 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,1180b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb>
-Output written on 03-method.pdf (6 pages, 83283 bytes).
+ 38i,6n,23p,1736b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti10.pfb>
+Output written on 05-conclusions.pdf (1 page, 66753 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

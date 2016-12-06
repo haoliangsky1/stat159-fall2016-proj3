@@ -1,35 +1,29 @@
 \documentclass{article}
-\title{Stat159 Project 3: Add a title}
+\title{Stat159 Project 3: College Recommendation}
 \author{Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen}
 \date{\today}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 \section{The App // Results}
 
 
 Now that we've established the composite quality score metric, we can talk in more detail about the actual app itself and what the student inputs. First, they are met with a small introduction which lays out the purpose of the app that we have reiterated over and over - providing a low-cost, high-quality education to students who need it. Then, the student enters in their:
+\begin{itemize}
+\item State of residence
+\item Ethnicity
+\item Income bracket
+\item First Generation Status
+\item Intended Field of Study
+\item SAT/ACT scores
+\end{itemize}
 
-- State of residence
+As discussed at length in the methods section, all of these were deemed as relevant to determining the dynamic aspects of the response score - the remaining factors, of median debt, repayment rate, and completion rate, are all constant across the university and not stratified in any way, so they cannot react to user input. However, besides these 3 flat response values, the remaining 7 pieces of the composite score metric are all dynamic and change both weight and information itself based on user input.\newline
 
-- Ethnicity
-
-- Income bracket
-
-- First Generation Status
-
-- Intended Field of Study
-
-- SAT/ACT scores
-
-As discussed at length in the methods section, all of these were deemed as relevant to determining the dynamic aspects of the response score - the remaining factors, of median debt, repayment rate, and completion rate, are all constant across the university and not stratified in any way, so they cannot react to user input. However, besides these 3 flat response values, the remaining 7 pieces of the composite score metric are all dynamic and change both weight and information itself based on user input.
-
-They also see a complete map of all institutions in the U.S., and when they select a state, another map will zoom in on their particular state and show a resized map of regional schools.
+They also see a complete map of all institutions in the U.S., and when they select a state, another map will zoom in on their particular state and show a resized map of regional schools.\newline
 
 So, we've established what the student enters and what they see. We then return a list of the top 10 matching schools, ordered on our composite quality metric, which best fit their portfolio of inputs and information. The top matching school will always have a 100 score value, and the remaining scores are computed proportionately from this arbitrary top scoring institution. To gather more information about schools a user is interested in, they can copy/paste the ID of a particular school into the box on the left, which pulls up more detailed summary statistics for the student to interpret, such as projected net price of attendance (after financial aid), percent of students of their ethnicity, percent of students within their major, and a standardized test score spread. While this is in no way exhaustive or comprehensive, we believe that the computed score will be of great value to potential applicants, as it will offer schools which empirically meet their demands but that they may not have heard of or searched for without the intervention of our analytic process. 
-
 
 
 \end{document}
