@@ -2,7 +2,8 @@
 # of the dataset for the project
 
 #setwd("~/Desktop/Fall_2016/Stat159/stat159-fall2016-proj3/")
-#college = read.csv('data/combinedData.csv')
+
+college = read.csv('data/combinedData.csv')
 library(plyr)
 library(maps)
 library(ggplot2)
@@ -260,7 +261,47 @@ print('table: netPrice Q5')
 save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 
  
+# Repayment Rate
+# #Summarry statistics for Monthly earnings P6
+# temp_P6 = college$MN_EARN_WNE_P6
+# temp_P6[temp_P6=='PrivacySuppressed'] = NA
+# college$MN_EARN_WNE_P6 = as.numeric(temp_P6)
+# MN_EARN_6 <- college$MN_EARN_WNE_P6
+# getSummary(MN_EARN_6)
+# hist(MN_EARN_P6)
 
+temp_Rpy3 <- college$COMPL_RPY_3YR_RT
+temp_Rpy3[temp_Rpy3=='PrivacySuppressed'] = NA
+Col_repay3 = as.numeric(temp_Rpy3)
+
+png('images/histogram-Col-repay3.png')
+hist(Col_repay3, main = "Histogram of Repayment Rate for 3
+     year after entering repayment")
+dev.off()
+  
+
+temp_Rpy5 <- college$COMPL_RPY_5YR_RT
+temp_Rpy5[temp_Rpy5=='PrivacySuppressed'] = NA
+Col_repay5 = as.numeric(temp_Rpy5)
+
+Col_repay5_sumstat <- getSummary(Col_repay5)
+
+Col_repay5 <- college$COMPL_RPY_5YR_RT
+Col_repay5_sumstat <- getSummary(Col_repay5)
+
+png('images/histogram-Col-repay5.png')
+hist(Col_repay5, main = "Histogram of Repayment Rate for 5
+     year after entering repayment")
+dev.off()
+
+#Completion Rate 
+C_rate <- college$C150_4
+C_rate_sumstat <- getSummary(C_rate)
+
+png('images/histogram-C-rate.png')
+hist(C_rate, main = "Histogram of Completion Rate for 4-
+     year after entering repayment")
+dev.off()
 
 
 # png('images/ggplot-schoolDistribution.png')
@@ -273,6 +314,7 @@ save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 # p
 # dev.off()
 
+#Percentage of first generation 
 
 temp = college$TUITIONFEE_IN
 temp = college$TUITIONFEE_OUT
