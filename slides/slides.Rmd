@@ -1,0 +1,14 @@
+---
+title: "slides"
+author: "Liang Hao, Bret Hart, Andrew Shibata, Gary Nguyen"
+date: "12/5/2016"
+output: ioslides_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(xtable.comment = FALSE)
+options(knitr.comment = FALSE)
+library(glmnet)
+library(pls)
+library(xtable)
+```
