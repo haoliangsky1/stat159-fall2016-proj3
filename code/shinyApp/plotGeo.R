@@ -2,8 +2,12 @@ library(ggmap)
 
 plotGeo = function(stateName, df){
 	if (stateName == 'None') {
+    temp = df
 		map = get_map(location = 'North America', zoom = 4)
-		mapPoints = ggmap(map) + geom_point(data=df, aes(x = LONGITUDE, y = LATITUDE, size= Score), alpha= .3, color = 'red') + scale_size('Score')
+		mapPoints = ggmap(map) + 
+          geom_point(data=temp, aes(x = LONGITUDE - 10, y = LATITUDE + 14,  size= Score), alpha= .3, 
+            color = 'red') + scale_size('Score')
+    # mapPoints = map
 		} else {
       temp = df[df$STABBR == stateName, ]
       temp = temp[order(-temp$Score), ]
