@@ -260,7 +260,11 @@ rownames(NPTable_Q5) = c('Public quantile 5', 'Private quantile 5')
 print('table: netPrice Q5')
 save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 
- 
+#a = lapply()
+#do.call("rbind", a)
+
+
+
 # Repayment Rate
 # #Summarry statistics for Monthly earnings P6
 # temp_P6 = college$MN_EARN_WNE_P6
@@ -269,13 +273,15 @@ save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 # MN_EARN_6 <- college$MN_EARN_WNE_P6
 # getSummary(MN_EARN_6)
 # hist(MN_EARN_P6)
+#cols <- c("COMPL_RPY_3YR_RT", "COMPL_RPY_5YR_RT")
 
-temp_Rpy3 <- college$COMPL_RPY_3YR_RT
+
+  temp_Rpy3 <- college$COMPL_RPY_3YR_RT
 temp_Rpy3[temp_Rpy3=='PrivacySuppressed'] = NA
 Col_repay3 = as.numeric(temp_Rpy3)
 
 png('images/histogram-Col-repay3.png')
-hist(Col_repay3, main = "Histogram of Repayment Rate for 3
+hist(Col_repay3, xlab = "Rate", main = "Histogram of Repayment Rate for 3
      year after entering repayment")
 dev.off()
   
@@ -283,14 +289,10 @@ dev.off()
 temp_Rpy5 <- college$COMPL_RPY_5YR_RT
 temp_Rpy5[temp_Rpy5=='PrivacySuppressed'] = NA
 Col_repay5 = as.numeric(temp_Rpy5)
-
-Col_repay5_sumstat <- getSummary(Col_repay5)
-
-Col_repay5 <- college$COMPL_RPY_5YR_RT
 Col_repay5_sumstat <- getSummary(Col_repay5)
 
 png('images/histogram-Col-repay5.png')
-hist(Col_repay5, main = "Histogram of Repayment Rate for 5
+hist(Col_repay5, xlab = "Rate", main = "Histogram of Repayment Rate for 5
      year after entering repayment")
 dev.off()
 
@@ -313,6 +315,20 @@ dev.off()
 # #p = p + geom_text(data = stateData, hjust = 0.5, vjust = -0.5, aes(x = LONGITUDE, y = LATITUDE, label = label), color = 'gold2', size = 4)
 # p
 # dev.off()
+
+##
+# Earning
+YearMeanEarning_10 <- college$MN_EARN_WNE_P10
+YearMedianEarning_10 <- as.numeric(college$MD_EARN_WNE_P10)
+
+YearMedianEarning_10_table <- getSummary(YearMedianEarning_10)
+his
+# Employment:
+#dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
+
+# Proportion of Pell Grant
+ProportionPellGrant <- as.numeric(college$PCTPELL)
+
 
 #Percentage of first generation 
 
