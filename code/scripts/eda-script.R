@@ -152,6 +152,42 @@ flagTable[,1] = c('Non Historically Black','Historically Black', 'Non Predominan
 flagTable[,3] = round(as.numeric(flagTable[,3]), digit =3)
 save(flagTable, file = 'data/rData/table-flag.RData')
 
+#Proportion of degrees
+prop_compsci <- college$PCIP11 + college$PCIP41
+prop_literature <- college$PCIP23 + college$PCIP25
+prop_math <- college$PCIP27
+prop_engineering <- college$PCIP14 + college$PCIP15 + college$PCIP47 + college$PCIP48 + college$PCIP49
+prop_socialstudies <- college$PCIP24 + college$PCIP45    
+prop_visualarts <-  college$PCIP50
+prop_business <- college$PCIP52
+
+prop_history = college$PCIP54
+
+# Life Science/Health
+prop_lifesciencehealth = college$PCIP26 + college$PCIP51 
+
+propdeg_pie <- c(mean(prop_compsci), mean(prop_literature), 
+                 mean(prop_math), mean(prop_engineering), mean(prop_socialstudies),     
+                 mean(prop_visualarts),
+                 mean(prop_business), 
+                 mean(prop_history))
+
+progdeg_barplot <- c(mean(prop_compsci), mean(prop_literature), 
+                     mean(prop_math), mean(prop_engineering), mean(prop_socialstudies),   
+                     mean(prop_visualarts),
+                     mean(prop_business), 
+                     mean(prop_history))
+
+png('images/piechart-proportionofDegrees.png')
+
+pie(propdeg_pie, labels = c('Computer Sciece', 'Literature', 'Mathematics', 'Engineering',
+                            'Social Studies', 'Visual Performing Arts', 'Business', 'History','LifeScienceHealth'), radius = 1, main = 'Piechart for Degree Proportion')
+dev.off()
+
+#barplot(progdeg_barplot, labels = c('Computer Sciece', 'Literature', 'Mathematics', 'Engineering',
+#                                   'Social Studies', 'Visual Performing Arts', 'Business', 'History','LifeScienceHealth'), radius = 1, main = 'Piechart for Degree Proportion', main = 'Barplot for Degree Proportion')
+
+
 
 # Total Share of enrollment of undergraduate degree-seeking students who are White
 ugdsWhite = college$UGDS_WHITE
@@ -276,7 +312,7 @@ save(NPTable_Q5, file = 'data/rData/table-netPrice_quintile5.RData')
 #cols <- c("COMPL_RPY_3YR_RT", "COMPL_RPY_5YR_RT")
 
 
-  temp_Rpy3 <- college$COMPL_RPY_3YR_RT
+temp_Rpy3 <- college$COMPL_RPY_3YR_RT
 temp_Rpy3[temp_Rpy3=='PrivacySuppressed'] = NA
 Col_repay3 = as.numeric(temp_Rpy3)
 
@@ -284,7 +320,7 @@ png('images/histogram-Col-repay3.png')
 hist(Col_repay3, xlab = "Rate", main = "Histogram of Repayment Rate for 3
      year after entering repayment")
 dev.off()
-  
+
 
 temp_Rpy5 <- college$COMPL_RPY_5YR_RT
 temp_Rpy5[temp_Rpy5=='PrivacySuppressed'] = NA
@@ -295,6 +331,17 @@ png('images/histogram-Col-repay5.png')
 hist(Col_repay5, xlab = "Rate", main = "Histogram of Repayment Rate for 5
      year after entering repayment")
 dev.off()
+
+#make pie-chart
+print('plotting: piechart-repaymentRate.ong;')
+
+png('images/piechart-repaymentRate.png')
+Col_repay_piechart = c(mean(as.numeric(Col_repay3), na.rm = TRUE), mean(Col_repay5, na.rm = TRUE))
+pie(Col_repay_piechart, labels = c('After 3 years', 'After 5 years'), radius = 1
+    , main = 'Piechart for College Repayment Rate of Undergraduates')
+dev.off()
+
+barplot()
 
 #Completion Rate 
 C_rate <- college$C150_4
@@ -322,15 +369,35 @@ YearMeanEarning_10 <- college$MN_EARN_WNE_P10
 YearMedianEarning_10 <- as.numeric(college$MD_EARN_WNE_P10)
 
 YearMedianEarning_10_table <- getSummary(YearMedianEarning_10)
-his
+
+png('images/histogram-YearMeanEarning_10.png')
+hist(YearMedianEarning_10, xlab = "earning", main = 'Histogram of yearly mean earning of College students')
+dev.off()
+
 # Employment:
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
+
+
 # Proportion of Pell Grant
 ProportionPellGrant <- as.numeric(college$PCTPELL)
+ProportionPellGrant_table <- getSummary(ProportionPellGrant)
 
+png('images/histogram-ProportionPellGrant.png')
+hist(ProportionPellGrant, xlab = "proportion", main = "Histogram of Pell Grant proportion")
+dev.off()
+
+save(ProportionPellGrant_table, file = 'data/rData/table-ProportionPellGrant.RData')
 
 #Percentage of first generation 
+ProportionFirstGeneration <- college$FIRST_GEN
+
+
+png('images/histogram-ProportionFirstGeneration.png')
+hist(ProportionFirstGeneration, xlab = "proportion", main = "Histogram of proportions of first-generation undergraduates")
+dev.off()
+
+save(ProportionFirstGeneration_table)
 
 temp = college$TUITIONFEE_IN
 temp = college$TUITIONFEE_OUT
@@ -339,7 +406,7 @@ temp = college$TUITIONFEE_PROG
 
 temp = college$INEXPFTE
 
-
+#Plotting Rate vs. Rate
 
 # Entrance Test Score Summary
 # SAT
