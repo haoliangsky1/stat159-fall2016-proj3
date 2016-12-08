@@ -322,7 +322,6 @@ YearMeanEarning_10 <- college$MN_EARN_WNE_P10
 YearMedianEarning_10 <- as.numeric(college$MD_EARN_WNE_P10)
 
 YearMedianEarning_10_table <- getSummary(YearMedianEarning_10)
-his
 # Employment:
 #dummy['10YearEmployment'] = as.numeric(college$COUNT_WNE_P10) / college$UGDS
 
